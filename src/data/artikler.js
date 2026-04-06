@@ -1,6 +1,6 @@
-import heroPrimary from '../../images/hero-primary.jpg'
-import heroSecondary from '../../images/hero-secondary.jpg'
-import tentMain from '../../images/tent-main.jpg'
+import heroPrimary from '../images/hero-primary.jpg'
+import heroSecondary from '../images/hero-secondary.jpg'
+import tentMain from '../images/tent-main.jpg'
 
 export const artikler = [
   {
