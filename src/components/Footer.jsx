@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { ArrowRight, Mail, MapPin, Phone } from 'lucide-react'
 import { companyInfo, navigationLinks } from '../data/produkter'
-import logoUrl from '../../images/logo.png'
+import logoUrl from '../../images/logo-white.png'
 
 export default function Footer() {
   const footerNavigationLinks = navigationLinks.filter((item) => item.path !== '/kontakt')
