@@ -61,7 +61,8 @@ export default function Hero() {
                 <img
                   src={image.src}
                   alt={image.alt}
-                  fetchPriority={index === 0 ? 'high' : undefined}
+                  // eslint-disable-next-line react/no-unknown-property
+                  fetchpriority={index === 0 ? 'high' : undefined}
                   loading={index === 0 ? 'eager' : 'lazy'}
                   decoding="async"
                 />
