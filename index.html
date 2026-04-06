@@ -32,6 +32,16 @@
       function gtag() {
         dataLayer.push(arguments)
       }
+      
+      // Default consent mode to denied
+      gtag('consent', 'default', {
+        'ad_storage': 'denied',
+        'ad_user_data': 'denied',
+        'ad_personalization': 'denied',
+        'analytics_storage': 'denied',
+        'wait_for_update': 500
+      });
+
       gtag('js', new Date())
       gtag('config', 'G-PJR6N81493')
     </script>

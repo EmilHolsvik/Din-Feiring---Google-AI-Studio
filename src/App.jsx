@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Navigate, Route, Routes, useLocation } from 'r
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import ScrollToTop from './components/ScrollToTop'
+import CookieConsent from './components/CookieConsent'
 import Home from './pages/Home'
 import About from './pages/About'
 import ProductsPage from './pages/ProductsPage'
@@ -42,6 +43,7 @@ function App() {
   return (
     <Router basename={import.meta.env.BASE_URL}>
       <ScrollToTop />
+      <CookieConsent />
       <div className="app-shell">
         <Navbar />
         <main id="hovedinnhold" className="app-main">

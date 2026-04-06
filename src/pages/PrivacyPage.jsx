@@ -65,10 +65,18 @@ export default function PrivacyPage() {
               eksempel være en tjeneste som Formspree eller tilsvarende leverandør.
             </p>
             <p className="section-copy">
-              Nettsiden bruker informasjonskapsler for nødvendige funksjoner og anonym besøksstatistikk. Vi bruker bare
-              cookies som er nødvendige for at nettsiden skal fungere, samt anonymiserte analyseverktøy for å forbedre
-              brukeropplevelsen.
+              Nettsiden bruker informasjonskapsler (cookies) for å forbedre brukeropplevelsen, analysere trafikk og for
+              markedsføring. Vi bruker Google Analytics for å samle anonymisert statistikk. Du kan selv velge hvilke
+              cookies du vil godta gjennom våre innstillinger.
             </p>
+            <div className="privacy-cookie-action">
+              <button 
+                onClick={() => window.dispatchEvent(new CustomEvent('open-cookie-settings'))}
+                className="btn btn-secondary btn-sm"
+              >
+                Administrer cookie-innstillinger
+              </button>
+            </div>
             <p className="section-copy">
               Vi ber aldri om mer informasjon enn det som er nødvendig for å kunne svare på din henvendelse eller inngå
               en avtale.

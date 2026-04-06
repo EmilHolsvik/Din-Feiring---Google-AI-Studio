@@ -1711,6 +1711,14 @@ section[id] { scroll-margin-top: calc(var(--nav-height) + 20px); }
   padding-top: 30px;
   border-top: 1px solid var(--border);
 }
+.privacy-cookie-action {
+  margin: 24px 0;
+  padding: 20px;
+  background: var(--cream);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-dark);
+}
+
 .privacy-list {
   display: grid;
   gap: 10px;
@@ -3828,6 +3836,7 @@ section[id] { scroll-margin-top: calc(var(--nav-height) + 20px); }
     grid-template-columns: 1fr;
     justify-items: center;
     text-align: center;
+    gap: 16px;
   }
   .footer-bottom-left,
   .footer-bottom-copy,
