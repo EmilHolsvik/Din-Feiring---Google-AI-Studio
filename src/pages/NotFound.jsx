@@ -1,13 +1,12 @@
 import { Link } from 'react-router-dom'
 import { TriangleAlert } from 'lucide-react'
 import Eyebrow from '../components/Eyebrow'
-import useDocumentTitle from '../hooks/useDocumentTitle'
+import SEO from '../components/SEO'
 
 export default function NotFound() {
-  useDocumentTitle('Fant ikke siden | Din Feiring')
-
   return (
     <section className="section">
+      <SEO title="Siden ble ikke funnet" noindex />
       <div className="container narrow-container">
         <div className="surface-card centered-card stack-lg">
           <Eyebrow icon={TriangleAlert}>404</Eyebrow>

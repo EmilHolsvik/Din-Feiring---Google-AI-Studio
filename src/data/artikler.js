@@ -6,6 +6,7 @@ export const artikler = [
   {
     slug: 'hvilke-arrangementer-passer-partytelt-for',
     title: 'Hvilke arrangementer passer partytelt for?',
+    seoTitle: 'Når passer det å leie partytelt? – Tips til din feiring',
     excerpt:
       'Partytelt passer til langt mer enn store sommerfester. Her er noen anledninger der telt gir ekstra ro, plass og fleksibilitet.',
     category: 'Inspirasjon',
@@ -61,6 +62,7 @@ export const artikler = [
   {
     slug: 'montering-og-sikring-av-partytelt',
     title: 'Montering og sikring av partytelt',
+    seoTitle: 'Hvordan montere og sikre partytelt? – Guide til trygg fest',
     excerpt:
       'Et telt skal ikke bare se bra ut. Det skal stå trygt gjennom hele arrangementet. Her er det viktigste å tenke på før gjestene kommer.',
     category: 'Montering',
@@ -116,6 +118,7 @@ export const artikler = [
   {
     slug: 'hvordan-velge-riktig-partytelt',
     title: 'Hvordan velge riktig partytelt',
+    seoTitle: 'Hvor stort partytelt trenger jeg? – Guide til riktig størrelse',
     excerpt:
       'Velg telt ut fra hvor mange som kommer, hvordan arrangementet skal brukes og hvor teltet faktisk skal stå. Det gjør valget mye enklere.',
     category: 'Planlegging',

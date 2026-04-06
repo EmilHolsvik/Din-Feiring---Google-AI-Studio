@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { Download, FileText } from 'lucide-react'
-import useDocumentTitle from '../hooks/useDocumentTitle'
+import SEO from '../components/SEO'
 import Eyebrow from '../components/Eyebrow'
 import { companyInfo } from '../data/produkter'
 
@@ -136,10 +136,9 @@ const deliveryChecklist = [
 ]
 
 export default function RentalTermsPage() {
-  useDocumentTitle('Leievilkår | Din Feiring')
-
   return (
     <section className="section privacy-page">
+      <SEO title="Leievilkår" noindex />
       <div className="container narrow-container">
         <div className="page-breadcrumbs">
           <Link to="/">Forside</Link>

@@ -1,13 +1,15 @@
 import Kontakt from '../components/Kontakt'
 import ContactTestimonials from '../components/ContactTestimonials'
-import useDocumentTitle from '../hooks/useDocumentTitle'
+import SEO from '../components/SEO'
 import { Compass } from 'lucide-react'
 
 export default function ContactPage() {
-  useDocumentTitle('Kontakt | Din Feiring')
-
   return (
     <>
+      <SEO 
+        title="Kontakt oss – Be om tilbud på partytelt"
+        description="Har du spørsmål om leie av partytelt, bord eller stoler? Kontakt Din Feiring i Sandefjord for et uforpliktende tilbud til ditt arrangement."
+      />
       <Kontakt
         eyebrow="Kontakt"
         eyebrowIcon={Compass}

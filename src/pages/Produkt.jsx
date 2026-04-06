@@ -4,19 +4,18 @@ import { ClipboardList, MessageCircle, Truck, ShieldCheck, ArrowLeft } from 'luc
 import ProduktKort from '../components/ProduktKort'
 import Kontakt from '../components/Kontakt'
 import ArticlesPreview from '../components/ArticlesPreview'
+import SEO from '../components/SEO'
 import {
   formatCurrency,
   getProductById,
   getRelatedProducts,
 } from '../data/produkter'
-import useDocumentTitle from '../hooks/useDocumentTitle'
 
 export default function Produkt() {
   const { id } = useParams()
   const produkt = useMemo(() => getProductById(id), [id])
   const [activeImage, setActiveImage] = useState('')
   const presetItems = useMemo(() => (produkt ? [{ productId: produkt.id, quantity: 1 }] : []), [produkt])
-  useDocumentTitle(produkt ? `${produkt.navn} | Din Feiring` : 'Produkt ikke funnet | Din Feiring')
 
   useEffect(() => {
     if (!produkt) return
@@ -26,6 +25,7 @@ export default function Produkt() {
   if (!produkt) {
     return (
       <div className="container" style={{ padding: '120px 24px', textAlign: 'center' }}>
+        <SEO title="Produkt ikke funnet" noindex />
         <h2>Produktet ble ikke funnet</h2>
         <Link to="/produkter" className="btn btn-primary" style={{ marginTop: '24px' }}>
           Tilbake til katalogen
@@ -40,6 +40,11 @@ export default function Produkt() {
 
   return (
     <div style={{ background: 'var(--cream-light)', minHeight: '100vh' }}>
+      <SEO 
+        title={produkt.seoTitle || `${produkt.navn} – Leie i Sandefjord`}
+        description={produkt.kortBeskrivelse}
+        ogImage={produkt.bilde}
+      />
       <div className="container product-content-wrap" style={{ padding: '36px 24px 0' }}>
         <div className="product-breadcrumbs">
           <Link to="/">Forside</Link>

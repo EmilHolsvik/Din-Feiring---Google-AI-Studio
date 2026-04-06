@@ -1,14 +1,13 @@
 import { Link } from 'react-router-dom'
 import { ShieldCheck } from 'lucide-react'
-import useDocumentTitle from '../hooks/useDocumentTitle'
+import SEO from '../components/SEO'
 import Eyebrow from '../components/Eyebrow'
 import { companyInfo } from '../data/produkter'
 
 export default function PrivacyPage() {
-  useDocumentTitle('Personvern | Din Feiring')
-
   return (
     <section className="section privacy-page">
+      <SEO title="Personvern" noindex />
       <div className="container narrow-container">
         <div className="page-breadcrumbs">
           <Link to="/">Forside</Link>

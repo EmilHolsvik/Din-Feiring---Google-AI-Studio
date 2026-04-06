@@ -24,7 +24,8 @@ function AppRoutes() {
       <Route path="/om-oss" element={<About />} />
       <Route path="/produkter" element={<ProductsPage />} />
       <Route path="/produkter/:id" element={<Produkt />} />
-      <Route path="/teltguide" element={<SizeGuidePage />} />
+      <Route path="/hvor-stort-partytelt" element={<SizeGuidePage />} />
+      <Route path="/teltguide" element={<Navigate to="/hvor-stort-partytelt" replace />} />
       <Route path="/artikler" element={<ArticlesPage />} />
       <Route path="/artikler/:slug" element={<ArticlePage />} />
       <Route path="/priser" element={<Navigate to="/kalkulator" replace />} />

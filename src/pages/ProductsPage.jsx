@@ -1,13 +1,15 @@
 import Produkter from '../components/Produkter'
 import Kontakt from '../components/Kontakt'
-import useDocumentTitle from '../hooks/useDocumentTitle'
+import SEO from '../components/SEO'
 import { ClipboardList } from 'lucide-react'
 
 export default function ProductsPage() {
-  useDocumentTitle('Produkter | Din Feiring')
-
   return (
     <>
+      <SEO 
+        title="Leie partytelt i Sandefjord – Se utvalg og priser"
+        description="Vi leier ut partytelt i mange størrelser, fra 3x6 til 6x12 meter. Se vårt utvalg av telt, bord og stoler til din neste feiring i Sandefjord."
+      />
       <Produkter />
       <Kontakt
         eyebrow="Bestilling"

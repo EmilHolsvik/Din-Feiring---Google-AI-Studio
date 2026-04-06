@@ -2,18 +2,17 @@ import { Link, useParams } from 'react-router-dom'
 import { ArrowLeft, Clock3, FileText, UserRound } from 'lucide-react'
 import Eyebrow from '../components/Eyebrow'
 import ArticleCard from '../components/ArticleCard'
-import useDocumentTitle from '../hooks/useDocumentTitle'
+import SEO from '../components/SEO'
 import { getAndreArtikler, getArtikkelBySlug } from '../data/artikler'
 
 export default function ArticlePage() {
   const { slug } = useParams()
   const article = getArtikkelBySlug(slug)
 
-  useDocumentTitle(article ? `${article.title} | Din Feiring` : 'Artikkel ikke funnet | Din Feiring')
-
   if (!article) {
     return (
       <section className="section article-index-page">
+        <SEO title="Artikkel ikke funnet" noindex />
         <div className="container narrow-container">
           <div className="page-breadcrumbs">
             <Link to="/">Forside</Link>
@@ -41,6 +40,12 @@ export default function ArticlePage() {
 
   return (
     <section className="section article-page">
+      <SEO 
+        title={article.seoTitle || article.title}
+        description={article.excerpt}
+        ogImage={article.image}
+        ogType="article"
+      />
       <div className="container narrow-container">
         <div className="page-breadcrumbs">
           <Link to="/">Forside</Link>

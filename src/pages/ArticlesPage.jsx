@@ -6,15 +6,17 @@ import Kontakt from '../components/Kontakt'
 import Leieprosess from '../components/Leieprosess'
 import WhyChooseUsSection from '../components/WhyChooseUsSection'
 import { getSortedArtikler } from '../data/artikler'
-import useDocumentTitle from '../hooks/useDocumentTitle'
+import SEO from '../components/SEO'
 
 export default function ArticlesPage() {
   const posts = getSortedArtikler()
 
-  useDocumentTitle('Artikler | Din Feiring')
-
   return (
     <>
+      <SEO 
+        title="Artikler og inspirasjon til din feiring"
+        description="Les våre artikler om valg av partytelt, montering, planlegging av hagefest og mye mer. Få tipsene du trenger for et vellykket arrangement."
+      />
       <section className="section article-index-page">
         <div className="container">
           <div className="page-breadcrumbs">
