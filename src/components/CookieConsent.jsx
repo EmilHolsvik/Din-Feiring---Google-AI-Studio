@@ -187,53 +187,53 @@ export default function CookieConsent() {
           .cookie-banner {
             left: 1.5rem;
             right: auto;
-            width: 420px;
+            width: 360px;
             padding: 0;
           }
         }
         .cookie-banner-content {
           background: white;
-          border-radius: 1rem;
-          padding: 1.25rem;
+          border-radius: 0.875rem;
+          padding: 1rem;
           box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
           border: 1px solid #e2e8f0;
           display: flex;
           flex-direction: column;
-          gap: 1rem;
+          gap: 0.75rem;
         }
         .cookie-banner-text {
           display: flex;
-          gap: 0.875rem;
+          gap: 0.75rem;
           align-items: flex-start;
         }
         .cookie-icon-wrapper {
           background: #f1f5f9;
-          padding: 0.625rem;
-          border-radius: 0.625rem;
+          padding: 0.5rem;
+          border-radius: 0.5rem;
           color: #0f172a;
           flex-shrink: 0;
         }
         .cookie-banner-title {
-          font-size: 0.9375rem;
+          font-size: 0.875rem;
           font-weight: 700;
           color: #0f172a;
           margin-bottom: 0.125rem;
         }
         .cookie-banner-description {
-          font-size: 0.8125rem;
+          font-size: 0.75rem;
           color: #64748b;
           line-height: 1.5;
         }
         .cookie-banner-actions {
           display: flex;
-          gap: 0.5rem;
+          gap: 0.375rem;
           flex-wrap: wrap;
         }
         .cookie-banner-actions .btn {
           flex: 1;
-          min-width: 100px;
-          padding: 8px 12px;
-          font-size: 0.8125rem;
+          min-width: 80px;
+          padding: 6px 10px;
+          font-size: 0.75rem;
         }
         
         .modal-overlay {
