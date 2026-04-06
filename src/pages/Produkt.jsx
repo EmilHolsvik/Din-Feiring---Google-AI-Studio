@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom'
 import { ClipboardList, MessageCircle, Truck, ShieldCheck, ArrowLeft } from 'lucide-react'
 import ProduktKort from '../components/ProduktKort'
 import Kontakt from '../components/Kontakt'
+import ArticlesPreview from '../components/ArticlesPreview'
 import {
   formatCurrency,
   getProductById,
@@ -186,6 +187,8 @@ export default function Produkt() {
         homeTone
         productSpacing
       />
+
+      <ArticlesPreview />
 
       <div style={{ background: 'white', padding: '60px 0', borderTop: '1px solid var(--border)' }}>
         <div className="container">

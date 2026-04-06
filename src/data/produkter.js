@@ -32,7 +32,7 @@ export const navigationLinks = [
   { label: 'Forside', path: '/' },
   { label: 'Om oss', path: '/om-oss' },
   { label: 'Produkter', path: '/produkter' },
-  { label: 'Teltguide', path: '/teltguide' },
+  { label: 'Teltguide', path: 'https://dinfeiring.no/hvor-stort-partytelt/', isExternal: true },
   { label: 'Artikler', path: '/artikler' },
   { label: priceEstimateLink.navLabel, path: priceEstimateLink.path },
   { label: 'Kontakt', path: '/kontakt' },

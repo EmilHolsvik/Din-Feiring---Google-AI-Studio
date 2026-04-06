@@ -1,13 +1,9 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-const repoName = process.env.GITHUB_REPOSITORY?.split('/')[1]
-const productionBase =
-  process.env.VITE_PUBLIC_BASE || (process.env.GITHUB_ACTIONS && repoName ? `/${repoName}/` : '/')
-
 // https://vitejs.dev/config/
-export default defineConfig(({ mode }) => ({
-  base: mode === 'production' ? productionBase : '/',
+export default defineConfig({
+  base: '/',
   plugins: [react()],
   server: {
     // HMR is disabled in AI Studio via DISABLE_HMR env var.
@@ -16,4 +12,4 @@ export default defineConfig(({ mode }) => ({
     port: 3000,
     host: '0.0.0.0',
   },
-}))
+})

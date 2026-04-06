@@ -89,6 +89,14 @@ export default function ArticlePage() {
               <h2>Oppsummert</h2>
               <p>{article.conclusion}</p>
             </section>
+
+            <div className="article-cta-box" style={{ marginTop: '48px', padding: '32px', background: 'var(--cream-light)', borderRadius: 'var(--radius)', textAlign: 'center' }}>
+              <h3 style={{ marginBottom: '12px' }}>Klar for å planlegge ditt arrangement?</h3>
+              <p style={{ marginBottom: '24px' }}>Se vårt utvalg av telt, bord, stoler og lydutstyr.</p>
+              <Link to="/produkter" className="btn btn-primary">
+                Se alle produkter
+              </Link>
+            </div>
           </div>
         </article>
 

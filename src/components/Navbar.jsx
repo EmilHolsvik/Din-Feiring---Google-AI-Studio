@@ -218,18 +218,29 @@ export default function Navbar() {
             <ul className={`mobile-nav-list ${isCompactDropdownViewport ? 'mobile-nav-list-compact' : ''}`}>
               {menuNavigationLinks.map((link) => (
                 <li key={link.path}>
-                  <NavLink
-                    to={link.path}
-                    aria-current={isCurrentPath(link.path) ? 'page' : undefined}
-                    className={({ isActive }) =>
-                      `${isCompactDropdownViewport ? 'compact-nav-link' : 'mobile-nav-link'} ${
-                        isActive ? (isCompactDropdownViewport ? 'compact-nav-link-active' : 'mobile-nav-link-active') : ''
-                      }`
-                    }
-                    end={link.path === '/'}
-                  >
-                    {link.label}
-                  </NavLink>
+                  {link.isExternal ? (
+                    <a
+                      href={link.path}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={isCompactDropdownViewport ? 'compact-nav-link' : 'mobile-nav-link'}
+                    >
+                      {link.label}
+                    </a>
+                  ) : (
+                    <NavLink
+                      to={link.path}
+                      aria-current={isCurrentPath(link.path) ? 'page' : undefined}
+                      className={({ isActive }) =>
+                        `${isCompactDropdownViewport ? 'compact-nav-link' : 'mobile-nav-link'} ${
+                          isActive ? (isCompactDropdownViewport ? 'compact-nav-link-active' : 'mobile-nav-link-active') : ''
+                        }`
+                      }
+                      end={link.path === '/'}
+                    >
+                      {link.label}
+                    </NavLink>
+                  )}
                 </li>
               ))}
             </ul>

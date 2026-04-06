@@ -22,6 +22,17 @@ export default function SizeGuide() {
               bord. I sittende oppsett anbefaler vi maks seks personer per bord. Er du usikker, hjelper vi deg gjerne å
               velge riktig størrelse.
             </p>
+            <div style={{ marginTop: '24px', display: 'flex', justifyContent: 'center' }}>
+              <a 
+                href="https://dinfeiring.no/hvor-stort-partytelt/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="btn btn-primary"
+                style={{ background: 'var(--primary-light)', borderColor: 'var(--primary-light)' }}
+              >
+                Se vår fulle teltguide her
+              </a>
+            </div>
           </div>
 
           <div className="size-guide-card surface-card">

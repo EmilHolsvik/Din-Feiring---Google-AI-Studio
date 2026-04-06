@@ -29,9 +29,15 @@ export default function Footer() {
             <ul className="footer-list">
               {footerNavigationLinks.map((item) => (
                 <li key={item.path}>
-                  <Link to={item.path} className="footer-link">
-                    {item.label}
-                  </Link>
+                  {item.isExternal ? (
+                    <a href={item.path} target="_blank" rel="noopener noreferrer" className="footer-link">
+                      {item.label}
+                    </a>
+                  ) : (
+                    <Link to={item.path} className="footer-link">
+                      {item.label}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>
