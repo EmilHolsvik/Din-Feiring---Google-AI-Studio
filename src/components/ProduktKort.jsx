@@ -1,4 +1,4 @@
-﻿import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { ArrowRight } from 'lucide-react'
 import { formatPriceFrom } from '../data/produkter'
 
@@ -12,6 +12,7 @@ export default function ProduktKort({ product, showBadge = true }) {
           <img
             src={product.bilde}
             alt={product.navn}
+            referrerPolicy="no-referrer"
             loading="lazy"
             decoding="async"
             sizes="(max-width: 768px) 100vw, 360px"

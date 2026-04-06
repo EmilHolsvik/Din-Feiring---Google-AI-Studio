@@ -1,6 +1,6 @@
-import heroPrimary from '../../images/IMG_9960-qs8wbk0h4cabr5045bbm78uw4tgtcyalt3gzvvbfoo.jpg.jpeg'
-import heroSecondary from '../../images/IMG_9199-qs8vyx2l8izjnvcxxuo6ofnsmbr5vg4iqjpzly1zc8.jpg.jpeg'
-import tentMain from '../../images/IMG_8458-qs8vw2m6jl3aidhrk4dumnijvbs5kfts0gm2as9w6g.jpg.jpeg'
+import heroPrimary from '../../images/hero-primary.jpg'
+import heroSecondary from '../../images/hero-secondary.jpg'
+import tentMain from '../../images/tent-main.jpg'
 
 export const artikler = [
   {

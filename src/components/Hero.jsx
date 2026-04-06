@@ -61,6 +61,7 @@ export default function Hero() {
                 <img
                   src={image.src}
                   alt={image.alt}
+                  referrerPolicy="no-referrer"
                   // eslint-disable-next-line react/no-unknown-property
                   fetchpriority={index === 0 ? 'high' : undefined}
                   loading={index === 0 ? 'eager' : 'lazy'}

@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { ArrowRight, Mail, MapPin, Phone } from 'lucide-react'
 import { companyInfo, navigationLinks } from '../data/produkter'
-import logoUrl from '../../images/image (42).png'
+import logoUrl from '../../images/footer-logo.png'
 
 export default function Footer() {
   const footerNavigationLinks = navigationLinks.filter((item) => item.path !== '/kontakt')
@@ -13,7 +13,7 @@ export default function Footer() {
         <div className="footer-grid">
           <div className="stack-md footer-brand-column">
             <div className="brand-lockup-footer">
-              <img src={logoUrl} alt="Din Feiring" className="brand-logo footer-logo" width="184" height="84" />
+              <img src={logoUrl} alt="Din Feiring" className="brand-logo footer-logo" width="184" height="84" referrerPolicy="no-referrer" />
             </div>
 
             <p className="footer-copy">Utleie av telt, bord, stoler og lyd fra vårt lager i Sandefjord.</p>

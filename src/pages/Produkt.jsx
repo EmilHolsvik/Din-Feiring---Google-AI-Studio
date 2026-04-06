@@ -1,4 +1,4 @@
-﻿import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { ClipboardList, MessageCircle, Truck, ShieldCheck, ArrowLeft } from 'lucide-react'
 import ProduktKort from '../components/ProduktKort'
@@ -63,6 +63,7 @@ export default function Produkt() {
               <img
                 src={selectedImage}
                 alt={produkt.navn}
+                referrerPolicy="no-referrer"
                 style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                 sizes="(max-width: 768px) 100vw, 640px"
               />
@@ -84,6 +85,7 @@ export default function Produkt() {
                       <img
                         src={img}
                         alt={`${produkt.navn} bilde ${idx + 1}`}
+                        referrerPolicy="no-referrer"
                         loading="lazy"
                         decoding="async"
                         style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: isActive ? 1 : 0.72 }}

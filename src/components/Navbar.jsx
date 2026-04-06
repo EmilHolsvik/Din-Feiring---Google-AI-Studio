@@ -1,9 +1,9 @@
-﻿import { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useRef } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
 import { Mail, Menu, Phone, X } from 'lucide-react'
 import { companyInfo, navigationLinks } from '../data/produkter'
-import logoUrl from '../../images/ChatGPT Image 18. mars 2026, 08_06_10 (1)-Photoroom.png'
+import logoUrl from '../../images/logo.png'
 
 export default function Navbar() {
   const headerRef = useRef(null)
@@ -155,7 +155,7 @@ export default function Navbar() {
           )}
 
           <Link to="/" className="brand-lockup" aria-label="Din Feiring forsiden">
-            <img src={logoUrl} alt="Din Feiring" className="brand-logo brand-logo-header" width="176" height="80" />
+            <img src={logoUrl} alt="Din Feiring" className="brand-logo brand-logo-header" width="176" height="80" referrerPolicy="no-referrer" />
           </Link>
 
           {isFullDesktopViewport ? (

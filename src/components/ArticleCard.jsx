@@ -6,7 +6,7 @@ export default function ArticleCard({ article }) {
     <article className="article-card card">
       <Link to={`/artikler/${article.slug}`} className="article-card-link">
         <div className="article-card-media">
-          <img src={article.image} alt={article.imageAlt} loading="lazy" decoding="async" />
+          <img src={article.image} alt={article.imageAlt} referrerPolicy="no-referrer" loading="lazy" decoding="async" />
         </div>
 
         <div className="article-card-body">

@@ -70,7 +70,7 @@ export default function ArticlePage() {
           </header>
 
           <div className="article-cover">
-            <img src={article.image} alt={article.imageAlt} />
+            <img src={article.image} alt={article.imageAlt} referrerPolicy="no-referrer" />
           </div>
 
           <div className="article-body">
