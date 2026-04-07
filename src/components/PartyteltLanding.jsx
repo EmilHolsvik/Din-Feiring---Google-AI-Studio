@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { ArrowRight, BadgeCheck, CalendarDays, CircleHelp, MapPin, Ruler, Truck } from 'lucide-react'
 import Eyebrow from './Eyebrow'
+import Kontakt from './Kontakt'
 import ProduktKort from './ProduktKort'
 import { priceEstimateLink } from '../data/produkter'
 import {
@@ -13,21 +14,39 @@ import {
 
 const quickFacts = [
   {
-    title: 'Utgangspunktet er ikke bare antall gjester',
-    text: 'Bordoppsett, buffet, gavebord og hvor lenge dere skal sitte under teltet betyr ofte like mye som gjestetallet.',
-    icon: MapPin,
-  },
-  {
-    title: 'Runde bord og ekstra soner krever mer plass',
-    text: 'Et telt som fungerer til mingling kan bli trangt til middag. Derfor bør oppsettet vurderes før størrelse velges.',
+    title: '25 til 35 gjester med middag',
+    text: 'Mange starter med 5 x 8 m. Skal dere også ha kaker, kaffe eller gavebord under teltet, er 5 x 10 m ofte tryggere.',
     icon: Ruler,
   },
   {
-    title: 'Plan B for været fungerer best når alt er avklart tidlig',
-    text: 'Levering, montering og plassering er lettere å få riktig når dato, sted og oppsett er tenkt gjennom på forhånd.',
+    title: '40 til 50 gjester eller runde bord',
+    text: 'Da ender mange på 5 x 10 m eller større. Runde bord og ekstra servering spiser fort mer plass enn man tror.',
     icon: CalendarDays,
   },
+  {
+    title: 'Usikker på størrelse? Send oss rammene',
+    text: 'Dato, sted, gjestetall og ønsket oppsett er nok til at vi kan peke dere mot et mye bedre utgangspunkt enn ren gjetting.',
+    icon: MapPin,
+  },
 ]
+
+function ActionLink({ to, className, children }) {
+  if (!to) return null
+
+  if (to.startsWith('#')) {
+    return (
+      <a href={to} className={className}>
+        {children}
+      </a>
+    )
+  }
+
+  return (
+    <Link to={to} className={className}>
+      {children}
+    </Link>
+  )
+}
 
 export default function PartyteltLanding() {
   return (
@@ -40,20 +59,20 @@ export default function PartyteltLanding() {
             </Eyebrow>
             <h1 className="section-title">Leie partytelt i Sandefjord og Vestfold</h1>
             <p className="section-subtitle section-subtitle-centered">
-              Finn teltstørrelser som passer gjestetall, bordoppsett og arrangementstype. Her får du et tydelig
-              utgangspunkt før du går videre til teltguide, prisestimat eller forespørsel.
+              Skal dere ha middag, gjester og servering ute, er det som regel bordoppsett og ekstra soner som avgjør om
+              teltet blir passe. Her får dere et ærlig sted å starte.
             </p>
 
-            <div className="button-row button-row-center">
-              <Link to="/kontakt" className="btn btn-primary">
+            <div className="button-row button-row-center seo-landing-hero-actions">
+              <ActionLink to="#kontakt" className="btn btn-primary">
                 Be om tilbud
-              </Link>
-              <Link to={priceEstimateLink.path} className="btn btn-secondary">
+              </ActionLink>
+              <ActionLink to={priceEstimateLink.path} className="btn btn-secondary">
                 {priceEstimateLink.ctaLabel}
-              </Link>
-              <Link to="/hvor-stort-partytelt" className="text-link">
+              </ActionLink>
+              <ActionLink to="/hvor-stort-partytelt" className="text-link">
                 Se teltguiden
-              </Link>
+              </ActionLink>
             </div>
           </div>
 
@@ -81,9 +100,9 @@ export default function PartyteltLanding() {
             <Eyebrow icon={Ruler} className="badge badge-spaced">
               Størrelser og priser
             </Eyebrow>
-            <h2 className="section-title">Velg teltstørrelse ut fra hvordan arrangementet faktisk skal brukes</h2>
+            <h2 className="section-title">Et godt sted å starte når du skal velge telt</h2>
             <p className="section-subtitle section-subtitle-centered">
-              Hver teltstørrelse har egen produktside med kapasitet, pris og praktisk informasjon om oppsett og bruk.
+              Velg størrelse ut fra hvordan teltet faktisk skal brukes, ikke bare hvor mange som er invitert.
             </p>
           </div>
 
@@ -101,10 +120,10 @@ export default function PartyteltLanding() {
             <Eyebrow icon={BadgeCheck} className="badge badge-spaced">
               Før dere velger telt
             </Eyebrow>
-            <h2 className="section-title">Tre ting som nesten alltid avgjør om teltet blir riktig</h2>
+            <h2 className="section-title">Det som oftest avgjør om teltet blir passe</h2>
             <p className="section-subtitle">
-              De fleste bommer ikke på teltvalg fordi de teller feil gjester, men fordi de undervurderer hvordan teltet
-              faktisk skal brukes gjennom dagen.
+              De fleste bommer ikke fordi de teller gjestene feil, men fordi de undervurderer hvor mye plass middag,
+              servering og bevegelse faktisk krever.
             </p>
           </div>
 
@@ -125,10 +144,9 @@ export default function PartyteltLanding() {
             <Eyebrow icon={Truck} className="badge badge-spaced">
               Praktisk planlegging
             </Eyebrow>
-            <h2 className="section-title">Slik blir bestillingen enklere og mer presis</h2>
+            <h2 className="section-title">Dette er nyttig å ha klart før dere ber om tilbud</h2>
             <p className="section-subtitle section-subtitle-centered">
-              Når de viktigste detaljene er avklart tidlig, er det mye enklere å få riktig telt og et tilbud som faktisk
-              passer arrangementet.
+              Da er det mye enklere å foreslå riktig størrelse med én gang, i stedet for at dere må prøve dere fram.
             </p>
           </div>
 
@@ -150,10 +168,9 @@ export default function PartyteltLanding() {
             <Eyebrow icon={CircleHelp} className="badge badge-spaced">
               Vanlige spørsmål
             </Eyebrow>
-            <h2 className="section-title">Svar på det folk oftest lurer på før de leier partytelt</h2>
+            <h2 className="section-title">Vanlige spørsmål før folk leier partytelt</h2>
             <p className="section-subtitle section-subtitle-centered">
-              Spørsmålene under går igjen når folk skal velge størrelse, planlegge oppsett og finne ut hvordan dagen
-              blir enklest å gjennomføre.
+              Korte svar på det som vanligvis må avklares før noen bestemmer seg.
             </p>
           </div>
 
@@ -173,12 +190,21 @@ export default function PartyteltLanding() {
         </div>
       </section>
 
+      <Kontakt
+        eyebrow="Få hjelp med teltvalget"
+        eyebrowIcon={Truck}
+        title="Fortell oss kort hva dere planlegger"
+        subtitle="Send dato, sted, gjestetall og om dere skal ha middag, buffet eller runde bord. Da kan vi foreslå en teltstørrelse som faktisk passer oppsettet."
+        compactSpacing
+        homeTone
+      />
+
       <section className="section section-tight seo-landing-band seo-landing-band-links">
         <div className="container">
           <div className="section-header section-header-centered section-header-sm">
-            <h2 className="section-title">Relaterte sider</h2>
+            <h2 className="section-title">Se også</h2>
             <p className="section-subtitle section-subtitle-centered">
-              Gå videre til sidene som hjelper mest når du skal finjustere oppsettet.
+              Hvis du vil sammenligne med møbler eller mer konkrete bruksscenarier.
             </p>
           </div>
 

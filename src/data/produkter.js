@@ -7,8 +7,10 @@ import img6 from '../images/IMG_2823-768x1024.jpg.jpeg'
 import img7 from '../images/IMG_6603-1024x768.jpg.jpeg'
 import img8 from '../images/IMG_6604-qspgwc8lsidv4erxt9t9m5k49j4rawmzlb3525h4q0.jpg.jpeg'
 import img9 from '../images/IMG_8449-2-qs8vvyuts8y57xn862rccogphsaopneuny04dofgvc.jpg.jpeg'
-import img10 from '../images/IMG_8458-qs8vw2m6jl3aidhrk4dumnijvbs5kfts0gm2as9w6g.jpg.jpeg'
+import img10 from '../images/IMG_9199-qs8vyx2l8izjnvcxxuo6ofnsmbr5vg4iqjpzly1zc8.jpg.jpeg'
 import img11 from '../images/IMG_9146-2-qs8vyaigoi4nx89plkx50lcqd2ucqpmyng2c3azfhk.jpg.jpeg'
+import img12 from '../images/IMG_9599-768x1024.jpg.jpeg'
+import img13 from '../images/IMG_9982-768x1024.jpg.jpeg'
 
 const heroPrimary = img1
 const heroSecondary = img2
@@ -21,6 +23,8 @@ const tableDinner = img8
 const tableLayout = img9
 const chairLayout = img10
 const soundboksPair = img11
+const tableStraight = img12
+const roundTableSetting = img13
 
 export const companyInfo = {
   name: 'Din Feiring',
@@ -414,9 +418,9 @@ export const alleProdukter = [
       'Disse bordene er solide og enkle å sette opp. De passer godt når du trenger bord som fungerer til det meste.',
     pris: 'Fra 115 kr / stk',
     priser: { dogn: 115, helg: 125, uke: 140 },
-    imageAlt: 'Sammenleggbare bord til middag, buffet og servering i telt eller hage',
-    bilde: tableDinner,
-    galleri: [tableDinner, tableLayout, heroSecondary],
+    imageAlt: 'Sammenleggbart bord satt opp til middag i partytelt',
+    bilde: tableStraight,
+    galleri: [tableStraight, tableLayout, tableDinner],
     kapasitet: 'Anbefalt maksimum seks personer per bord',
     passerTil: ['Middag', 'Buffet', 'Servering'],
     montering: 'Beina slås raskt ut.',
@@ -443,9 +447,9 @@ export const alleProdukter = [
       'Runde bord gir en annen bordsetting enn vanlige klappbord. De passer godt når gjestene skal sitte lenge og prate sammen rundt bordet.',
     pris: 'Fra 250 kr / stk',
     priser: { dogn: 250, helg: 300, uke: 400 },
-    imageAlt: 'Runde bord til bryllup, jubileum og selskaper med sittende bordsetting',
-    bilde: tableDinner,
-    galleri: [tableDinner, heroSecondary],
+    imageAlt: 'Runde bord dekket opp i partytelt til bryllup eller jubileum',
+    bilde: roundTableSetting,
+    galleri: [roundTableSetting, tableDinner],
     kapasitet: 'Anbefalt maksimum seks personer per bord',
     passerTil: ['Bryllup', 'Jubileum', 'Middagsselskap'],
     montering: 'Klart til bruk og enkelt å sette ut.',

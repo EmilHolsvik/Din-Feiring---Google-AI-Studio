@@ -292,7 +292,7 @@ section[id] { scroll-margin-top: calc(var(--nav-height) + 20px); }
 .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 32px; }
 .page-shell { min-height: 100%; background: var(--cream); }
 .centered-card { text-align: center; padding: 32px 28px; }
-.button-row { display: flex; gap: 12px; flex-wrap: wrap; }
+.button-row { display: flex; gap: 16px; row-gap: 14px; flex-wrap: wrap; }
 .button-row-center { justify-content: center; }
 .stack-lg { display: flex; flex-direction: column; gap: 24px; }
 .stack-md { display: flex; flex-direction: column; gap: 18px; }
@@ -310,18 +310,40 @@ section[id] { scroll-margin-top: calc(var(--nav-height) + 20px); }
   background: #f2e6d7;
 }
 .seo-landing-hero-shell {
-  max-width: 760px;
+  max-width: 720px;
   margin: 0 auto;
   text-align: center;
+  display: grid;
+  gap: 22px;
+  justify-items: center;
+}
+.seo-landing-hero-shell .badge-spaced,
+.seo-landing-hero-shell .section-title,
+.seo-landing-hero-shell .section-subtitle {
+  margin: 0;
+}
+.seo-landing-hero-shell .section-subtitle {
+  max-width: 44ch;
+}
+.seo-landing-hero-actions {
+  margin-top: 6px;
+}
+.seo-landing-hero-actions .btn {
+  min-width: 176px;
+}
+.seo-landing-hero-actions .text-link {
+  min-height: 52px;
+  padding: 14px 6px;
+  justify-content: center;
 }
 .seo-landing-facts {
   list-style: none;
-  margin-top: 44px;
-  padding-top: 28px;
+  margin-top: 56px;
+  padding-top: 32px;
   border-top: 1px solid rgba(32, 25, 20, 0.1);
 }
 .seo-landing-fact {
-  padding: 8px 12px;
+  padding: 12px 14px;
 }
 .seo-landing-fact-title {
   max-width: 18ch;
@@ -2086,6 +2108,9 @@ section[id] { scroll-margin-top: calc(var(--nav-height) + 20px); }
 }
 
 @media (max-width: 768px) {
+  .seo-landing-hero-shell {
+    gap: 18px;
+  }
   .seo-landing-facts {
     margin-top: 36px;
     padding-top: 20px;
@@ -2107,6 +2132,18 @@ section[id] { scroll-margin-top: calc(var(--nav-height) + 20px); }
   }
   .seo-landing-step {
     padding-left: 18px;
+  }
+}
+
+@media (max-width: 520px) {
+  .seo-landing-hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+  .seo-landing-hero-actions .btn,
+  .seo-landing-hero-actions .text-link {
+    width: 100%;
   }
 }
 .price-period-title {

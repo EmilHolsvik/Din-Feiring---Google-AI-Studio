@@ -1,8 +1,27 @@
 import { Link } from 'react-router-dom'
 import { ArrowRight } from 'lucide-react'
 import Eyebrow from './Eyebrow'
+import Kontakt from './Kontakt'
 import ProduktKort from './ProduktKort'
 import { getProductById } from '../data/produkter'
+
+function ActionLink({ to, className, children }) {
+  if (!to) return null
+
+  if (to.startsWith('#')) {
+    return (
+      <a href={to} className={className}>
+        {children}
+      </a>
+    )
+  }
+
+  return (
+    <Link to={to} className={className}>
+      {children}
+    </Link>
+  )
+}
 
 export default function SeoCollectionLanding({ content }) {
   const products = (content.productSection?.productIds ?? []).map((id) => getProductById(id)).filter(Boolean)
@@ -20,21 +39,21 @@ export default function SeoCollectionLanding({ content }) {
             <h1 className="section-title">{content.hero.title}</h1>
             <p className="section-subtitle section-subtitle-centered">{content.hero.description}</p>
 
-            <div className="button-row button-row-center">
+            <div className="button-row button-row-center seo-landing-hero-actions">
               {content.hero.primaryCta ? (
-                <Link to={content.hero.primaryCta.to} className="btn btn-primary">
+                <ActionLink to={content.hero.primaryCta.to} className="btn btn-primary">
                   {content.hero.primaryCta.label}
-                </Link>
+                </ActionLink>
               ) : null}
               {content.hero.secondaryCta ? (
-                <Link to={content.hero.secondaryCta.to} className="btn btn-secondary">
+                <ActionLink to={content.hero.secondaryCta.to} className="btn btn-secondary">
                   {content.hero.secondaryCta.label}
-                </Link>
+                </ActionLink>
               ) : null}
               {content.hero.tertiaryCta ? (
-                <Link to={content.hero.tertiaryCta.to} className="text-link">
+                <ActionLink to={content.hero.tertiaryCta.to} className="text-link">
                   {content.hero.tertiaryCta.label}
-                </Link>
+                </ActionLink>
               ) : null}
             </div>
           </div>
@@ -152,6 +171,18 @@ export default function SeoCollectionLanding({ content }) {
             </div>
           </div>
         </section>
+      ) : null}
+
+      {content.contactSection ? (
+        <Kontakt
+          eyebrow={content.contactSection.eyebrow}
+          eyebrowIcon={content.contactSection.icon}
+          title={content.contactSection.title}
+          subtitle={content.contactSection.subtitle}
+          compactSpacing
+          homeTone
+          presetItems={content.contactSection.presetItems}
+        />
       ) : null}
 
       {content.internalLinks?.length ? (
