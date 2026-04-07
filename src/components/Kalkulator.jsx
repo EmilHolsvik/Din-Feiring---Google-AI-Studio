@@ -144,7 +144,7 @@ export default function Kalkulator({
     <section
       id="kalkulator"
       className="section section-alt"
-      style={{ minHeight: '100vh', background: 'var(--section-top)' }}
+      style={{ background: 'var(--section-top)' }}
     >
       <div className="container" style={{ maxWidth: '800px' }}>
         <div style={{ textAlign: 'center', marginBottom: '48px' }}>

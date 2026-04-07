@@ -1996,7 +1996,6 @@ section[id] { scroll-margin-top: calc(var(--nav-height) + 20px); }
   line-height: 1.75;
   max-width: 68ch;
 }
-
 .size-guide-card {
   overflow: hidden;
 }
@@ -2225,6 +2224,11 @@ section[id] { scroll-margin-top: calc(var(--nav-height) + 20px); }
 .price-notes-list-inline {
   max-width: 60ch;
   justify-items: center;
+}
+.price-anchor-nav {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
 }
 .price-notes-list li {
   display: flex;
@@ -2571,16 +2575,6 @@ section[id] { scroll-margin-top: calc(var(--nav-height) + 20px); }
   max-width: 30ch;
   color: var(--text-muted);
   line-height: 1.75;
-}
-.arrangement-footer {
-  display: flex;
-  justify-content: center;
-  gap: 12px;
-  flex-wrap: wrap;
-  margin-top: 28px;
-}
-.arrangement-footer-inline-mobile {
-  flex-wrap: nowrap;
 }
 
 .faq-item summary {

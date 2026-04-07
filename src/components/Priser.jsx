@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { ArrowRight, BadgePercent } from 'lucide-react'
 import Eyebrow from './Eyebrow'
-import { alleProdukter, productCategories, formatCurrency, priceNotes } from '../data/produkter'
+import { alleProdukter, productCategories, formatCurrency } from '../data/produkter'
 
 const grouped = productCategories.map((cat) => ({
   ...cat,
@@ -15,23 +15,24 @@ export default function Priser() {
         <div className="price-intro-shell">
           <div className="price-intro-head">
             <Eyebrow icon={BadgePercent} className="badge badge-spaced price-badge">
-              Prisliste
+              Sammenlign priser
             </Eyebrow>
-            <h2 className="section-title price-header-title">Våre priser</h2>
+            <h2 className="section-title price-header-title">Gå rett til kategorien du vil se</h2>
             <p className="price-intro-subtitle">
-              Her ser du priser per produkt og leieperiode. Prislisten viser leie av utstyret, mens totalprisen kommer an
-              på hva du trenger. Finn riktig nivå først, og send oss en forespørsel når du vil ha et samlet tilbud.
+              Velg produktkategorien du vil sammenligne, eller gå videre til teltguiden hvis du er usikker på hvilken størrelse du trenger.
             </p>
 
-            <ul className="price-notes-list price-notes-list-inline" aria-label="Greit å vite">
-              {priceNotes.map((note) => (
-                <li key={note}>{note}</li>
+            <div className="anchor-nav price-anchor-nav" aria-label="Hopp til priskategori">
+              {grouped.map((kategori) => (
+                <a key={kategori.id} href={`#priser-${kategori.id}`} className="anchor-chip">
+                  {kategori.name}
+                </a>
               ))}
-            </ul>
-
-            <div className="price-notes-actions price-notes-actions-centered">
-              <Link to="/kontakt" className="btn btn-secondary">
-                Be om tilbud
+              <Link to="/hvor-stort-partytelt" className="anchor-chip">
+                Se teltguide
+              </Link>
+              <Link to="/kontakt" className="anchor-chip">
+                Send forespørsel
               </Link>
             </div>
           </div>
@@ -39,7 +40,7 @@ export default function Priser() {
 
         <div className="price-sections">
           {grouped.map((kategori) => (
-            <article key={kategori.id} className="price-section-card">
+            <article key={kategori.id} id={`priser-${kategori.id}`} className="price-section-card">
               <div className="price-section-head">
                 <div>
                   <h3 className="price-section-title">{kategori.name}</h3>
