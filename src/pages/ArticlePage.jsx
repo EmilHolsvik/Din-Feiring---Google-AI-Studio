@@ -11,7 +11,7 @@ export default function ArticlePage() {
 
   if (!article) {
     return (
-      <section className="section article-index-page">
+      <section className="section article-index-page not-found-page">
         <SEO title="Artikkel ikke funnet" noindex />
         <div className="container narrow-container">
           <div className="page-breadcrumbs">
@@ -22,7 +22,7 @@ export default function ArticlePage() {
             <strong>Fant ikke artikkelen</strong>
           </div>
 
-          <div className="surface-card centered-card">
+          <div className="surface-card centered-card stack-lg not-found-card">
             <h1 className="section-title compact-title">Artikkelen ble ikke funnet</h1>
             <p className="section-copy">Lenken er kanskje gammel, eller så er artikkelen flyttet.</p>
             <div className="button-row button-row-center" style={{ marginTop: '24px' }}>

@@ -49,7 +49,10 @@ export default function CookieConsent() {
 
   const handleSaveCustom = () => {
     saveConsent(consent)
-    setShowModal(false)
+  }
+
+  const toggleConsent = (key) => {
+    setConsent((current) => ({ ...current, [key]: !current[key] }))
   }
 
   const saveConsent = (newConsent) => {
@@ -57,6 +60,7 @@ export default function CookieConsent() {
     localStorage.setItem('cookie-consent', JSON.stringify(newConsent))
     updateGtag(newConsent)
     setShowBanner(false)
+    setShowModal(false)
   }
 
   return (
@@ -92,7 +96,7 @@ export default function CookieConsent() {
                     Avslå alle
                   </button>
                   <button onClick={handleAcceptAll} className="btn btn-primary btn-sm">
-                    Godta alle
+                    Godkjenn alle
                   </button>
                 </div>
               </div>
@@ -134,27 +138,41 @@ export default function CookieConsent() {
                       <h4 className="cookie-option-title">Nødvendige</h4>
                       <p className="cookie-option-desc">Kreves for grunnleggende funksjonalitet som sikkerhet og skjemaer.</p>
                     </div>
-                    <div className="cookie-toggle disabled">
+                    <button type="button" className="cookie-toggle disabled" disabled aria-label="Nødvendige cookies er alltid aktive">
                       <Check size={16} className="text-white" />
-                    </div>
+                    </button>
                   </div>
 
-                  <div className="cookie-option" onClick={() => setConsent(prev => ({ ...prev, analytics: !prev.analytics }))}>
+                  <div className="cookie-option">
                     <div className="cookie-option-info">
                       <h4 className="cookie-option-title">Analyse</h4>
                       <p className="cookie-option-desc">Hjelper oss å forstå hvordan besøkende bruker nettsiden slik at vi kan forbedre den.</p>
                     </div>
-                    <button className={`cookie-toggle ${consent.analytics ? 'active' : ''}`}>
+                    <button
+                      type="button"
+                      className={`cookie-toggle ${consent.analytics ? 'active' : ''}`}
+                      role="switch"
+                      aria-checked={consent.analytics}
+                      aria-label="Slå analysecookies av eller på"
+                      onClick={() => toggleConsent('analytics')}
+                    >
                       <div className="toggle-handle" />
                     </button>
                   </div>
 
-                  <div className="cookie-option" onClick={() => setConsent(prev => ({ ...prev, marketing: !prev.marketing }))}>
+                  <div className="cookie-option">
                     <div className="cookie-option-info">
                       <h4 className="cookie-option-title">Markedsføring</h4>
                       <p className="cookie-option-desc">Brukes for å vise relevante annonser og måle effekten av markedsføring.</p>
                     </div>
-                    <button className={`cookie-toggle ${consent.marketing ? 'active' : ''}`}>
+                    <button
+                      type="button"
+                      className={`cookie-toggle ${consent.marketing ? 'active' : ''}`}
+                      role="switch"
+                      aria-checked={consent.marketing}
+                      aria-label="Slå markedsføringscookies av eller på"
+                      onClick={() => toggleConsent('marketing')}
+                    >
                       <div className="toggle-handle" />
                     </button>
                   </div>
@@ -163,7 +181,7 @@ export default function CookieConsent() {
 
               <div className="modal-footer">
                 <button onClick={handleAcceptAll} className="btn btn-secondary">
-                  Godta alle
+                  Godkjenn alle
                 </button>
                 <button onClick={handleSaveCustom} className="btn btn-primary">
                   Lagre valg
@@ -196,11 +214,11 @@ export default function CookieConsent() {
           }
         }
         .cookie-banner-content {
-          background: white;
+          background: var(--white);
           border-radius: 0.875rem;
           padding: 1rem;
           box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
-          border: 1px solid #e2e8f0;
+          border: 1px solid var(--border);
           display: flex;
           flex-direction: column;
           gap: 0.75rem;
@@ -211,21 +229,21 @@ export default function CookieConsent() {
           align-items: flex-start;
         }
         .cookie-icon-wrapper {
-          background: #f1f5f9;
+          background: var(--cream-light);
           padding: 0.5rem;
           border-radius: 0.5rem;
-          color: #0f172a;
+          color: var(--primary);
           flex-shrink: 0;
         }
         .cookie-banner-title {
           font-size: 0.875rem;
           font-weight: 700;
-          color: #0f172a;
+          color: var(--primary);
           margin-bottom: 0.125rem;
         }
         .cookie-banner-description {
           font-size: 0.75rem;
-          color: #64748b;
+          color: var(--text-muted);
           line-height: 1.5;
         }
         .cookie-banner-actions {
@@ -255,7 +273,7 @@ export default function CookieConsent() {
           padding: 1rem;
         }
         .cookie-modal {
-          background: white;
+          background: var(--white);
           border-radius: 1.25rem;
           width: 100%;
           max-width: 500px;
@@ -264,7 +282,7 @@ export default function CookieConsent() {
         }
         .modal-header {
           padding: 1.5rem;
-          border-bottom: 1px solid #f1f5f9;
+          border-bottom: 1px solid var(--border);
           display: flex;
           align-items: center;
           justify-content: space-between;
@@ -277,24 +295,28 @@ export default function CookieConsent() {
         .modal-title {
           font-size: 1.25rem;
           font-weight: 700;
-          color: #0f172a;
+          color: var(--primary);
         }
         .modal-close {
-          color: #94a3b8;
+          appearance: none;
+          border: 0;
+          background: transparent;
+          color: var(--primary-light);
           padding: 0.5rem;
           border-radius: 0.5rem;
           transition: all 0.2s;
+          cursor: pointer;
         }
         .modal-close:hover {
-          background: #f1f5f9;
-          color: #0f172a;
+          background: var(--cream-light);
+          color: var(--primary);
         }
         .modal-body {
           padding: 1.5rem;
         }
         .modal-description {
           font-size: 0.9375rem;
-          color: #64748b;
+          color: var(--text-muted);
           margin-bottom: 1.5rem;
           line-height: 1.6;
         }
@@ -308,38 +330,43 @@ export default function CookieConsent() {
           align-items: center;
           justify-content: space-between;
           padding: 1rem;
-          background: #f8fafc;
+          background: var(--cream-light);
           border-radius: 0.75rem;
-          border: 1px solid #f1f5f9;
-          cursor: pointer;
+          border: 1px solid var(--border);
           transition: all 0.2s;
         }
         .cookie-option:hover {
-          border-color: #cbd5e1;
+          border-color: var(--border-dark);
         }
         .cookie-option-title {
           font-weight: 600;
-          color: #0f172a;
+          color: var(--primary);
           margin-bottom: 0.125rem;
         }
         .cookie-option-desc {
           font-size: 0.8125rem;
-          color: #64748b;
+          color: var(--text-muted);
         }
         .cookie-toggle {
+          appearance: none;
+          border: 0;
+          padding: 0;
+          display: inline-flex;
+          align-items: center;
           width: 3rem;
           height: 1.5rem;
-          background: #e2e8f0;
+          background: var(--border-dark);
           border-radius: 1rem;
           position: relative;
           transition: all 0.3s;
           flex-shrink: 0;
+          cursor: pointer;
         }
         .cookie-toggle.active {
-          background: #0f172a;
+          background: var(--primary);
         }
         .cookie-toggle.disabled {
-          background: #94a3b8;
+          background: #a7b3c5;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -360,7 +387,7 @@ export default function CookieConsent() {
         }
         .modal-footer {
           padding: 1.5rem;
-          background: #f8fafc;
+          background: var(--cream-light);
           display: flex;
           gap: 1rem;
           justify-content: flex-end;

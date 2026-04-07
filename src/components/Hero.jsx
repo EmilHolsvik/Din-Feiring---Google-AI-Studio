@@ -19,7 +19,7 @@ export default function Hero() {
 
     const interval = window.setInterval(() => {
       setActiveImageIndex((current) => (current + 1) % heroImages.length)
-    }, 4200)
+    }, 3000)
 
     return () => window.clearInterval(interval)
   }, [])

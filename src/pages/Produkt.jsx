@@ -24,13 +24,20 @@ export default function Produkt() {
 
   if (!produkt) {
     return (
-      <div className="container" style={{ padding: '120px 24px', textAlign: 'center' }}>
+      <section className="section not-found-page">
         <SEO title="Produkt ikke funnet" noindex />
-        <h2>Produktet ble ikke funnet</h2>
-        <Link to="/produkter" className="btn btn-primary" style={{ marginTop: '24px' }}>
-          Tilbake til katalogen
-        </Link>
-      </div>
+        <div className="container narrow-container">
+          <div className="surface-card centered-card stack-lg not-found-card">
+            <h1 className="section-title compact-title">Produktet ble ikke funnet</h1>
+            <p className="section-copy">Lenken kan være gammel, eller produktet kan ha blitt fjernet fra katalogen.</p>
+            <div className="button-row button-row-center">
+              <Link to="/produkter" className="btn btn-primary">
+                Tilbake til katalogen
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
     )
   }
 
@@ -109,7 +116,7 @@ export default function Produkt() {
   }
 
   return (
-    <div style={{ background: 'var(--cream-light)', minHeight: '100vh' }}>
+    <div style={{ background: 'var(--section-top)', minHeight: '100vh' }}>
       <SEO 
         title={produkt.seoTitle || `${produkt.navn} – Leie i Sandefjord`}
         description={produkt.kortBeskrivelse}

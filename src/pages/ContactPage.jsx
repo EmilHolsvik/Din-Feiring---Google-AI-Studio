@@ -17,13 +17,7 @@ export default function ContactPage() {
       <Kontakt
         eyebrow="Kontakt"
         eyebrowIcon={Compass}
-        title="Send oss en forespørsel"
-        subtitle="Fyll inn det viktigste først, så kan resten tas steg for steg. Vi holder skjemaet kort og bruker opplysningene kun for å svare på henvendelsen din."
-        showSellingPoints
-        homeTone
         titleAs="h1"
-        titleText="Kontakt oss om partytelt og utleie"
-        subtitleText="Fortell oss hva du planlegger, så hjelper vi deg med telt, bord, stoler og levering i Sandefjord og Vestfold."
       />
       <ContactTestimonials />
     </>

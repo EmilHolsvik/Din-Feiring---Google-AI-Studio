@@ -12,6 +12,7 @@
   --accent-strong: #996f39;
   --accent-cool: #b78a4c;
 
+  --section-top: #faf5ee;
   --cream: #f5efe7;
   --cream-dark: #ece3d6;
   --cream-light: #fbf7f1;
@@ -27,7 +28,7 @@
   --border-dark: #d7ccb9;
   --border-strong: #bcae98;
   --card-bg: #fffdf9;
-  --section-alt: #f7f1e8;
+  --section-alt: #f3ece2;
   --success: #10b981;
   --nav-height: 96px;
   --nav-height-mobile: 84px;
@@ -50,7 +51,7 @@ html { scroll-behavior: smooth; }
 body {
   font-family: var(--font-main);
   color: var(--text);
-  background: var(--cream-light);
+  background: var(--section-top);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
@@ -71,7 +72,7 @@ img { max-width: 100%; display: block; }
   border-radius: 4px;
 }
 
-.app-shell { min-height: 100vh; background: var(--cream-light); }
+.app-shell { min-height: 100vh; background: var(--section-top); }
 .app-main { min-height: calc(100vh - var(--nav-height)); }
 .app-main:has(.kontakt-section-submitted) {
   min-height: auto;
@@ -79,6 +80,7 @@ img { max-width: 100%; display: block; }
 .app-main > .section:first-child,
 .app-main > section.section:first-child {
   padding-top: 64px;
+  background: var(--section-top);
 }
 .app-main > .section.section-tight:first-child,
 .app-main > section.section.section-tight:first-child {
@@ -303,13 +305,29 @@ section[id] { scroll-margin-top: calc(var(--nav-height) + 20px); }
 
 .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 32px; }
 .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 32px; }
-.page-shell { min-height: 100%; background: var(--cream); }
+.page-shell { min-height: 100%; background: var(--section-top); }
 .centered-card { text-align: center; padding: 32px 28px; }
 .button-row { display: flex; gap: 16px; row-gap: 14px; flex-wrap: wrap; }
 .button-row-center { justify-content: center; }
 .stack-lg { display: flex; flex-direction: column; gap: 24px; }
 .stack-md { display: flex; flex-direction: column; gap: 18px; }
 .stack-sm { display: flex; flex-direction: column; gap: 10px; }
+.not-found-page {
+  min-height: calc(100vh - var(--nav-height));
+  display: grid;
+  align-items: center;
+}
+.not-found-page .container {
+  width: 100%;
+}
+.not-found-card {
+  width: min(100%, 580px);
+  margin: 0 auto;
+  align-items: center;
+}
+.not-found-card .eyebrow {
+  justify-content: center;
+}
 
 .seo-landing-page {
   background: var(--cream-light);
@@ -320,7 +338,7 @@ section[id] { scroll-margin-top: calc(var(--nav-height) + 20px); }
   border-bottom: 1px solid rgba(32, 25, 20, 0.04);
 }
 .seo-landing-hero {
-  background: #f7eee4;
+  background: var(--section-top);
 }
 .seo-landing-hero-shell {
   max-width: 720px;
@@ -519,7 +537,8 @@ section[id] { scroll-margin-top: calc(var(--nav-height) + 20px); }
 }
 .hero-slide {
   opacity: 0;
-  transition: opacity 0.9s ease;
+  transition: opacity 1.1s ease-in-out;
+  will-change: opacity;
 }
 .hero-slide-active {
   opacity: 1;
@@ -1870,10 +1889,10 @@ section[id] { scroll-margin-top: calc(var(--nav-height) + 20px); }
 }
 .privacy-cookie-action {
   margin: 24px 0;
-  padding: 20px;
-  background: var(--cream);
-  border-radius: var(--radius-sm);
-  border: 1px solid var(--border-dark);
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
 }
 
 .privacy-list {
@@ -4109,6 +4128,29 @@ section[id] { scroll-margin-top: calc(var(--nav-height) + 20px); }
   .icon-button { grid-column: span 2; justify-self: flex-start; }
   .hero-highlights { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .hero-stat { width: 100%; }
+  .not-found-page .container {
+    padding: 0 16px;
+  }
+  .not-found-card {
+    width: 100%;
+    max-width: none;
+  }
+  .form-step-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .form-step-actions-left,
+  .form-step-actions-right {
+    width: 100%;
+  }
+  .form-step-actions-right .btn,
+  .form-step-actions-left .btn {
+    width: 100%;
+  }
+  .contact-direct-row {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
   .site-header-row {
     grid-template-columns: 78px minmax(0, 1fr) 78px;
     gap: 10px;

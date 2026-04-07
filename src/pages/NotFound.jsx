@@ -5,10 +5,10 @@ import SEO from '../components/SEO'
 
 export default function NotFound() {
   return (
-    <section className="section">
+    <section className="section not-found-page">
       <SEO title="Siden ble ikke funnet" noindex />
       <div className="container narrow-container">
-        <div className="surface-card centered-card stack-lg">
+        <div className="surface-card centered-card stack-lg not-found-card">
           <Eyebrow icon={TriangleAlert}>404</Eyebrow>
           <h1 className="section-title">Siden finnes ikke</h1>
           <p className="section-copy">
