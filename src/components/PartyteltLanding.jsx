@@ -13,74 +13,77 @@ import {
 
 const quickFacts = [
   {
-    title: 'Sandefjord og Vestfold',
-    text: 'Lokal base med utleie til både private feiringer og bedriftsarrangementer.',
+    title: 'Utgangspunktet er ikke bare antall gjester',
+    text: 'Bordoppsett, buffet, gavebord og hvor lenge dere skal sitte under teltet betyr ofte like mye som gjestetallet.',
     icon: MapPin,
   },
   {
-    title: 'Fra små til store oppsett',
-    text: 'Du finner flere størrelser, fra kompakte telt til de største løsningene våre.',
+    title: 'Runde bord og ekstra soner krever mer plass',
+    text: 'Et telt som fungerer til mingling kan bli trangt til middag. Derfor bør oppsettet vurderes før størrelse velges.',
     icon: Ruler,
   },
   {
-    title: 'Plan B som fungerer',
-    text: 'Partytelt gjør det enklere å arrangere ute selv når været er usikkert.',
+    title: 'Plan B for været fungerer best når alt er avklart tidlig',
+    text: 'Levering, montering og plassering er lettere å få riktig når dato, sted og oppsett er tenkt gjennom på forhånd.',
     icon: CalendarDays,
   },
 ]
 
 export default function PartyteltLanding() {
   return (
-    <article className="section section-alt section-tight">
-      <div className="container stack-lg" style={{ gap: '72px' }}>
-        <div className="section-header section-header-centered">
-          <Eyebrow icon={BadgeCheck} className="badge badge-spaced">
-            Partytelt til utleie
-          </Eyebrow>
-          <h1 className="section-title">Leie partytelt i Sandefjord og Vestfold</h1>
-          <p className="section-subtitle section-subtitle-centered">
-            Hos Din Feiring kan du leie partytelt i flere størrelser, med tydelige priser og enkel vei videre til
-            kontakt, prisestimat og teltguide. Vi hjelper deg med å finne et telt som passer antall gjester, plass og
-            type arrangement.
-          </p>
-          <div className="button-row button-row-center">
-            <Link to="/kontakt" className="btn btn-primary">
-              Be om tilbud
-            </Link>
-            <Link to={priceEstimateLink.path} className="btn btn-secondary">
-              {priceEstimateLink.ctaLabel}
-            </Link>
-            <Link to="/hvor-stort-partytelt" className="text-link">
-              Se teltguiden
-            </Link>
+    <article className="seo-landing-page">
+      <section className="section section-tight seo-landing-hero">
+        <div className="container">
+          <div className="seo-landing-hero-shell">
+            <Eyebrow icon={BadgeCheck} className="badge badge-spaced">
+              Partytelt til utleie
+            </Eyebrow>
+            <h1 className="section-title">Leie partytelt i Sandefjord og Vestfold</h1>
+            <p className="section-subtitle section-subtitle-centered">
+              Finn teltstørrelser som passer gjestetall, bordoppsett og arrangementstype. Her får du et tydelig
+              utgangspunkt før du går videre til teltguide, prisestimat eller forespørsel.
+            </p>
+
+            <div className="button-row button-row-center">
+              <Link to="/kontakt" className="btn btn-primary">
+                Be om tilbud
+              </Link>
+              <Link to={priceEstimateLink.path} className="btn btn-secondary">
+                {priceEstimateLink.ctaLabel}
+              </Link>
+              <Link to="/hvor-stort-partytelt" className="text-link">
+                Se teltguiden
+              </Link>
+            </div>
           </div>
+
+          <ul className="grid-3 arrangement-list-simple seo-landing-facts" aria-label="Hva som påvirker valg av partytelt">
+            {quickFacts.map((item) => {
+              const Icon = item.icon
+
+              return (
+                <li key={item.title} className="arrangement-feature seo-landing-fact">
+                  <span className="arrangement-feature-icon" aria-hidden="true">
+                    <Icon size={24} strokeWidth={1.9} />
+                  </span>
+                  <p className="arrangement-feature-title seo-landing-fact-title">{item.title}</p>
+                  <p className="arrangement-feature-copy seo-landing-fact-copy">{item.text}</p>
+                </li>
+              )
+            })}
+          </ul>
         </div>
+      </section>
 
-        <div className="grid-3" style={{ marginBottom: '48px' }}>
-          {quickFacts.map((item) => {
-            const Icon = item.icon
-
-            return (
-              <div key={item.title} className="surface-card stack-sm" style={{ padding: '24px' }}>
-                <span className="product-trust-icon" aria-hidden="true" style={{ marginBottom: '16px' }}>
-                  <Icon size={24} strokeWidth={1.8} />
-                </span>
-                <h3 className="product-card-title">{item.title}</h3>
-                <p className="product-card-copy">{item.text}</p>
-              </div>
-            )
-          })}
-        </div>
-
-        <section>
+      <section className="section seo-landing-band seo-landing-band-white">
+        <div className="container">
           <div className="section-header section-header-centered">
             <Eyebrow icon={Ruler} className="badge badge-spaced">
               Størrelser og priser
             </Eyebrow>
-            <h2 className="section-title">Velg teltstørrelse ut fra gjester og oppsett</h2>
+            <h2 className="section-title">Velg teltstørrelse ut fra hvordan arrangementet faktisk skal brukes</h2>
             <p className="section-subtitle section-subtitle-centered">
-              Under finner du de mest populære partyteltene våre. Hver modell har egen produktside med pris, kapasitet
-              og mer detaljert informasjon.
+              Hver teltstørrelse har egen produktside med kapasitet, pris og praktisk informasjon om oppsett og bruk.
             </p>
           </div>
 
@@ -89,62 +92,68 @@ export default function PartyteltLanding() {
               <ProduktKort key={product.id} product={product} showBadge={false} />
             ))}
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section>
-          <div className="section-header section-header-centered">
+      <section className="section seo-landing-band seo-landing-band-warm">
+        <div className="container seo-landing-split">
+          <div className="seo-landing-copy-column">
             <Eyebrow icon={BadgeCheck} className="badge badge-spaced">
-              Derfor velger kunder oss
+              Før dere velger telt
             </Eyebrow>
-            <h2 className="section-title">Tydelig, lokalt og enkelt å bestille</h2>
-            <p className="section-subtitle section-subtitle-centered">
-              Vi forsøker å gjøre leie av partytelt så lite komplisert som mulig, fra første spørsmål til utlevering.
+            <h2 className="section-title">Tre ting som nesten alltid avgjør om teltet blir riktig</h2>
+            <p className="section-subtitle">
+              De fleste bommer ikke på teltvalg fordi de teller feil gjester, men fordi de undervurderer hvordan teltet
+              faktisk skal brukes gjennom dagen.
             </p>
           </div>
 
-          <div className="grid-3">
+          <div className="seo-landing-lines">
             {partyteltBenefits.map((item) => (
-              <div key={item.title} className="surface-card" style={{ padding: '24px' }}>
-                <h3 className="product-card-title" style={{ marginBottom: '10px' }}>
-                  {item.title}
-                </h3>
-                <p className="product-card-copy">{item.text}</p>
-              </div>
+              <article key={item.title} className="seo-landing-line-item">
+                <h3 className="seo-landing-line-title">{item.title}</h3>
+                <p className="seo-landing-line-copy">{item.text}</p>
+              </article>
             ))}
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section>
-          <div className="section-header section-header-centered">
+      <section className="section seo-landing-band seo-landing-band-soft">
+        <div className="container">
+          <div className="section-header section-header-centered section-header-sm">
             <Eyebrow icon={Truck} className="badge badge-spaced">
-              Levering og montering
+              Praktisk planlegging
             </Eyebrow>
-            <h2 className="section-title">Få teltet dit det skal, klart til bruk</h2>
+            <h2 className="section-title">Slik blir bestillingen enklere og mer presis</h2>
             <p className="section-subtitle section-subtitle-centered">
-              Vi kan gjøre det enkelt å få teltet på plass, enten du vil hente selv eller avtale levering.
+              Når de viktigste detaljene er avklart tidlig, er det mye enklere å få riktig telt og et tilbud som faktisk
+              passer arrangementet.
             </p>
           </div>
 
-          <div className="grid-3">
-            {partyteltServicePoints.map((item) => (
-              <div key={item.title} className="surface-card" style={{ padding: '24px' }}>
-                <h3 className="product-card-title" style={{ marginBottom: '10px' }}>
-                  {item.title}
-                </h3>
-                <p className="product-card-copy">{item.text}</p>
-              </div>
+          <div className="grid-3 seo-landing-steps">
+            {partyteltServicePoints.map((item, index) => (
+              <article key={item.title} className="seo-landing-step">
+                <span className="seo-landing-step-number">{`0${index + 1}`}</span>
+                <h3 className="seo-landing-step-title">{item.title}</h3>
+                <p className="seo-landing-step-copy">{item.text}</p>
+              </article>
             ))}
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section>
-          <div className="section-header section-header-centered">
+      <section className="section seo-landing-band seo-landing-band-plain">
+        <div className="container narrow-container">
+          <div className="section-header section-header-centered section-header-sm">
             <Eyebrow icon={CircleHelp} className="badge badge-spaced">
               Vanlige spørsmål
             </Eyebrow>
-            <h2 className="section-title">Svar på det folk ofte lurer på</h2>
+            <h2 className="section-title">Svar på det folk oftest lurer på før de leier partytelt</h2>
             <p className="section-subtitle section-subtitle-centered">
-              Her er de viktigste spørsmålene vi får om partytelt, størrelse og bestilling.
+              Spørsmålene under går igjen når folk skal velge størrelse, planlegge oppsett og finne ut hvordan dagen
+              blir enklest å gjennomføre.
             </p>
           </div>
 
@@ -161,25 +170,23 @@ export default function PartyteltLanding() {
               </details>
             ))}
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section>
-          <div className="section-header section-header-centered">
-            <h2 className="section-title">Neste steg</h2>
+      <section className="section section-tight seo-landing-band seo-landing-band-links">
+        <div className="container">
+          <div className="section-header section-header-centered section-header-sm">
+            <h2 className="section-title">Relaterte sider</h2>
             <p className="section-subtitle section-subtitle-centered">
-              Bruk en av sidene under for å komme videre med planleggingen.
+              Gå videre til sidene som hjelper mest når du skal finjustere oppsettet.
             </p>
           </div>
 
-          <div className="grid-3">
+          <div className="grid-3 seo-landing-link-grid">
             {partyteltInternalLinks.map((item) => (
-              <Link key={item.to} to={item.to} className="surface-card stack-sm" style={{ padding: '24px', display: 'block' }}>
-                <h3 className="product-card-title">
-                  {item.label}
-                </h3>
-                <p className="product-card-copy">
-                  {item.text}
-                </p>
+              <Link key={item.to} to={item.to} className="seo-landing-link">
+                <h3 className="seo-landing-link-title">{item.label}</h3>
+                <p className="seo-landing-link-copy">{item.text}</p>
                 <span className="text-link">
                   Gå videre
                   <ArrowRight size={16} />
@@ -187,8 +194,8 @@ export default function PartyteltLanding() {
               </Link>
             ))}
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
     </article>
   )
 }

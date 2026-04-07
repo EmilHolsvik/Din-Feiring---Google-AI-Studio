@@ -8,99 +8,76 @@ export const partyteltProducts = alleProdukter
 
 export const partyteltBenefits = [
   {
-    title: 'Lager i Sandefjord',
-    text: 'Du vet hvor utstyret kommer fra, og du får en lokal leverandør som er enkel å forholde seg til.',
+    title: 'Antall gjester er bare startpunktet',
+    text: 'Det viktigste er hvor mange som faktisk skal sitte eller oppholde seg i teltet samtidig. Et telt til stående mingling kan være for lite hvis samme gjester også skal spise der.',
   },
   {
-    title: 'Tydelige priser',
-    text: 'Prisene er synlige før du tar kontakt, slik at du kan sammenligne størrelser og planlegge budsjettet tidlig.',
+    title: 'Bordoppsettet endrer kapasiteten mye',
+    text: 'Runde bord krever mer plass enn langbord, og buffet, gavebord eller serveringsbord må også regnes inn. Derfor kan samme gjestetall trenge forskjellige teltstørrelser.',
   },
   {
-    title: 'Alt til feiringen samlet',
-    text: 'Du kan bestille telt, bord, stoler og lyd fra samme sted og slippe å koordinere flere leverandører.',
-  },
-  {
-    title: 'Hjelp til riktig størrelse',
-    text: 'Er du usikker på kapasitet, hjelper vi deg med å velge et telt som passer antall gjester og type arrangement.',
+    title: 'Plassering og underlag må fungere i praksis',
+    text: 'Mål området før du bestiller. Det må være nok plass til selve teltet, litt arbeidsrom rundt, og et underlag som fungerer for både oppsett og bruk gjennom dagen.',
   },
 ]
 
 export const partyteltServicePoints = [
   {
-    title: 'Henting eller levering',
-    text: 'Du kan hente selv i Sandefjord, eller avtale levering hvis det passer bedre for arrangementet ditt.',
+    title: 'Start med dato, sted og gjestetall',
+    text: 'Når vi vet hvor og når arrangementet skal være, og omtrent hvor mange som kommer, er det mye enklere å peke dere mot riktig teltstørrelse.',
   },
   {
-    title: 'Montering og trygg sikring',
-    text: 'Vi legger vekt på at teltet skal stå trygt og fungere godt gjennom hele dagen, ikke bare se bra ut på bilder.',
+    title: 'Beskriv hvordan teltet skal brukes',
+    text: 'Si fra om dere skal ha middag, runde bord, buffet, gavebord eller bare stående mingling. Det er slike detaljer som avgjør om et telt blir akkurat passe eller for trangt.',
   },
   {
-    title: 'Tilpasset ulike arrangementer',
-    text: 'Vi leverer ofte til konfirmasjon, dåp, bryllup, sommerfest og firmaarrangementer i Sandefjord og Vestfold.',
-  },
-  {
-    title: 'Enkel vei videre',
-    text: 'Du kan lese teltguiden, regne på prisestimatet eller sende en forespørsel når du er klar.',
+    title: 'Avklar henting, levering og montering tidlig',
+    text: 'Noen henter selv, andre vil ha levering eller teltet satt opp klart. Når dette avklares tidlig, blir både planlegging og tilbud mer presist.',
   },
 ]
 
 export const partyteltFaq = [
   {
-    question: 'Hvilken størrelse partytelt bør vi velge?',
+    question: 'Hvor mange personer får plass i et partytelt?',
     answer:
-      'Det kommer an på hvor mange som skal være under teltet samtidig og hvordan dere skal bruke plassen. Som regel anbefaler vi å velge litt mer plass enn du tror du trenger, spesielt hvis dere skal ha bord, servering eller ekstra soner.',
+      'Det avhenger av om teltet skal brukes til stående mingling, langbord eller runde bord. Et 5 x 10 m telt kan for eksempel fungere fint til rundt 55 til 60 stående, men merkbart færre dersom dere skal ha sittende oppsett med god luft mellom bordene.',
   },
   {
-    question: 'Kan vi hente teltet selv?',
+    question: 'Hva bør vi tenke på før vi velger teltstørrelse?',
     answer:
-      'Ja, du kan hente selv i Sandefjord. Hvis du vil slippe logistikk og montering, kan levering avtales etter behov.',
+      'Tenk gjennom gjestetall, bordoppsett, om dere trenger buffet eller gavebord, og om alle skal være under teltet samtidig. Det er ofte disse tingene som gjør at man bør gå opp en størrelse.',
   },
   {
-    question: 'Passer partytelt til bryllup og konfirmasjon?',
+    question: 'Kan dere hjelpe oss å velge riktig partytelt?',
     answer:
-      'Ja. Mange bruker partytelt til konfirmasjon, bryllup, dåp, jubileum og hagefest fordi det gir fleksibilitet og en trygg plan B ved usikkert vær.',
+      'Ja. Send oss dato, sted, omtrent antall gjester og hvordan dere tenker å bruke teltet, så kan vi anbefale en størrelse som passer bedre enn et rent kvadratmeteranslag.',
   },
   {
-    question: 'Kan vi få hjelp til å finne riktig størrelse?',
+    question: 'Kan vi bestille partytelt sammen med bord og stoler?',
     answer:
-      'Ja. Du kan bruke teltguiden vår eller sende en forespørsel med antall gjester og type oppsett, så hjelper vi deg videre.',
+      'Ja. Mange bestiller telt, bord og stoler samlet, særlig til konfirmasjon, bryllup og større hagefester. Det gjør det enklere å vurdere helheten og planlegge levering eller henting.',
   },
 ]
 
 export const partyteltInternalLinks = [
   {
-    label: 'Se bord og stoler',
+    label: 'Leie bord og stoler',
     to: '/bord-og-stoler',
-    text: 'Kombiner teltet med klappbord, runde bord og stoler som passer oppsettet ditt.',
+    text: 'Se møblene som oftest kombineres med partytelt når arrangementet skal ha sittende oppsett.',
   },
   {
-    label: 'Se partytelt til konfirmasjon',
+    label: 'Partytelt til konfirmasjon',
     to: '/partytelt-konfirmasjon',
-    text: 'Få en mer konkret oversikt over telt, bord og stoler som ofte passer til konfirmasjon.',
+    text: 'Få et mer konkret utgangspunkt for konfirmasjon med telt, bord, stoler og plass til kaker og gavebord.',
   },
   {
-    label: 'Se partytelt til bryllup',
+    label: 'Partytelt til bryllup',
     to: '/partytelt-bryllup',
-    text: 'Se telt, runde bord og bryllupsnære oppsett med bedre plass og flyt.',
+    text: 'Se hvordan telt, runde bord og bedre luft i oppsettet ofte planlegges til bryllup under telt.',
   },
   {
-    label: 'Se teltguiden',
+    label: 'Finn riktig størrelse',
     to: '/hvor-stort-partytelt',
-    text: 'Få hjelp til å velge riktig størrelse og se kapasitet per modell.',
-  },
-  {
-    label: 'Bruk prisestimatet',
-    to: '/kalkulator',
-    text: 'Regn raskt på pris før du sender en forespørsel.',
-  },
-  {
-    label: 'Ta kontakt',
-    to: '/kontakt',
-    text: 'Send oss dato, sted og antall gjester, så svarer vi så presist vi kan.',
-  },
-  {
-    label: 'Les artiklene våre',
-    to: '/artikler',
-    text: 'Se korte guider om valg av partytelt, montering og planlegging av feiring.',
+    text: 'Bruk teltguiden hvis du vil sammenligne størrelser, kapasitet og hva som passer til ulike oppsett.',
   },
 ]
