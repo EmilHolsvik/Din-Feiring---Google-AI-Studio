@@ -23,16 +23,16 @@ export const partyteltBenefits = [
 
 export const partyteltServicePoints = [
   {
-    title: 'Send dato, sted og omtrent gjestetall',
-    text: 'Da kan vi raskt luke bort størrelser som enten blir for små eller større enn dere trenger.',
+    title: 'Når både middag og ekstra bord skal inn under samme tak',
+    text: 'Kaker, gavebord, buffet eller kaffestasjon gjør ofte større utslag enn selve gjestetallet.',
   },
   {
-    title: 'Skriv om dere skal ha middag, runde bord eller stående mingling',
-    text: 'Det er dette som gjør forskjellen på et telt som bare akkurat går opp, og et telt som faktisk fungerer godt.',
+    title: 'Når dere ønsker roligere passasjer mellom bordene',
+    text: 'Litt ekstra luft merkes godt når folk skal sitte lenge, reise seg og bevege seg mellom bordene gjennom dagen.',
   },
   {
-    title: 'Nevn om dere også trenger bord, stoler eller levering',
-    text: 'Når hele oppsettet planlegges samlet, blir det mye enklere å gi et tilbud som stemmer bedre med behovet deres.',
+    title: 'Når teltet skal brukes lenge, ikke bare til en kort middag',
+    text: 'Jo mer teltet skal fungere som hovedrom for dagen, desto mer merkes det hvis oppsettet blir for tett.',
   },
 ]
 
@@ -63,16 +63,16 @@ export const partyteltInternalLinks = [
   {
     label: 'Leie bord og stoler',
     to: '/bord-og-stoler',
-    text: 'Se møblene som oftest kombineres med partytelt når gjestene skal sitte komfortabelt.',
+    text: 'Nyttig hvis du allerede vet at gjestene skal sitte til middag og du vil se møblene som passer best.',
   },
   {
     label: 'Partytelt til konfirmasjon',
     to: '/partytelt-konfirmasjon',
-    text: 'Få et mer konkret utgangspunkt hvis teltet skal romme middag, kaker og familie gjennom hele dagen.',
+    text: 'Et mer konkret utgangspunkt hvis dere prøver å få plass til middag, kaker og gavebord i samme oppsett.',
   },
   {
     label: 'Partytelt til bryllup',
     to: '/partytelt-bryllup',
-    text: 'Se hvordan telt, runde bord og mer luft i oppsettet ofte planlegges til bryllup.',
+    text: 'Nyttig hvis dere vurderer runde bord, et roligere middagsrom og litt mer luft i oppsettet.',
   },
 ]

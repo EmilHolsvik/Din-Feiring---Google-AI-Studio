@@ -133,9 +133,8 @@ export default function SeoCollectionLanding({ content }) {
             </div>
 
             <div className="grid-3 seo-landing-steps">
-              {secondarySection.cards.map((item, index) => (
+              {secondarySection.cards.map((item) => (
                 <article key={item.title} className="seo-landing-step">
-                  <span className="seo-landing-step-number">{`0${index + 1}`}</span>
                   <h3 className="seo-landing-step-title">{item.title}</h3>
                   <p className="seo-landing-step-copy">{item.text}</p>
                 </article>
@@ -180,7 +179,6 @@ export default function SeoCollectionLanding({ content }) {
           title={content.contactSection.title}
           subtitle={content.contactSection.subtitle}
           compactSpacing
-          homeTone
           presetItems={content.contactSection.presetItems}
         />
       ) : null}

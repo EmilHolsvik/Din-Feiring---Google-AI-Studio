@@ -92,21 +92,21 @@ export const bordOgStolerLandingContent = {
     },
     {
       icon: Truck,
-      eyebrow: 'Før dere sender forespørsel',
-      title: 'Ha dette klart før dere spør oss',
-      description: 'Da går det raskere å få et tilbud som faktisk passer arrangementet deres.',
+      eyebrow: 'Det som gjør oppdekkingen bedre',
+      title: 'Tre valg som ofte gjør bordoppsettet mer behagelig',
+      description: 'Dette er grep som først og fremst merkes av gjestene rundt bordet, ikke bare i planleggingen.',
       cards: [
         {
-          title: 'Hvor mange skal sitte samtidig?',
-          text: 'Dette avgjør hvor mange hovedbord og stoler dere trenger før dere legger til buffet eller andre soner.',
+          title: 'Gi servering og kaker en egen sone',
+          text: 'Da slipper dere at middagsbordene blir fulle av fat, kakeesker og ting som egentlig burde stå et annet sted.',
         },
         {
-          title: 'Skal oppsettet stå i telt, lokale eller hage?',
-          text: 'Det påvirker både plassutnyttelse, logistikk og hva som er smartest å velge av møbler.',
+          title: 'Velg bordtype ut fra stemning, ikke vane',
+          text: 'Klappbord er ofte smartest når mange skal sitte samlet, mens runde bord gir et roligere uttrykk når praten rundt bordet betyr mer.',
         },
         {
-          title: 'Vil dere ha alt levert samlet?',
-          text: 'Hvis dere også trenger telt eller annet utstyr, er det ofte enklere å planlegge alt i én runde.',
+          title: 'La gjestene få litt luft rundt bordene',
+          text: 'Det merkes fort når stoler står for tett eller passasjene blir for smale. Litt margin gir et langt roligere oppsett.',
         },
       ],
     },
@@ -126,24 +126,24 @@ export const bordOgStolerLandingContent = {
       'Send antall gjester, om dere ønsker klappbord eller runde bord, og om dere også trenger telt. Så kan vi foreslå et oppsett som faktisk fungerer.',
   },
   linksHeading: {
-    title: 'Se også',
-    description: 'Nyttig hvis dere skal sette sammen hele oppsettet.',
+    title: 'Videre hvis dere vil sammenligne',
+    description: 'Disse sidene er mest nyttige når bordene også skal passe inn i resten av oppsettet.',
   },
   internalLinks: [
     {
       label: 'Se partytelt',
       to: '/partytelt',
-      text: 'Gå videre hvis dere også trenger telt og vil sammenligne størrelsene på en ryddig måte.',
+      text: 'Nyttig hvis middagen også skal stå ute og dere vil se hvilke teltstørrelser som passer til sittende oppsett.',
     },
     {
       label: 'Partytelt til bryllup',
       to: '/partytelt-bryllup',
-      text: 'Se hvordan runde bord og telt ofte planlegges sammen når middagen skal foregå ute.',
+      text: 'Se hvordan runde bord og telt ofte kombineres når middagen skal ha et roligere og mer sosialt uttrykk.',
     },
     {
       label: 'Bruk prisestimatet',
       to: '/kalkulator',
-      text: 'Få et raskt overslag før dere sender inn en samlet forespørsel.',
+      text: 'Få et grovt overslag hvis dere vil kjenne litt på nivået før dere bestemmer dere.',
     },
   ],
 }
@@ -229,21 +229,21 @@ export const partyteltKonfirmasjonLandingContent = {
     },
     {
       icon: Truck,
-      eyebrow: 'Før dere tar kontakt',
-      title: 'Dette er nyttig å ha klart før dere ber om tilbud',
-      description: 'Da kan vi gi et mer presist forslag uten at dere må prøve dere fram først.',
+      eyebrow: 'Det som ofte gjør dagen roligere',
+      title: 'Tre ting som ofte gjør konfirmasjonsteltet bedre å være i',
+      description: 'Dette er grep som vanligvis merkes mer av familien og gjestene enn av den som sender inn skjemaet.',
       cards: [
         {
-          title: 'Dato, sted og omtrent gjestetall',
-          text: 'Det er nok til å peke dere mot et realistisk utgangspunkt med én gang.',
+          title: 'Egen plass til kaker og kaffe',
+          text: 'Når dette får sin egen sone, slipper dere at middagsbordene blir fylt av ting som skaper uro senere på dagen.',
         },
         {
-          title: 'Langbord eller runde bord',
-          text: 'Bordtypen påvirker hvor stort telt dere faktisk trenger mye mer enn mange tror.',
+          title: 'Litt luft mellom bordene',
+          text: 'Det merkes fort når familie i flere aldre skal sette seg, reise seg og hente kaffe gjennom et langt selskap.',
         },
         {
-          title: 'Om dere også trenger bord, stoler eller levering',
-          text: 'Når hele pakken planlegges samlet, blir det enklere å lande et oppsett som fungerer på dagen.',
+          title: 'Plass til at alle faktisk kan sitte samlet',
+          text: 'Hvis noen må flyttes ut av teltet når været snur, føles oppsettet fort mindre trygt enn det så ut på forhånd.',
         },
       ],
     },
@@ -263,24 +263,24 @@ export const partyteltKonfirmasjonLandingContent = {
       'Send dato, sted, antall gjester og om dere vil ha middag og kakebord under teltet. Så kan vi foreslå en størrelse som gir mening.',
   },
   linksHeading: {
-    title: 'Se også',
-    description: 'Hvis dere vil sammenligne størrelser eller legge til resten av oppsettet.',
+    title: 'Videre hvis dere vil sammenligne',
+    description: 'Disse sidene er mest nyttige hvis dere vil se konfirmasjonsoppsettet i en litt større sammenheng.',
   },
   internalLinks: [
     {
       label: 'Se alle partytelt',
       to: '/partytelt',
-      text: 'Sammenlign størrelsene side om side hvis dere vil se hele utvalget før dere bestemmer dere.',
+      text: 'Sammenlign størrelsene side om side hvis dere fortsatt er usikre på hvor mye plass dere egentlig trenger.',
     },
     {
       label: 'Leie bord og stoler',
       to: '/bord-og-stoler',
-      text: 'Se møblene som oftest brukes til middag, kaker og kaffe i konfirmasjonstelt.',
+      text: 'Se bord og stoler som ofte brukes når konfirmasjonsteltet også skal romme middag, kaffe og kakeservering.',
     },
     {
       label: 'Bruk prisestimatet',
       to: '/kalkulator',
-      text: 'Få et raskt overslag før dere sender inn forespørselen.',
+      text: 'Få et grovt overslag hvis dere vil vite nivået før dere går videre.',
     },
   ],
 }
@@ -366,21 +366,21 @@ export const partyteltBryllupLandingContent = {
     },
     {
       icon: Truck,
-      eyebrow: 'Før dere tar kontakt',
-      title: 'Dette er lurt å avklare tidlig',
-      description: 'Da blir det mye enklere å lande et telt som passer både praktisk og visuelt.',
+      eyebrow: 'Det som ofte løfter opplevelsen',
+      title: 'Tre valg som ofte gjør bryllupsteltet roligere',
+      description: 'Dette er grep som først og fremst handler om hvordan bryllupet oppleves når gjestene setter seg.',
       cards: [
         {
-          title: 'Gjestetall og bordtype først',
-          text: 'Det gir et langt bedre grunnlag enn å starte med kvadratmeter alene.',
+          title: 'Litt ekstra luft rundt bordene',
+          text: 'Når bordene står romsligere, føles middagsrommet både penere og roligere gjennom hele kvelden.',
         },
         {
-          title: 'Hvilke deler av dagen skal inn i teltet',
-          text: 'Middag, mingling, kaffe og servering trenger ikke samme type plass, men bør sees samlet.',
+          title: 'Egen plass til velkomst eller kaffe',
+          text: 'Det gir en mykere flyt enn når alt skal presses inn i den samme middagsflaten.',
         },
         {
-          title: 'Når vil dere ha teltet klart',
-          text: 'Mange vil ha god tid til pynting og borddekking før selve dagen, og det er lurt å avklare tidlig.',
+          title: 'Bordtype som passer uttrykket dere vil ha',
+          text: 'Runde bord kan være verdt den ekstra plassen når dere ønsker et lunere og mer sosialt middagsoppsett.',
         },
       ],
     },
@@ -400,24 +400,24 @@ export const partyteltBryllupLandingContent = {
       'Send dato, sted, gjestetall og om dere ser for dere runde bord eller langbord. Så kan vi foreslå et oppsett som faktisk passer kvelden.',
   },
   linksHeading: {
-    title: 'Se også',
-    description: 'Hvis dere vil sammenligne teltstørrelser eller resten av oppsettet.',
+    title: 'Videre hvis dere vil sammenligne',
+    description: 'Disse sidene er mest nyttige hvis dere vil se bryllupsoppsettet opp mot resten av valgene.',
   },
   internalLinks: [
     {
       label: 'Se alle partytelt',
       to: '/partytelt',
-      text: 'Sammenlign teltstørrelsene hvis dere vil vurdere hele utvalget før dere bestemmer dere.',
+      text: 'Sammenlign teltstørrelsene hvis dere vil vurdere hele utvalget før dere låser oppsettet.',
     },
     {
       label: 'Leie bord og stoler',
       to: '/bord-og-stoler',
-      text: 'Se runde bord, stoler og øvrige møbler som ofte brukes i bryllupstelt.',
+      text: 'Se runde bord, stoler og øvrige møbler som ofte brukes når bryllupsmiddagen skal foregå under telt.',
     },
     {
       label: 'Bruk prisestimatet',
       to: '/kalkulator',
-      text: 'Få et raskt overslag før dere sender inn en samlet forespørsel.',
+      text: 'Få et grovt overslag hvis dere vil kjenne på nivået før dere går videre.',
     },
   ],
 }

@@ -142,18 +142,17 @@ export default function PartyteltLanding() {
         <div className="container">
           <div className="section-header section-header-centered section-header-sm">
             <Eyebrow icon={Truck} className="badge badge-spaced">
-              Praktisk planlegging
+              Når det er verdt å ha litt mer plass
             </Eyebrow>
-            <h2 className="section-title">Dette er nyttig å ha klart før dere ber om tilbud</h2>
+            <h2 className="section-title">Tre tegn på at dere bør vurdere en større teltstørrelse</h2>
             <p className="section-subtitle section-subtitle-centered">
-              Da er det mye enklere å foreslå riktig størrelse med én gang, i stedet for at dere må prøve dere fram.
+              Dette handler ikke om hva som er lettest for oss, men om hva som gjør at oppsettet faktisk føles bedre når gjestene kommer.
             </p>
           </div>
 
           <div className="grid-3 seo-landing-steps">
-            {partyteltServicePoints.map((item, index) => (
+            {partyteltServicePoints.map((item) => (
               <article key={item.title} className="seo-landing-step">
-                <span className="seo-landing-step-number">{`0${index + 1}`}</span>
                 <h3 className="seo-landing-step-title">{item.title}</h3>
                 <p className="seo-landing-step-copy">{item.text}</p>
               </article>
@@ -196,15 +195,14 @@ export default function PartyteltLanding() {
         title="Fortell oss kort hva dere planlegger"
         subtitle="Send dato, sted, gjestetall og om dere skal ha middag, buffet eller runde bord. Da kan vi foreslå en teltstørrelse som faktisk passer oppsettet."
         compactSpacing
-        homeTone
       />
 
       <section className="section section-tight seo-landing-band seo-landing-band-links">
         <div className="container">
           <div className="section-header section-header-centered section-header-sm">
-            <h2 className="section-title">Se også</h2>
+            <h2 className="section-title">Videre hvis du vil sammenligne</h2>
             <p className="section-subtitle section-subtitle-centered">
-              Hvis du vil sammenligne med møbler eller mer konkrete bruksscenarier.
+              Disse sidene er mest nyttige hvis du står mellom flere oppsett og vil se noe mer konkret.
             </p>
           </div>
 

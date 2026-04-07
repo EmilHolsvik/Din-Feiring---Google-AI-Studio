@@ -183,11 +183,15 @@ export default function CookieConsent() {
           z-index: 1000;
           padding: 0 1rem;
         }
+        .cookie-banner .container {
+          max-width: none;
+          padding: 0;
+        }
         @media (min-width: 768px) {
           .cookie-banner {
-            left: 1.5rem;
-            right: auto;
-            width: 360px;
+            left: auto;
+            right: 1.5rem;
+            width: min(380px, calc(100vw - 3rem));
             padding: 0;
           }
         }
