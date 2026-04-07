@@ -3836,15 +3836,30 @@ section[id] { scroll-margin-top: calc(var(--nav-height) + 20px); }
     margin-bottom: 22px;
   }
   .contact-testimonials-marquee {
-    margin: 0 -20px;
-    padding: 4px 20px;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
   }
   .contact-testimonials-marquee::before,
   .contact-testimonials-marquee::after {
-    width: 44px;
+    display: none;
+  }
+  .contact-testimonials-track {
+    display: grid;
+    gap: 16px;
+    width: 100%;
+    animation: none;
+  }
+  .contact-testimonials-group {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+  .contact-testimonials-group[aria-hidden="true"] {
+    display: none;
   }
   .contact-testimonial-card {
-    width: min(320px, calc(100vw - 64px));
+    width: 100%;
     padding: 16px 20px;
   }
   .contact-testimonial-card::after {
@@ -4128,7 +4143,17 @@ section[id] { scroll-margin-top: calc(var(--nav-height) + 20px); }
 @media (max-width: 560px) {
   .line-item-card { grid-template-columns: 1fr 1fr; }
   .icon-button { grid-column: span 2; justify-self: flex-start; }
-  .hero-highlights { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .hero-highlights {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .hero-highlight-card {
+    padding: 0;
+    gap: 10px;
+  }
+  .hero-highlight-copy {
+    max-width: 32ch;
+  }
   .hero-stat { width: 100%; }
   .not-found-page .container {
     padding: 0 16px;
@@ -4136,6 +4161,38 @@ section[id] { scroll-margin-top: calc(var(--nav-height) + 20px); }
   .not-found-card {
     width: 100%;
     max-width: none;
+  }
+  .contact-testimonials-marquee {
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+  }
+  .contact-testimonials-marquee::before,
+  .contact-testimonials-marquee::after {
+    display: none;
+  }
+  .contact-testimonials-track {
+    display: grid;
+    gap: 16px;
+    width: 100%;
+    animation: none;
+  }
+  .contact-testimonials-group {
+    display: grid;
+    gap: 16px;
+  }
+  .contact-testimonials-group[aria-hidden="true"] {
+    display: none;
+  }
+  .contact-testimonial-card {
+    width: 100%;
+    padding: 18px;
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    background: rgba(255, 253, 249, 0.9);
+  }
+  .contact-testimonial-card::after {
+    display: none;
   }
   .form-step-actions {
     flex-direction: column;
