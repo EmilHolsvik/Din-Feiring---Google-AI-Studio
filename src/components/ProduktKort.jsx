@@ -11,7 +11,7 @@ export default function ProduktKort({ product, showBadge = true }) {
         <div className="product-card-media">
           <img
             src={product.bilde}
-            alt={product.navn}
+            alt={product.imageAlt || product.navn}
             referrerPolicy="no-referrer"
             loading="lazy"
             decoding="async"

@@ -36,6 +36,11 @@ export default function Arrangementstyper() {
                   </span>
                   <h3 className="arrangement-feature-title">{item.title}</h3>
                   <p className="arrangement-feature-copy">{item.text}</p>
+                  {item.path ? (
+                    <Link to={item.path} className="text-link" style={{ marginTop: '10px' }}>
+                      Les mer
+                    </Link>
+                  ) : null}
                 </li>
               )
             })}

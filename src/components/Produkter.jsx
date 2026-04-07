@@ -7,9 +7,15 @@ import { alleProdukter } from '../data/produkter'
 
 const POPULAR_IDS = ['partytelt-5x10', 'partytelt-6x12', 'partytelt-3x8', 'stoler', 'bord', 'soundboks']
 
-export default function Produkter({ variant = 'page' }) {
+export default function Produkter({
+  variant = 'page',
+  titleAs = 'h2',
+  pageTitle = 'Vårt sortiment',
+  pageDescription = 'Trykk deg inn på et produkt for å se priser, størrelse og mer informasjon, eller send en samlet forespørsel nederst på siden.',
+}) {
   const [isMobile, setIsMobile] = useState(false)
   const isHome = variant === 'home'
+  const TitleTag = titleAs
 
   useEffect(() => {
     const mediaQuery = window.matchMedia('(max-width: 768px)')
@@ -38,7 +44,7 @@ export default function Produkter({ variant = 'page' }) {
       <div className="container">
         <div className={`section-header ${isHome ? 'section-header-centered' : 'products-page-header'}`}>
           <Eyebrow icon={Package}>{isHome ? 'Produkter til feiringen' : 'Produkter'}</Eyebrow>
-          <h2 className="section-title">
+          <TitleTag className="section-title">
             {isHome ? (
               <>
                 Utvalgt utstyr
@@ -47,13 +53,13 @@ export default function Produkter({ variant = 'page' }) {
                 til de fleste anledninger
               </>
             ) : (
-              'Vårt sortiment'
+              pageTitle
             )}
-          </h2>
+          </TitleTag>
           <p className={`section-subtitle ${isHome ? 'section-subtitle-centered' : 'products-page-copy'}`}>
             {isHome
               ? 'Her ser du noen av produktene vi leier ut oftest.'
-              : 'Trykk deg inn på et produkt for å se priser, størrelse og mer informasjon, eller send en samlet forespørsel nederst på siden.'}
+              : pageDescription}
           </p>
         </div>
 

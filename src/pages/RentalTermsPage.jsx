@@ -138,7 +138,11 @@ const deliveryChecklist = [
 export default function RentalTermsPage() {
   return (
     <section className="section privacy-page">
-      <SEO title="Leievilkår" noindex />
+      <SEO
+        title="Leievilkår for partytelt, bord og stoler"
+        description="Les leievilkår for partytelt, bord, stoler og lydutstyr fra Din Feiring i Sandefjord. Her finner du regler for leieperiode, ansvar, betaling og bruk."
+        path="/leievilkar"
+      />
       <div className="container narrow-container">
         <div className="page-breadcrumbs">
           <Link to="/">Forside</Link>

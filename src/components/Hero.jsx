@@ -34,7 +34,7 @@ export default function Hero() {
               Lager i Sandefjord
             </span>
 
-            <h1 className="hero-title">Lei telt, bord, stoler og lyd på ett sted</h1>
+            <h1 className="hero-title">Lei partytelt, bord, stoler og lyd på ett sted</h1>
 
             <p className="hero-lede">
               Se priser, størrelser og produkter først. Når du er klar kan du sende en forespørsel og få svar.

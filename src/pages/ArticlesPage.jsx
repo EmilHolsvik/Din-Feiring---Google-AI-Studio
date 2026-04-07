@@ -16,6 +16,9 @@ export default function ArticlesPage() {
       <SEO 
         title="Artikler og inspirasjon til din feiring"
         description="Les våre artikler om valg av partytelt, montering, planlegging av hagefest og mye mer. Få tipsene du trenger for et vellykket arrangement."
+        path="/artikler"
+        ogImage={posts[0]?.image}
+        ogImageAlt={posts[0]?.imageAlt}
       />
       <section className="section article-index-page">
         <div className="container">

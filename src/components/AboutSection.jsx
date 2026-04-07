@@ -48,11 +48,12 @@ const copyByVariant = {
   },
 }
 
-export default function AboutSection({ variant = 'teaser' }) {
+export default function AboutSection({ variant = 'teaser', titleAs = 'h2', titleText }) {
   const content = copyByVariant[variant] ?? copyByVariant.teaser
   const isFull = variant === 'full'
   const hasAside = Boolean(content.asideTitle && content.asideCopy?.length)
   const showFacts = !isFull
+  const TitleTag = titleAs
 
   return (
     <FadeIn>
@@ -68,15 +69,17 @@ export default function AboutSection({ variant = 'teaser' }) {
                 <Eyebrow icon={Building2} className="badge badge-spaced">
                   {content.badge}
                 </Eyebrow>
-                <h2 className="section-title about-title">
-                  {isFull ? (
+                <TitleTag className="section-title about-title">
+                  {titleText ? (
+                    titleText
+                  ) : isFull ? (
                     <>
                       Din Feiring skal <br /> være lett å planlegge med
                     </>
                   ) : (
                     content.title
                   )}
-                </h2>
+                </TitleTag>
 
                 {content.paragraphs.map((paragraph, index) => (
                   <p

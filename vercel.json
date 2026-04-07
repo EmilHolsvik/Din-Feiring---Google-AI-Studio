@@ -1,4 +1,46 @@
 {
+  "redirects": [
+    {
+      "source": "/teltguide",
+      "destination": "/hvor-stort-partytelt",
+      "permanent": true
+    },
+    {
+      "source": "/priser",
+      "destination": "/kalkulator",
+      "permanent": true
+    },
+    {
+      "source": "/teltutleie",
+      "destination": "/partytelt",
+      "permanent": true
+    },
+    {
+      "source": "/partytelt-utleie",
+      "destination": "/partytelt",
+      "permanent": true
+    },
+    {
+      "source": "/leie-bord-og-stoler",
+      "destination": "/bord-og-stoler",
+      "permanent": true
+    },
+    {
+      "source": "/bord-og-stoler-sandefjord",
+      "destination": "/bord-og-stoler",
+      "permanent": true
+    },
+    {
+      "source": "/konfirmasjonstelt",
+      "destination": "/partytelt-konfirmasjon",
+      "permanent": true
+    },
+    {
+      "source": "/bryllupstelt",
+      "destination": "/partytelt-bryllup",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/(.*)",

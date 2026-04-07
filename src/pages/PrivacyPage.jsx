@@ -7,7 +7,11 @@ import { companyInfo } from '../data/produkter'
 export default function PrivacyPage() {
   return (
     <section className="section privacy-page">
-      <SEO title="Personvern" noindex />
+      <SEO
+        title="Personvern og cookies"
+        description="Les hvordan Din Feiring behandler personopplysninger, cookies og kontaktdata når du bruker nettsiden eller sender en forespørsel."
+        path="/personvern"
+      />
       <div className="container narrow-container">
         <div className="page-breadcrumbs">
           <Link to="/">Forside</Link>

@@ -18,7 +18,13 @@ const PERIODER = [
   { id: 'uke', label: 'Uke (man-fre)' },
 ]
 
-export default function Kalkulator() {
+export default function Kalkulator({
+  titleAs = 'h2',
+  titleText = 'Se ca. pris med en gang',
+  subtitleText = 'Velg produkter, antall og periode for å få en ca. pris. Levering og montering kommer i tillegg ved behov.',
+}) {
+  const TitleTag = titleAs
+
   const produktvalg = useMemo(
     () =>
       getInquirySelectableProducts().map((p) => ({
@@ -145,9 +151,9 @@ export default function Kalkulator() {
           <Eyebrow icon={Calculator} className="badge" style={{ marginBottom: '12px', display: 'inline-flex' }}>
             Prisestimat
           </Eyebrow>
-          <h2 className="heading-elegant" style={{ fontSize: 'clamp(32px, 5vw, 42px)', color: 'var(--primary)', marginBottom: '12px' }}>
-            Se ca. pris med en gang
-          </h2>
+          <TitleTag className="heading-elegant" style={{ fontSize: 'clamp(32px, 5vw, 42px)', color: 'var(--primary)', marginBottom: '12px' }}>
+            {titleText}
+          </TitleTag>
           <p
             style={{
               color: 'var(--text-muted)',
@@ -158,7 +164,7 @@ export default function Kalkulator() {
               lineHeight: 1.6,
             }}
           >
-            Velg produkter, antall og periode for å få en ca. pris. Levering og montering kommer i tillegg ved behov.
+            {subtitleText}
           </p>
           <p style={{ marginTop: '14px', color: 'var(--text-muted)', fontSize: '15px', fontWeight: 500 }}>
             Hele prislisten finner du lenger ned på siden.

@@ -33,8 +33,12 @@ export default function Kontakt({
   compactSpacing = false,
   homeTone = false,
   productSpacing = false,
+  titleAs = 'h2',
+  titleText = title,
+  subtitleText = subtitle,
 }) {
   const [hasSubmitted, setHasSubmitted] = useState(false)
+  const TitleTag = titleAs
 
   return (
     <FadeIn>
@@ -63,43 +67,14 @@ export default function Kontakt({
             </div>
           ) : (
             <>
-              {showSellingPoints ? (
-                <div className="kontakt-benefits" aria-labelledby="kontakt-benefits-title">
-                  <div className="section-header section-header-centered section-header-sm kontakt-benefits-header">
-                    <Eyebrow icon={BadgeCheck} className="badge badge-spaced">
-                      Derfor er det enkelt
-                    </Eyebrow>
-                    <h3 id="kontakt-benefits-title" className="section-title">
-                      Du får en ryddig vei videre
-                    </h3>
-                    <p className="section-subtitle section-subtitle-centered compact-copy">
-                      Kontaktsiden skal gjøre det lett å komme i gang, enten du vet nøyaktig hva du trenger eller bare vil
-                      ha hjelp til å finne riktig oppsett.
-                    </p>
-                  </div>
-
-                  <ul className="kontakt-benefits-grid" aria-label="Fordeler ved å sende en forespørsel">
-                    {contactSellingPoints.map(({ title: itemTitle, text, Icon }) => (
-                      <li key={itemTitle} className="kontakt-benefit">
-                        <span className="kontakt-benefit-icon" aria-hidden="true">
-                          <Icon size={24} strokeWidth={1.8} />
-                        </span>
-                        <h4 className="kontakt-benefit-title">{itemTitle}</h4>
-                        <p className="kontakt-benefit-copy">{text}</p>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ) : null}
-
-                <div className={`kontakt-layout ${showSellingPoints ? 'kontakt-layout-emphasized' : ''}`}>
+              <div className={`kontakt-layout ${showSellingPoints ? 'kontakt-layout-emphasized' : ''}`}>
                 <div className="kontakt-copy">
                   <div className="section-header kontakt-header">
                     <Eyebrow icon={eyebrowIcon} className="badge badge-spaced">
                       {eyebrow}
                     </Eyebrow>
-                    <h2 className="section-title">{title}</h2>
-                    <p className="section-subtitle kontakt-subtitle">{subtitle}</p>
+                    <TitleTag className="section-title">{titleText}</TitleTag>
+                    <p className="section-subtitle kontakt-subtitle">{subtitleText}</p>
                   </div>
 
                   <div className="contact-intro-clean">
@@ -132,6 +107,35 @@ export default function Kontakt({
                   />
                 </div>
               </div>
+
+              {showSellingPoints ? (
+                <div className="kontakt-benefits" aria-labelledby="kontakt-benefits-title">
+                  <div className="section-header section-header-centered section-header-sm kontakt-benefits-header">
+                    <Eyebrow icon={BadgeCheck} className="badge badge-spaced">
+                      Derfor er det enkelt
+                    </Eyebrow>
+                    <h3 id="kontakt-benefits-title" className="section-title">
+                      Du får en ryddig vei videre
+                    </h3>
+                    <p className="section-subtitle section-subtitle-centered compact-copy">
+                      Kontaktsiden skal gjøre det lett å komme i gang, enten du vet nøyaktig hva du trenger eller bare vil
+                      ha hjelp til å finne riktig oppsett.
+                    </p>
+                  </div>
+
+                  <ul className="kontakt-benefits-grid" aria-label="Fordeler ved å sende en forespørsel">
+                    {contactSellingPoints.map(({ title: itemTitle, text, Icon }) => (
+                      <li key={itemTitle} className="kontakt-benefit">
+                        <span className="kontakt-benefit-icon" aria-hidden="true">
+                          <Icon size={24} strokeWidth={1.8} />
+                        </span>
+                        <h4 className="kontakt-benefit-title">{itemTitle}</h4>
+                        <p className="kontakt-benefit-copy">{text}</p>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ) : null}
             </>
           )}
         </div>

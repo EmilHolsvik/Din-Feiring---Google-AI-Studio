@@ -37,6 +37,76 @@ export default function Produkt() {
   const related = getRelatedProducts(produkt)
   const gallery = produkt.galleri?.length ? produkt.galleri : [produkt.bilde]
   const selectedImage = activeImage || gallery[0]
+  const categoryPath =
+    produkt.kategoriId === 'partytelt' ? '/partytelt' : produkt.kategoriId === 'mobler' ? '/bord-og-stoler' : '/produkter'
+  const categoryLabel =
+    produkt.kategoriId === 'partytelt' ? 'Partytelt' : produkt.kategoriId === 'mobler' ? 'Bord og stoler' : 'Produkter'
+  const productPath = `/produkter/${produkt.id}`
+  const breadcrumbJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Forside',
+        item: '/',
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: categoryLabel,
+        item: categoryPath,
+      },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        name: produkt.navn,
+        item: productPath,
+      },
+    ],
+  }
+  const productJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name: produkt.navn,
+    description: produkt.kortBeskrivelse,
+    image: gallery,
+    category: produkt.kategori,
+    brand: {
+      '@type': 'Brand',
+      name: 'Din Feiring',
+    },
+    offers: [
+      {
+        '@type': 'Offer',
+        priceCurrency: 'NOK',
+        price: produkt.priser.dogn,
+        url: productPath,
+        availability: 'https://schema.org/InStock',
+        businessFunction: 'http://purl.org/goodrelations/v1#LeaseOut',
+        itemCondition: 'https://schema.org/UsedCondition',
+      },
+      {
+        '@type': 'Offer',
+        priceCurrency: 'NOK',
+        price: produkt.priser.helg,
+        url: productPath,
+        availability: 'https://schema.org/InStock',
+        businessFunction: 'http://purl.org/goodrelations/v1#LeaseOut',
+        itemCondition: 'https://schema.org/UsedCondition',
+      },
+      {
+        '@type': 'Offer',
+        priceCurrency: 'NOK',
+        price: produkt.priser.uke,
+        url: productPath,
+        availability: 'https://schema.org/InStock',
+        businessFunction: 'http://purl.org/goodrelations/v1#LeaseOut',
+        itemCondition: 'https://schema.org/UsedCondition',
+      },
+    ],
+  }
 
   return (
     <div style={{ background: 'var(--cream-light)', minHeight: '100vh' }}>
@@ -44,12 +114,15 @@ export default function Produkt() {
         title={produkt.seoTitle || `${produkt.navn} – Leie i Sandefjord`}
         description={produkt.kortBeskrivelse}
         ogImage={produkt.bilde}
+        ogImageAlt={produkt.imageAlt || produkt.navn}
+        path={productPath}
+        jsonLd={[breadcrumbJsonLd, productJsonLd]}
       />
       <div className="container product-content-wrap" style={{ padding: '36px 24px 0' }}>
         <div className="product-breadcrumbs">
           <Link to="/">Forside</Link>
           <span>/</span>
-          <Link to="/produkter">Produkter</Link>
+          <Link to={categoryPath}>{categoryLabel}</Link>
           <span>/</span>
           <strong>{produkt.navn}</strong>
         </div>
@@ -68,7 +141,7 @@ export default function Produkt() {
             >
               <img
                 src={selectedImage}
-                alt={produkt.navn}
+                alt={produkt.imageAlt || produkt.navn}
                 referrerPolicy="no-referrer"
                 style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                 sizes="(max-width: 768px) 100vw, 640px"
@@ -90,7 +163,7 @@ export default function Produkt() {
                     >
                       <img
                         src={img}
-                        alt={`${produkt.navn} bilde ${idx + 1}`}
+                        alt={`${produkt.imageAlt || produkt.navn} bilde ${idx + 1}`}
                         referrerPolicy="no-referrer"
                         loading="lazy"
                         decoding="async"
@@ -227,8 +300,8 @@ export default function Produkt() {
                 <h3 className="section-title" style={{ fontSize: '28px' }}>
                   Passer sammen med
                 </h3>
-                <Link to="/produkter" className="text-link">
-                  Se alle produkter
+                <Link to={categoryPath} className="text-link">
+                  {produkt.kategoriId === 'partytelt' ? 'Se alle partytelt' : 'Se alle produkter'}
                 </Link>
               </div>
               <div className="product-related-grid">
@@ -240,9 +313,9 @@ export default function Produkt() {
           )}
 
           <div style={{ marginTop: '36px' }}>
-            <Link to="/produkter" className="text-link">
+            <Link to={categoryPath} className="text-link">
               <ArrowLeft size={16} />
-              Tilbake til katalogen
+              {produkt.kategoriId === 'partytelt' ? 'Tilbake til partytelt' : 'Tilbake til katalogen'}
             </Link>
           </div>
         </div>

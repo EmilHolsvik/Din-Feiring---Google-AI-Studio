@@ -37,6 +37,67 @@ export default function ArticlePage() {
   }
 
   const relatedArticles = getAndreArtikler(article.slug, 2)
+  const articlePath = `/artikler/${article.slug}`
+  const ctaConfig =
+    article.slug === 'hvilke-arrangementer-passer-partytelt-for'
+      ? {
+          title: 'Se teltløsninger for de vanligste anledningene',
+          text: 'Gå videre til sider som er laget for konfirmasjon, bryllup og andre arrangementer utendørs.',
+          primary: { to: '/partytelt-konfirmasjon', label: 'Partytelt til konfirmasjon' },
+          secondary: { to: '/partytelt-bryllup', label: 'Partytelt til bryllup' },
+        }
+      : article.slug === 'montering-og-sikring-av-partytelt'
+        ? {
+            title: 'Se partytelt og få hjelp til riktig oppsett',
+            text: 'Sammenlign teltstørrelser og ta kontakt hvis du vil avklare levering, montering eller plassering.',
+            primary: { to: '/partytelt', label: 'Se partytelt' },
+            secondary: { to: '/kontakt', label: 'Ta kontakt' },
+          }
+        : {
+            title: 'Klar for å finne riktig partytelt?',
+            text: 'Se størrelser, kapasitet og veien videre til prisestimat eller kontakt.',
+            primary: { to: '/partytelt', label: 'Se partytelt' },
+            secondary: { to: '/hvor-stort-partytelt', label: 'Se teltguiden' },
+          }
+  const breadcrumbJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Forside',
+        item: '/',
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Artikler',
+        item: '/artikler',
+      },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        name: article.title,
+        item: articlePath,
+      },
+    ],
+  }
+  const articleJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: article.title,
+    description: article.excerpt,
+    image: article.image,
+    author: {
+      '@type': 'Person',
+      name: article.author,
+    },
+    datePublished: article.publishedAt,
+    dateModified: article.publishedAt,
+    inLanguage: 'no',
+    mainEntityOfPage: articlePath,
+  }
 
   return (
     <section className="section article-page">
@@ -45,6 +106,8 @@ export default function ArticlePage() {
         description={article.excerpt}
         ogImage={article.image}
         ogType="article"
+        path={articlePath}
+        jsonLd={[breadcrumbJsonLd, articleJsonLd]}
       />
       <div className="container narrow-container">
         <div className="page-breadcrumbs">
@@ -96,11 +159,16 @@ export default function ArticlePage() {
             </section>
 
             <div className="article-cta-box" style={{ marginTop: '48px', padding: '32px', background: 'var(--cream-light)', borderRadius: 'var(--radius)', textAlign: 'center' }}>
-              <h3 style={{ marginBottom: '12px' }}>Klar for å planlegge ditt arrangement?</h3>
-              <p style={{ marginBottom: '24px' }}>Se vårt utvalg av telt, bord, stoler og lydutstyr.</p>
-              <Link to="/produkter" className="btn btn-primary">
-                Se alle produkter
-              </Link>
+              <h3 style={{ marginBottom: '12px' }}>{ctaConfig.title}</h3>
+              <p style={{ marginBottom: '24px' }}>{ctaConfig.text}</p>
+              <div className="button-row button-row-center">
+                <Link to={ctaConfig.primary.to} className="btn btn-primary">
+                  {ctaConfig.primary.label}
+                </Link>
+                <Link to={ctaConfig.secondary.to} className="btn btn-secondary">
+                  {ctaConfig.secondary.label}
+                </Link>
+              </div>
             </div>
           </div>
         </article>

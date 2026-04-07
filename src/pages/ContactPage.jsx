@@ -2,6 +2,7 @@ import Kontakt from '../components/Kontakt'
 import ContactTestimonials from '../components/ContactTestimonials'
 import SEO from '../components/SEO'
 import { Compass } from 'lucide-react'
+import { heroImages } from '../data/produkter'
 
 export default function ContactPage() {
   return (
@@ -9,6 +10,9 @@ export default function ContactPage() {
       <SEO 
         title="Kontakt oss – Be om tilbud på partytelt"
         description="Har du spørsmål om leie av partytelt, bord eller stoler? Kontakt Din Feiring i Sandefjord for et uforpliktende tilbud til ditt arrangement."
+        path="/kontakt"
+        ogImage={heroImages[1]?.src || heroImages[0]?.src}
+        ogImageAlt={heroImages[1]?.alt || heroImages[0]?.alt}
       />
       <Kontakt
         eyebrow="Kontakt"
@@ -17,6 +21,9 @@ export default function ContactPage() {
         subtitle="Fyll inn det viktigste først, så kan resten tas steg for steg. Vi holder skjemaet kort og bruker opplysningene kun for å svare på henvendelsen din."
         showSellingPoints
         homeTone
+        titleAs="h1"
+        titleText="Kontakt oss om partytelt og utleie"
+        subtitleText="Fortell oss hva du planlegger, så hjelper vi deg med telt, bord, stoler og levering i Sandefjord og Vestfold."
       />
       <ContactTestimonials />
     </>

@@ -1,20 +1,36 @@
+import { Suspense, lazy } from 'react'
 import { BrowserRouter as Router, Navigate, Route, Routes, useLocation } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import ScrollToTop from './components/ScrollToTop'
 import CookieConsent from './components/CookieConsent'
-import Home from './pages/Home'
-import About from './pages/About'
-import ProductsPage from './pages/ProductsPage'
-import Produkt from './pages/Produkt'
-import CalculatorPage from './pages/CalculatorPage'
-import ContactPage from './pages/ContactPage'
-import SizeGuidePage from './pages/SizeGuidePage'
-import ArticlesPage from './pages/ArticlesPage'
-import ArticlePage from './pages/ArticlePage'
-import RentalTermsPage from './pages/RentalTermsPage'
-import PrivacyPage from './pages/PrivacyPage'
-import NotFound from './pages/NotFound'
+
+const Home = lazy(() => import('./pages/Home'))
+const About = lazy(() => import('./pages/About'))
+const BordOgStolerPage = lazy(() => import('./pages/BordOgStolerPage'))
+const PartyteltPage = lazy(() => import('./pages/PartyteltPage'))
+const PartyteltBryllupPage = lazy(() => import('./pages/PartyteltBryllupPage'))
+const PartyteltKonfirmasjonPage = lazy(() => import('./pages/PartyteltKonfirmasjonPage'))
+const ProductsPage = lazy(() => import('./pages/ProductsPage'))
+const Produkt = lazy(() => import('./pages/Produkt'))
+const CalculatorPage = lazy(() => import('./pages/CalculatorPage'))
+const ContactPage = lazy(() => import('./pages/ContactPage'))
+const SizeGuidePage = lazy(() => import('./pages/SizeGuidePage'))
+const ArticlesPage = lazy(() => import('./pages/ArticlesPage'))
+const ArticlePage = lazy(() => import('./pages/ArticlePage'))
+const RentalTermsPage = lazy(() => import('./pages/RentalTermsPage'))
+const PrivacyPage = lazy(() => import('./pages/PrivacyPage'))
+const NotFound = lazy(() => import('./pages/NotFound'))
+
+function RouteFallback() {
+  return (
+    <section className="section section-tight">
+      <div className="container">
+        <p className="section-copy">Laster side...</p>
+      </div>
+    </section>
+  )
+}
 
 function AppRoutes() {
   const location = useLocation()
@@ -22,6 +38,10 @@ function AppRoutes() {
   return (
     <Routes location={location} key={location.pathname}>
       <Route path="/" element={<Home />} />
+      <Route path="/partytelt" element={<PartyteltPage />} />
+      <Route path="/bord-og-stoler" element={<BordOgStolerPage />} />
+      <Route path="/partytelt-konfirmasjon" element={<PartyteltKonfirmasjonPage />} />
+      <Route path="/partytelt-bryllup" element={<PartyteltBryllupPage />} />
       <Route path="/om-oss" element={<About />} />
       <Route path="/produkter" element={<ProductsPage />} />
       <Route path="/produkter/:id" element={<Produkt />} />
@@ -47,7 +67,9 @@ function App() {
       <div className="app-shell">
         <Navbar />
         <main id="hovedinnhold" className="app-main">
-          <AppRoutes />
+          <Suspense fallback={<RouteFallback />}>
+            <AppRoutes />
+          </Suspense>
         </main>
         <Footer />
       </div>

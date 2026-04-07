@@ -122,9 +122,9 @@ export const artikler = [
   {
     slug: 'hvordan-velge-riktig-partytelt',
     title: 'Hvordan velge riktig partytelt',
-    seoTitle: 'Hvor stort partytelt trenger jeg? – Guide til riktig størrelse',
+    seoTitle: 'Hvordan velge riktig partytelt – størrelse, oppsett og kapasitet',
     excerpt:
-      'Velg telt ut fra hvor mange som kommer, hvordan arrangementet skal brukes og hvor teltet faktisk skal stå. Det gjør valget mye enklere.',
+      'Velg partytelt ut fra antall gjester, bordoppsett, kapasitet og hvor teltet faktisk skal stå. Denne guiden hjelper deg å vurdere helheten før du bestemmer størrelse.',
     category: 'Planlegging',
     author: 'Emil Holsvik',
     publishedAt: '2026-03-05T08:12:00+01:00',

@@ -4,7 +4,18 @@ import FadeIn from './FadeIn'
 import { sizeGuide, priceEstimateLink } from '../data/produkter'
 import Eyebrow from './Eyebrow'
 
-export default function SizeGuide() {
+export default function SizeGuide({
+  titleAs = 'h2',
+  titleText = (
+    <>
+      Finn teltstørrelsen
+      <br /> som passer din feiring
+    </>
+  ),
+  subtitleText = 'Tallene under viser komfortabel kapasitet for stående mingling, langbord eller kvadratiske bord og runde bord. I sittende oppsett anbefaler vi maks seks personer per bord. Er du usikker, hjelper vi deg gjerne å velge riktig størrelse.',
+}) {
+  const TitleTag = titleAs
+
   return (
     <FadeIn>
       <section className="section section-alt" id="size-guide">
@@ -13,15 +24,8 @@ export default function SizeGuide() {
             <Eyebrow icon={Ruler} className="badge badge-spaced">
               Størrelsesguide
             </Eyebrow>
-            <h2 className="section-title">
-              Finn teltstørrelsen
-              <br /> som passer din feiring
-            </h2>
-            <p className="section-subtitle section-subtitle-centered">
-              Tallene under viser komfortabel kapasitet for stående mingling, langbord eller kvadratiske bord og runde
-              bord. I sittende oppsett anbefaler vi maks seks personer per bord. Er du usikker, hjelper vi deg gjerne å
-              velge riktig størrelse.
-            </p>
+            <TitleTag className="section-title">{titleText}</TitleTag>
+            <p className="section-subtitle section-subtitle-centered">{subtitleText}</p>
           </div>
 
           <div className="size-guide-card surface-card">

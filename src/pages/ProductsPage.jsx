@@ -2,15 +2,23 @@ import Produkter from '../components/Produkter'
 import Kontakt from '../components/Kontakt'
 import SEO from '../components/SEO'
 import { ClipboardList } from 'lucide-react'
+import { heroImages } from '../data/produkter'
 
 export default function ProductsPage() {
   return (
     <>
       <SEO 
-        title="Leie partytelt i Sandefjord – Se utvalg og priser"
-        description="Vi leier ut partytelt i mange størrelser, fra 3x6 til 6x12 meter. Se vårt utvalg av telt, bord og stoler til din neste feiring i Sandefjord."
+        title="Produkter til utleie i Sandefjord – telt, bord, stoler og lyd"
+        description="Se hele utvalget av produkter til utleie hos Din Feiring, med partytelt, bord, stoler og lydutstyr i Sandefjord og Vestfold."
+        path="/produkter"
+        ogImage={heroImages[0]?.src}
+        ogImageAlt={heroImages[0]?.alt}
       />
-      <Produkter />
+      <Produkter
+        titleAs="h1"
+        pageTitle="Produkter til utleie i Sandefjord"
+        pageDescription="Se hele utvalget vårt av partytelt, bord, stoler og lydutstyr. Bruk denne siden som en oversikt over produktene, og gå videre til kategorisidene når du vil sammenligne løsninger mer målrettet."
+      />
       <Kontakt
         eyebrow="Bestilling"
         eyebrowIcon={ClipboardList}
