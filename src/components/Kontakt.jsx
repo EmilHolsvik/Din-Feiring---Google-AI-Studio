@@ -23,19 +23,19 @@ const contactSellingPoints = [
   },
 ]
 
+const contactHeading = 'Send oss en forespørsel'
+const contactDescription =
+  'Send inn en forespørsel, så hører du fra oss. Velg gjerne dato, utstyr og antall, så blir det enklere for oss å hjelpe deg raskt. Er du usikker på hvilket utstyr du trenger, hjelper vi deg gjerne.'
+
 export default function Kontakt({
   eyebrow = 'Kontakt',
   eyebrowIcon = Mail,
-  title = 'Send oss en forespørsel',
-  subtitle = 'Fyll inn det viktigste først, så kan resten tas steg for steg. Vi holder skjemaet kort og bruker opplysningene kun for å svare på henvendelsen din.',
   presetItems = [],
   showSellingPoints = false,
   compactSpacing = false,
   homeTone = false,
   productSpacing = false,
   titleAs = 'h2',
-  titleText = title,
-  subtitleText = subtitle,
 }) {
   const [hasSubmitted, setHasSubmitted] = useState(false)
   const TitleTag = titleAs
@@ -73,8 +73,8 @@ export default function Kontakt({
                     <Eyebrow icon={eyebrowIcon} className="badge badge-spaced">
                       {eyebrow}
                     </Eyebrow>
-                    <TitleTag className="section-title">{titleText}</TitleTag>
-                    <p className="section-subtitle kontakt-subtitle">{subtitleText}</p>
+                    <TitleTag className="section-title">{contactHeading}</TitleTag>
+                    <p className="section-subtitle kontakt-subtitle">{contactDescription}</p>
                   </div>
 
                   <div className="contact-intro-clean">
