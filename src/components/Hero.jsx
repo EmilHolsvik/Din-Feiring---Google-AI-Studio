@@ -53,7 +53,7 @@ export default function Hero() {
           <div className="hero-visual">
             {heroImages.map((image, index) => (
               <picture
-                key={image.src}
+                key={index}
                 className={`hero-picture hero-slide ${index === activeImageIndex ? 'hero-slide-active' : ''}`}
                 aria-hidden={index !== activeImageIndex}
               >

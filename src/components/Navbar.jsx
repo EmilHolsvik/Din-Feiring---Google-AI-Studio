@@ -3,7 +3,7 @@ import { useRef } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
 import { Mail, Menu, Phone, X } from 'lucide-react'
 import { companyInfo, navigationLinks } from '../data/produkter'
-import logoUrl from '../images/logo-alt.png'
+import logoUrl from '../images/ChatGPT_Image_18_mars_2026_08_06_10_1_Photoroom.png'
 
 export default function Navbar() {
   const headerRef = useRef(null)

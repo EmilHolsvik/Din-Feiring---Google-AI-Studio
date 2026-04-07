@@ -1,14 +1,26 @@
-import heroPrimary from '../images/hero-primary.jpg'
-import heroSecondary from '../images/hero-secondary.jpg'
-import tentMain from '../images/tent-main.jpg'
-import tentFloor from '../images/tent-floor.jpg'
-import tentLong from '../images/tent-long.jpg'
-import tentSide from '../images/tent-side.jpg'
-import tentOpen from '../images/tent-open.jpg'
-import tableDinner from '../images/table-dinner.jpg'
-import tableLayout from '../images/table-layout.jpg'
-import chairLayout from '../images/chair-layout.jpg'
-import soundboksPair from '../images/soundboks-pair.jpg'
+import img1 from '../images/IMG_0246-qs8w6cylcb69kqjthkgux225x52rt6o0rdnddt0s2w.jpg.jpeg'
+import img2 from '../images/IMG_0720.jpg.jpeg'
+import img3 from '../images/IMG_0721-qti55x2qe9s9bvicaki16k51eqfuphj3i1n7btmrs8.jpg.jpeg'
+import img4 from '../images/IMG_1079-qufh5v033b8z6x6kyzczk7cyzzf85cb29wp63cnay0.jpg.jpeg'
+import img5 from '../images/IMG_1093-qufh83u7f2bmxdx5uyawimym34csjb7z90sxd5bg2w.jpg.jpeg'
+import img6 from '../images/IMG_2823-768x1024.jpg.jpeg'
+import img7 from '../images/IMG_6603-1024x768.jpg.jpeg'
+import img8 from '../images/IMG_6604-qspgwc8lsidv4erxt9t9m5k49j4rawmzlb3525h4q0.jpg.jpeg'
+import img9 from '../images/IMG_8449-2-qs8vvyuts8y57xn862rccogphsaopneuny04dofgvc.jpg.jpeg'
+import img10 from '../images/IMG_8458-qs8vw2m6jl3aidhrk4dumnijvbs5kfts0gm2as9w6g.jpg.jpeg'
+import img11 from '../images/IMG_9146-2-qs8vyaigoi4nx89plkx50lcqd2ucqpmyng2c3azfhk.jpg.jpeg'
+
+const heroPrimary = img1
+const heroSecondary = img2
+const tentMain = img3
+const tentFloor = img4
+const tentLong = img5
+const tentSide = img6
+const tentOpen = img7
+const tableDinner = img8
+const tableLayout = img9
+const chairLayout = img10
+const soundboksPair = img11
 
 export const companyInfo = {
   name: 'Din Feiring',

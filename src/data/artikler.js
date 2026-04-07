@@ -1,6 +1,10 @@
-import heroPrimary from '../images/hero-primary.jpg'
-import heroSecondary from '../images/hero-secondary.jpg'
-import tentMain from '../images/tent-main.jpg'
+import img1 from '../images/IMG_0246-qs8w6cylcb69kqjthkgux225x52rt6o0rdnddt0s2w.jpg.jpeg'
+import img2 from '../images/IMG_0720.jpg.jpeg'
+import img3 from '../images/IMG_0721-qti55x2qe9s9bvicaki16k51eqfuphj3i1n7btmrs8.jpg.jpeg'
+
+const heroPrimary = img1
+const heroSecondary = img2
+const tentMain = img3
 
 export const artikler = [
   {
