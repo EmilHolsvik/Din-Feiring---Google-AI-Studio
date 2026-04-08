@@ -6,14 +6,14 @@ import { companyInfo } from '../data/produkter'
 
 const rentalTermsPdfUrl = `${import.meta.env.BASE_URL}leievilkar_holsvik_co_full.pdf`
 
-const documentIntroLines = ['Utleie av partytelt, bord, stoler og soundbokser', 'Gjelder for privatkunder og bedriftskunder']
+const documentIntroLines = ['Utleie av partytelt, bord, stoler og soundbokser', 'Gjelder for privatkunder og bedrifter']
 
 const rentalTermSections = [
   {
     title: 'Kort om disse vilkårene',
     paragraphs: [
       'Disse vilkårene gjelder med mindre noe annet er uttrykkelig avtalt skriftlig. For privatkunder gjelder ufravikelige regler i norsk forbrukerlovgivning foran motstridende vilkår.',
-      'Ved fjernsalg til privatkunder, for eksempel bestilling på nett eller per telefon, skal lovpålagte opplysninger og eventuell angrerett håndteres i samsvar med angrerettloven.',
+      'Ved fjernsalg til privatkunder, for eksempel bestilling på nett eller på telefon, skal lovpålagte opplysninger og eventuell angrerett håndteres i samsvar med angrerettloven.',
     ],
   },
   {

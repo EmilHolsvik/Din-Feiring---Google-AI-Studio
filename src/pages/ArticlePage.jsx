@@ -42,20 +42,20 @@ export default function ArticlePage() {
     article.slug === 'hvilke-arrangementer-passer-partytelt-for'
       ? {
           title: 'Se teltløsninger for de vanligste anledningene',
-          text: 'Gå videre til sider som er laget for konfirmasjon, bryllup og andre arrangementer utendørs.',
+          text: 'Se sider for konfirmasjon, bryllup og andre oppsett ute hvis du vil sammenligne litt mer konkret.',
           primary: { to: '/partytelt-konfirmasjon', label: 'Partytelt til konfirmasjon' },
           secondary: { to: '/partytelt-bryllup', label: 'Partytelt til bryllup' },
         }
       : article.slug === 'montering-og-sikring-av-partytelt'
         ? {
             title: 'Se partytelt og få hjelp til riktig oppsett',
-            text: 'Sammenlign teltstørrelser og ta kontakt hvis du vil avklare levering, montering eller plassering.',
+            text: 'Sammenlign teltstørrelser og ta kontakt hvis du vil avklare levering, montering eller plassering før du bestemmer deg.',
             primary: { to: '/partytelt', label: 'Se partytelt' },
             secondary: { to: '/kontakt', label: 'Ta kontakt' },
           }
         : {
             title: 'Klar for å finne riktig partytelt?',
-            text: 'Se størrelser, kapasitet og veien videre til prisestimat eller kontakt.',
+            text: 'Se størrelser, kapasitet og de vanligste valgene før du går videre til prisestimat eller kontakt.',
             primary: { to: '/partytelt', label: 'Se partytelt' },
             secondary: { to: '/hvor-stort-partytelt', label: 'Se teltguiden' },
           }

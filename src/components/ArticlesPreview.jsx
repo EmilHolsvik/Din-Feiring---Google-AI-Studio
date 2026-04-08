@@ -19,7 +19,7 @@ export default function ArticlesPreview() {
               før du planlegger
             </h2>
             <p className="section-subtitle articles-preview-subtitle">
-              Tre korte artikler som gjør det enklere å velge telt, planlegge oppsett og finne ut hva som passer til
+              Tre korte artikler som gjør det lettere å velge telt, planlegge oppsett og finne ut hva som passer til
               arrangementet ditt.
             </p>
             <Link to="/artikler" className="text-link articles-preview-link">

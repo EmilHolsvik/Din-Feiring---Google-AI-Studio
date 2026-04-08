@@ -12,7 +12,7 @@ export default function SizeGuide({
       <br /> som passer din feiring
     </>
   ),
-  subtitleText = 'Tallene under viser komfortabel kapasitet for stående mingling, langbord eller kvadratiske bord og runde bord. I sittende oppsett anbefaler vi maks seks personer per bord. Er du usikker, hjelper vi deg gjerne å velge riktig størrelse.',
+  subtitleText = 'Tallene under gir et komfortabelt utgangspunkt for stående mingling, langbord, kvadratiske bord og runde bord. I sittende oppsett anbefaler vi maks seks personer per bord. Er du usikker, hjelper vi deg gjerne å finne riktig størrelse.',
 }) {
   const TitleTag = titleAs
 

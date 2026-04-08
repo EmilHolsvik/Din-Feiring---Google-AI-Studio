@@ -21,7 +21,7 @@ export default function WhyChooseUsSection() {
             </Eyebrow>
             <h2 className="section-title">Derfor velger kunder oss</h2>
             <p className="section-subtitle section-subtitle-centered">
-              Vi prøver å gjøre det enkelt å finne frem og enkelt å bestille.
+              Vi prøver å gjøre det lett å forstå hva du kan leie, og lett å komme videre.
             </p>
           </div>
 

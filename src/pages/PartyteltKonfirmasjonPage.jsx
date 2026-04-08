@@ -42,7 +42,7 @@ export default function PartyteltKonfirmasjonPage() {
     <>
       <SEO
         title="Partytelt til konfirmasjon i Sandefjord og Vestfold"
-        description="Planlegg konfirmasjon med partytelt, bord og stoler i Sandefjord og Vestfold. Se anbefalte teltstørrelser, oppsett og veien videre til tilbud."
+        description="Se hva som er lurt å tenke på når konfirmasjonen skal være under telt. Her får dere et godt startpunkt for størrelse, bordoppsett og plass til kaker og kaffe."
         path="/partytelt-konfirmasjon"
         ogImage={leadProduct?.bilde}
         ogImageAlt={leadProduct?.imageAlt || leadProduct?.navn}

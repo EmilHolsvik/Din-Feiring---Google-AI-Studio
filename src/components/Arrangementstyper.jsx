@@ -6,7 +6,7 @@ import Eyebrow from './Eyebrow'
 const navigationIdeas = [
   {
     title: 'Se partytelt og størrelser',
-    text: 'Gå til oversikten over teltstørrelser, kapasitet og oppsett.',
+    text: 'Se oversikten over teltstørrelser, kapasitet og vanlige oppsett.',
     path: '/partytelt',
     Icon: Tent,
   },
@@ -18,7 +18,7 @@ const navigationIdeas = [
   },
   {
     title: 'Les guider og tips',
-    text: 'Gå videre til artikler om planlegging, plassbehov og valg av utstyr.',
+    text: 'Les artikler om planlegging, plassbehov og valg av utstyr.',
     path: '/artikler',
     Icon: FileText,
   },
@@ -35,7 +35,7 @@ export default function Arrangementstyper() {
             </Eyebrow>
             <h2 className="section-title">Hva trenger du hjelp til?</h2>
             <p className="section-subtitle section-subtitle-centered">
-              Velg om du vil se produkter, bruke teltguiden eller lese deg opp først.
+              Velg om du vil se partytelt, bruke teltguiden eller lese deg litt opp først.
             </p>
           </div>
 

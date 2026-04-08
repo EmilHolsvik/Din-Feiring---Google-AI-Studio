@@ -9,7 +9,7 @@ export default function ContactPage() {
     <>
       <SEO 
         title="Kontakt oss – Be om tilbud på partytelt"
-        description="Har du spørsmål om leie av partytelt, bord eller stoler? Kontakt Din Feiring i Sandefjord for et uforpliktende tilbud til ditt arrangement."
+        description="Ta kontakt hvis du vil leie partytelt, bord, stoler eller lyd. Send en forespørsel, så hører du fra oss så fort vi kan."
         path="/kontakt"
         ogImage={heroImages[1]?.src || heroImages[0]?.src}
         ogImageAlt={heroImages[1]?.alt || heroImages[0]?.alt}

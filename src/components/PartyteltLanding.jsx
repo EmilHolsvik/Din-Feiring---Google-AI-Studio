@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { ArrowRight, BadgeCheck, CalendarDays, CircleHelp, MapPin, Ruler, Truck } from 'lucide-react'
 import Eyebrow from './Eyebrow'
+import FaqAnswer from './FaqAnswer'
 import Kontakt from './Kontakt'
 import ProduktKort from './ProduktKort'
 import { priceEstimateLink } from '../data/produkter'
@@ -25,7 +26,7 @@ const quickFacts = [
   },
   {
     title: 'Usikker på størrelse? Send oss rammene',
-    text: 'Dato, sted, gjestetall og ønsket oppsett er nok til at vi kan peke dere mot et mye bedre utgangspunkt enn ren gjetting.',
+    text: 'Send dato, sted, gjestetall og litt om oppsettet, så kan vi peke dere i riktig retning.',
     icon: MapPin,
   },
 ]
@@ -60,7 +61,7 @@ export default function PartyteltLanding() {
             <h1 className="section-title">Leie partytelt i Sandefjord og Vestfold</h1>
             <p className="section-subtitle section-subtitle-centered">
               Skal dere ha middag, gjester og servering ute, er det som regel bordoppsett og ekstra soner som avgjør om
-              teltet blir passe. Her får dere et ærlig sted å starte.
+              teltet blir passe. Her er et godt sted å starte.
             </p>
 
             <div className="button-row button-row-center seo-landing-hero-actions">
@@ -167,9 +168,9 @@ export default function PartyteltLanding() {
             <Eyebrow icon={CircleHelp} className="badge badge-spaced">
               Vanlige spørsmål
             </Eyebrow>
-            <h2 className="section-title">Vanlige spørsmål før folk leier partytelt</h2>
+            <h2 className="section-title">Vanlige spørsmål når folk skal velge partytelt</h2>
             <p className="section-subtitle section-subtitle-centered">
-              Korte svar på det som vanligvis må avklares før noen bestemmer seg.
+              Korte svar på det som vanligvis avgjør størrelse, oppsett og hva som faktisk får plass.
             </p>
           </div>
 
@@ -182,7 +183,7 @@ export default function PartyteltLanding() {
                     +
                   </span>
                 </summary>
-                <p>{item.answer}</p>
+                <FaqAnswer item={item} />
               </details>
             ))}
           </div>
@@ -193,7 +194,7 @@ export default function PartyteltLanding() {
         eyebrow="Få hjelp med teltvalget"
         eyebrowIcon={Truck}
         title="Fortell oss kort hva dere planlegger"
-        subtitle="Send dato, sted, gjestetall og om dere skal ha middag, buffet eller runde bord. Da kan vi foreslå en teltstørrelse som faktisk passer oppsettet."
+        subtitle="Send dato, sted, gjestetall og om dere skal ha middag, buffet eller runde bord. Da kan vi foreslå en teltstørrelse som passer bedre."
         compactSpacing
       />
 

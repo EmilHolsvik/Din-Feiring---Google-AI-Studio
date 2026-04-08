@@ -20,8 +20,8 @@ const PERIODER = [
 
 export default function Kalkulator({
   titleAs = 'h2',
-  titleText = 'Se ca. pris med en gang',
-  subtitleText = 'Velg produkter, antall og periode for å få en ca. pris. Levering og montering kommer i tillegg ved behov.',
+  titleText = 'Se et prisestimat med en gang',
+  subtitleText = 'Velg produkter, antall og periode for å få et raskt overslag. Levering og montering kommer i tillegg ved behov.',
 }) {
   const TitleTag = titleAs
 
@@ -167,19 +167,19 @@ export default function Kalkulator({
             {subtitleText}
           </p>
           <p style={{ marginTop: '14px', color: 'var(--text-muted)', fontSize: '15px', fontWeight: 500 }}>
-            Hele prislisten finner du lenger ned på siden.
+            Prislisten ligger lenger ned på siden.
           </p>
         </div>
 
         <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '40px', alignItems: 'start' }}>
           <div className="card" style={{ padding: '32px 40px', background: 'var(--white)' }}>
             <h3 className="heading-elegant" style={{ fontSize: '22px', marginBottom: '20px', color: 'var(--primary)', fontWeight: 700 }}>
-              Dette vil du ha med
+              Velg det du vil ha med
             </h3>
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
               {valg.length === 0 ? (
-                <p className="calculator-empty-state">Legg til et produkt for å starte beregningen.</p>
+                <p className="calculator-empty-state">Legg til et produkt for å komme i gang.</p>
               ) : null}
 
               {valg.map((item, index) => (
@@ -314,7 +314,7 @@ export default function Kalkulator({
                   textTransform: 'uppercase',
                 }}
               >
-                Ca. totalpris
+                Prisestimat
               </div>
               <output
                 aria-live="polite"
@@ -329,7 +329,7 @@ export default function Kalkulator({
                 {formatCurrency(total)}
               </output>
               <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '14px', marginTop: '18px', lineHeight: 1.6, fontWeight: 400 }}>
-                Dette er en ca. pris basert på valgene over. Levering og montering kommer i tillegg ved behov.
+                Dette er et overslag basert på valgene over. Levering og montering kommer i tillegg ved behov.
               </p>
               <div className="calculator-summary">
                 <strong>Valgene dine</strong>
@@ -344,7 +344,7 @@ export default function Kalkulator({
                 className="btn btn-outline"
                 style={{ width: '100%', maxWidth: '320px', marginTop: '22px', borderColor: 'rgba(255,255,255,0.3)', color: 'white' }}
               >
-                Send forespørsel med disse valgene
+                Send disse valgene videre
               </Link>
             </div>
 

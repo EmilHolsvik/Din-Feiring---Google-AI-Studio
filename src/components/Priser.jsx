@@ -19,7 +19,7 @@ export default function Priser() {
             </Eyebrow>
             <h2 className="section-title price-header-title">Gå rett til kategorien du vil se</h2>
             <p className="price-intro-subtitle">
-              Velg produktkategorien du vil sammenligne, eller gå videre til teltguiden hvis du er usikker på hvilken størrelse du trenger.
+              Velg kategorien du vil sammenligne, eller bruk teltguiden hvis du er usikker på hvilken størrelse du trenger.
             </p>
 
             <div className="anchor-nav price-anchor-nav" aria-label="Hopp til priskategori">

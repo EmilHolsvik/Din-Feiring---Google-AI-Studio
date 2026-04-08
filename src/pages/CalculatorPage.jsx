@@ -8,7 +8,7 @@ export default function CalculatorPage() {
     <>
       <SEO 
         title="Pris på leie av partytelt – Få estimat her"
-        description="Bruk vår priskalkulator for å få et raskt estimat på leie av partytelt, bord og stoler til din fest. Se våre faste priser og be om tilbud."
+        description="Bruk kalkulatoren vår for å få en rask pekepinn på pris for partytelt, bord og stoler. Du kan også se prislisten og sende en forespørsel når du vil."
         path="/kalkulator"
         ogImage={heroImages[0]?.src}
         ogImageAlt={heroImages[0]?.alt}
@@ -16,7 +16,7 @@ export default function CalculatorPage() {
       <Kalkulator
         titleAs="h1"
         titleText="Pris på leie av partytelt, bord og stoler"
-        subtitleText="Velg produkter, antall og periode for å få et raskt estimat. Levering, montering og eventuelle tillegg avtales ved behov."
+        subtitleText="Velg utstyr, antall og periode for å få et raskt overslag. Levering og montering kommer i tillegg ved behov."
       />
       <Priser />
     </>

@@ -7,8 +7,8 @@ export default function About() {
   return (
     <>
       <SEO 
-        title="Om oss"
-        description="Lær mer om Din Feiring. Vi er din lokale leverandør av partytelt, bord og stoler i Sandefjord og Vestfold."
+        title="Om Din Feiring"
+        description="Les litt mer om Din Feiring, hvordan vi jobber og hva du kan leie hos oss i Sandefjord og Vestfold."
         path="/om-oss"
         ogImage={heroImages[3]?.src || heroImages[0]?.src}
         ogImageAlt={heroImages[3]?.alt || heroImages[0]?.alt}

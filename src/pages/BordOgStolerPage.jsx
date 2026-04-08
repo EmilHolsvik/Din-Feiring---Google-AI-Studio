@@ -42,7 +42,7 @@ export default function BordOgStolerPage() {
     <>
       <SEO
         title="Leie bord og stoler i Sandefjord og Vestfold"
-        description="Lei bord, runde bord og stoler i Sandefjord og Vestfold. Se priser, kombiner med partytelt og finn riktig oppsett til bryllup, konfirmasjon og hagefest."
+        description="Se bord, runde bord og stoler før du bestemmer deg. Her får du et godt utgangspunkt for middag, kaker, kaffe og oppsett som passer bedre."
         path="/bord-og-stoler"
         ogImage={leadProduct?.bilde}
         ogImageAlt={leadProduct?.imageAlt || leadProduct?.navn}

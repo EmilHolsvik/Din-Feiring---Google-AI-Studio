@@ -57,7 +57,7 @@ export default function PartyteltPage() {
     <>
       <SEO
         title="Leie partytelt i Sandefjord og Vestfold"
-        description="Lei partytelt i Sandefjord og Vestfold hos Din Feiring. Se størrelser, priser, levering og montering, og finn riktig telt til konfirmasjon, bryllup og hagefest."
+        description="Se partytelt, størrelser og priser før du bestemmer deg. Her får du et godt utgangspunkt for konfirmasjon, bryllup, hagefest og andre selskap ute."
         path="/partytelt"
         ogImage={heroImages[0]?.src}
         ogImageAlt={heroImages[0]?.alt}

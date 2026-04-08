@@ -17,7 +17,7 @@ export const partyteltBenefits = [
   },
   {
     title: 'Mål området før dere låser valget',
-    text: 'Det må være plass til teltet, litt arbeidsrom rundt og et underlag som faktisk fungerer gjennom hele dagen.',
+    text: 'Det må være plass til teltet, litt arbeidsrom rundt og et underlag som fungerer godt gjennom hele dagen.',
   },
 ]
 
@@ -41,21 +41,50 @@ export const partyteltFaq = [
     question: 'Hvilken teltstørrelse passer ofte til 25 til 35 gjester?',
     answer:
       'Hvis alle skal sitte til middag under teltet, er 5 x 8 m et vanlig startpunkt. Skal dere også ha kaker, buffet eller litt ekstra luft, ender mange heller på 5 x 10 m.',
+    related: {
+      prefix: 'Hvis du vil sammenligne dette nærmere, kan du se ',
+      links: [
+        { label: '5 x 8 m', to: '/produkter/partytelt-5x8' },
+        { label: '5 x 10 m', to: '/produkter/partytelt-5x10' },
+        { label: 'teltguiden', to: '/hvor-stort-partytelt' },
+      ],
+    },
   },
   {
     question: 'Når bør vi gå opp en størrelse?',
     answer:
       'Hvis dere vil ha runde bord, flere serveringssoner eller unngå et tett oppsett, lønner det seg ofte å gå opp en størrelse før dere låser bestillingen.',
+    related: {
+      prefix: 'Det er ekstra relevant hvis du vurderer ',
+      links: [
+        { label: 'bord og stoler', to: '/bord-og-stoler' },
+        { label: 'bryllup under telt', to: '/partytelt-bryllup' },
+      ],
+    },
   },
   {
     question: 'Må vi regne med plass til mer enn selve bordene?',
     answer:
       'Ja, som regel. Det er nettopp kakebord, gavebord, servering og passasjer som gjør at et telt som ser stort nok ut på papiret kan bli trangt i praksis.',
+    related: {
+      prefix: 'Hvis du vil lese mer om hvordan dette påvirker valget, kan du bruke ',
+      links: [
+        { label: 'teltguiden', to: '/hvor-stort-partytelt' },
+        { label: 'artikkelen om hvordan du velger riktig partytelt', to: '/artikler/hvordan-velge-riktig-partytelt' },
+      ],
+    },
   },
   {
-    question: 'Kan dere hjelpe oss med telt, bord og stoler samlet?',
+    question: 'Hva er forskjellen på 5 x 8 m og 5 x 10 m i praksis?',
     answer:
-      'Ja. Det er ofte den enkleste løsningen, fordi vi da kan se teltstørrelse og bordoppsett i samme runde i stedet for at dere må gjette dere fram hver for dere.',
+      'De ekstra to meterne merkes ofte mer enn mange tror. Det er ofte forskjellen på bare å få plass til bordene, og å også få inn kaker, servering eller litt roligere passasjer mellom bordene.',
+    related: {
+      prefix: 'Du kan sammenligne størrelsene direkte på ',
+      links: [
+        { label: '5 x 8 m-siden', to: '/produkter/partytelt-5x8' },
+        { label: '5 x 10 m-siden', to: '/produkter/partytelt-5x10' },
+      ],
+    },
   },
 ]
 

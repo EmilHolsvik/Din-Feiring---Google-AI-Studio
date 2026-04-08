@@ -15,7 +15,7 @@ export default function ArticlesPage() {
     <>
       <SEO 
         title="Artikler og inspirasjon til din feiring"
-        description="Les våre artikler om valg av partytelt, montering, planlegging av hagefest og mye mer. Få tipsene du trenger for et vellykket arrangement."
+        description="Les artiklene våre om partytelt, oppsett, montering og planlegging. Her finner du korte og praktiske råd før du bestemmer deg."
         path="/artikler"
         ogImage={posts[0]?.image}
         ogImageAlt={posts[0]?.imageAlt}
@@ -30,10 +30,9 @@ export default function ArticlesPage() {
 
           <div className="section-header section-header-lg section-header-centered">
             <Eyebrow icon={FileText}>Artikler</Eyebrow>
-            <h1 className="section-title">Blogg og guider fra Din Feiring</h1>
+            <h1 className="section-title">Artikler og guider fra Din Feiring</h1>
             <p className="section-subtitle section-subtitle-centered">
-              Her finner du korte og praktiske artikler om valg av partytelt, montering og hvilke arrangementer telt
-              passer godt til.
+              Her finner du korte og praktiske artikler om valg av partytelt, montering og hva som faktisk er lurt å tenke på før du bestemmer deg.
             </p>
           </div>
 

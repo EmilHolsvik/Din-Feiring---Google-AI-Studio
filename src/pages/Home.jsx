@@ -43,7 +43,7 @@ export default function Home() {
     <>
       <SEO 
         title="Din Feiring i Sandefjord – partytelt, bord, stoler og lyd"
-        description="Din Feiring leier ut partytelt, bord, stoler og lydutstyr i Sandefjord og Vestfold. Se kategorier, finn riktig teltstørrelse og send en forespørsel."
+        description="Din Feiring leier ut partytelt, bord, stoler og lyd i Sandefjord og Vestfold. Se priser, størrelser og produkter før du sender en forespørsel."
         path="/"
         ogImage={heroImages[0]?.src}
         ogImageAlt={heroImages[0]?.alt}

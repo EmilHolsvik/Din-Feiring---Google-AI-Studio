@@ -11,7 +11,7 @@ export default function Produkter({
   variant = 'page',
   titleAs = 'h2',
   pageTitle = 'Vårt sortiment',
-  pageDescription = 'Trykk deg inn på et produkt for å se priser, størrelse og mer informasjon, eller send en samlet forespørsel nederst på siden.',
+  pageDescription = 'Åpne et produkt for å se pris, størrelse og det viktigste du trenger å vite.',
 }) {
   const [isMobile, setIsMobile] = useState(false)
   const isHome = variant === 'home'

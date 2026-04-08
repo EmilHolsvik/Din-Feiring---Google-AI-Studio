@@ -3,6 +3,7 @@ import { CircleHelp } from 'lucide-react'
 import FadeIn from './FadeIn'
 import { faqItems } from '../data/produkter'
 import Eyebrow from './Eyebrow'
+import FaqAnswer from './FaqAnswer'
 
 export default function FAQ({ homeTone = false }) {
   return (
@@ -15,7 +16,7 @@ export default function FAQ({ homeTone = false }) {
             </Eyebrow>
             <h2 className="section-title">Vanlige spørsmål</h2>
             <p className="section-subtitle section-subtitle-centered">
-              Her finner du svar på det mange lurer på før de bestiller.
+              Her finner du svar på det mange lurer på når de planlegger telt, bord, stoler og oppsett.
             </p>
           </div>
 
@@ -28,7 +29,7 @@ export default function FAQ({ homeTone = false }) {
                     +
                   </span>
                 </summary>
-                <p>{item.answer}</p>
+                <FaqAnswer item={item} />
               </details>
             ))}
           </div>

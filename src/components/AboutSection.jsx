@@ -6,17 +6,17 @@ import Eyebrow from './Eyebrow'
 const sellingPoints = [
   {
     title: 'Lager i Sandefjord',
-    text: 'Lokal base med tydelig sted for henting, levering og praktisk planlegging.',
+    text: 'Lokal base med et tydelig sted for henting, levering og planlegging.',
     icon: MapPinned,
   },
   {
     title: 'Telt og utstyr samlet',
-    text: 'Telt, bord, stoler og lyd kan samles i samme bestilling hos én leverandør.',
+    text: 'Telt, bord, stoler og lyd kan samles i én bestilling hos samme leverandør.',
     icon: Tent,
   },
   {
-    title: 'Enkel bestilling',
-    text: 'Prisnivå, kapasitet og størrelser er tilgjengelige før du sender en forespørsel.',
+    title: 'Enkelt å komme i gang',
+    text: 'Du ser prisnivå, størrelser og kapasitet før du sender en forespørsel.',
     icon: ClipboardCheck,
   },
 ]
@@ -26,8 +26,8 @@ const copyByVariant = {
     title: 'Lokal utleie med lager i Sandefjord',
     badge: 'Om oss',
     paragraphs: [
-      'Vi vil gjøre det enkelt å leie telt og utstyr. Du skal slippe å lure på priser, størrelser eller hva som passer.',
-      'Fra vårt lager i Sandefjord hjelper vi med telt, bord, stoler og lyd til alt fra hagefest og konfirmasjon til bryllup og firmaarrangement.',
+      'Vi vil gjøre det enkelt å finne riktig telt og utstyr. Du skal slippe å lure på pris, størrelse og hva som faktisk passer.',
+      'Fra lageret vårt i Sandefjord hjelper vi med telt, bord, stoler og lyd til alt fra hagefest og konfirmasjon til bryllup og firmaarrangement.',
     ],
     ctas: [
       { label: 'Be om tilbud', to: '/kontakt', className: 'btn btn-primary' },
@@ -38,8 +38,8 @@ const copyByVariant = {
     title: 'Din Feiring skal være lett å planlegge med',
     badge: 'Om Din Feiring',
     paragraphs: [
-      'Din Feiring er bygget rundt en enkel idé: det skal være lettere å finne riktig telt og utstyr uten å måtte gjette på pris eller kapasitet.',
-      'Vi holder lager i Sandefjord og hjelper både private og bedrifter med utstyr til alt fra mindre hagefester til store markeringer.',
+      'Din Feiring er bygget rundt en enkel idé: Det skal være lettere å finne riktig telt og utstyr uten å måtte gjette på pris eller kapasitet.',
+      'Vi holder lager i Sandefjord og hjelper både private og bedrifter med utstyr til alt fra mindre hagefester til større markeringer.',
     ],
     ctas: [
       { label: 'Se produkter', to: '/produkter', className: 'btn btn-secondary' },

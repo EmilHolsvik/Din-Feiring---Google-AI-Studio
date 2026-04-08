@@ -57,39 +57,39 @@ export const navigationLinks = [
 
 export const homeHighlights = [
   {
-    title: 'Transparente priser',
-    text: 'Du kan se priser og beregne litt selv før du tar kontakt.',
+    title: 'Tydelige priser',
+    text: 'Du kan se priser og regne litt selv før du tar kontakt.',
     icon: 'price',
   },
   {
     title: 'Lager i Sandefjord',
-    text: 'Du vet hvor utstyret skal hentes, og hvor det kommer fra.',
+    text: 'Du ser hvor utstyret hentes, og at det kommer fra oss lokalt.',
     icon: 'warehouse',
   },
   {
-    title: 'Én samlet bestilling',
-    text: 'Du kan sende én samlet forespørsel for telt, bord, stoler og lyd.',
+    title: 'Alt på ett sted',
+    text: 'Telt, bord, stoler og lyd kan tas i samme bestilling.',
     icon: 'bundle',
   },
   {
-    title: 'Enkel bestilling',
-    text: 'Prisnivå, kapasitet og størrelser er tilgjengelige før du sender en forespørsel.',
+    title: 'Enkelt å komme i gang',
+    text: 'Du får oversikt over priser, størrelser og produkter før du bestemmer deg.',
     icon: 'simple',
   },
 ]
 
 export const serviceValues = [
   {
-    title: 'Kort vei til tilbud',
-    text: 'Du ser pris og hvor mye plass produktene har tidlig, så det er lett å komme i gang.',
+    title: 'Lett å finne det som passer',
+    text: 'Du ser pris og plassbehov tidlig, så det blir lettere å velge.',
   },
   {
-    title: 'Utstyr som henger sammen',
+    title: 'Utstyr som passer sammen',
     text: 'Telt, bord, stoler og lyd er valgt for å fungere godt sammen.',
   },
   {
-    title: 'Lokalt og forutsigbart',
-    text: 'Vi holder til i Sandefjord og gjør avtaler som er enkle og tydelige.',
+    title: 'Lokalt og ryddig',
+    text: 'Vi holder til i Sandefjord og prøver å gjøre alt så enkelt og tydelig som mulig.',
   },
 ]
 
@@ -100,10 +100,10 @@ export const processSteps = [
   },
   {
     title: 'Send forespørsel',
-    text: 'Bruk skjemaet eller kontakt oss direkte når du er klar.',
+    text: 'Send det du vet nå. Resten avklarer vi sammen.',
   },
   {
-    title: 'Vi bekrefter detaljene',
+    title: 'Vi avklarer detaljene',
     text: 'Du får svar på tilgjengelighet, pris og om det blir henting eller levering.',
   },
   {
@@ -115,17 +115,17 @@ export const processSteps = [
 export const eventIdeas = [
   {
     title: 'Bryllup og jubileum',
-    text: 'Passer når du trenger godt med plass til middag, gjester og en lang dag utendørs.',
+    text: 'Et godt valg når dere trenger god plass til middag, gjester og en lang dag ute.',
     path: '/partytelt-bryllup',
   },
   {
     title: 'Konfirmasjon og hagefest',
-    text: 'Et godt valg når du vil være trygg på været, sitteplasser og servering.',
+    text: 'Nyttig når dere vil ha kontroll på vær, sitteplasser og servering.',
     path: '/partytelt-konfirmasjon',
   },
   {
     title: 'Firmaarrangement og sommerfest',
-    text: 'En enkel måte å samle telt, møbler og lyd i én og samme bestilling.',
+    text: 'En enkel måte å samle telt, møbler og lyd på ett sted.',
     path: '/partytelt',
   },
 ]
@@ -133,24 +133,64 @@ export const eventIdeas = [
 export const faqItems = [
   {
     question: 'Kan vi hente utstyret selv?',
-    answer: 'Ja. Du kan hente utstyret fra vårt lager i Sandefjord.',
-  },
-  {
-    question: 'Leverer og monterer dere?',
-    answer: 'Ja, det kan avtales. Skriv hvor arrangementet er, så tar vi det med i tilbudet.',
-  },
-  {
-    question: 'Er prisene på nettsiden endelige?',
-    answer: 'Prisene gjelder for leie av utstyret. Levering og eventuelle tillegg kommer i tillegg ved behov.',
-  },
-  {
-    question: 'Hva bør vi opplyse om i forespørselen?',
-    answer: 'Oppgi dato, sted, antall gjester og hva du ønsker å leie. Da kan vi svare mer presist.',
-  },
-  {
-    question: 'Hvordan velger vi riktig teltstørrelse?',
     answer:
-      'Se teltguiden og kapasiteten for stående, langbord, kvadratiske bord og runde bord på produktsidene. I sittende oppsett anbefaler vi maksimalt seks personer per bord. Er du usikker, hjelper vi deg gjerne med å velge.',
+      'Ja, mye av utstyret kan hentes fra lageret vårt i Sandefjord. For større telt eller oppsett med mye utstyr er levering ofte den roligere løsningen.',
+    related: {
+      prefix: 'Hvis du vil se hva som faktisk kan kombineres, kan du starte på ',
+      links: [
+        { label: 'produktsiden', to: '/produkter' },
+        { label: 'partytelt-siden', to: '/partytelt' },
+      ],
+    },
+  },
+  {
+    question: 'Leverer og monterer dere partytelt?',
+    answer:
+      'Ja, det kan avtales. Det er spesielt nyttig når teltet skal brukes til middag eller stå oppe gjennom en hel dag, fordi plassering og sikring betyr mer enn mange tror.',
+    related: {
+      prefix: 'Hvis du vil lese mer om dette, kan du se ',
+      links: [
+        { label: 'artikkelen om montering og sikring', to: '/artikler/montering-og-sikring-av-partytelt' },
+        { label: 'leievilkårene', to: '/leievilkar' },
+      ],
+    },
+  },
+  {
+    question: 'Hvordan finner vi riktig teltstørrelse?',
+    answer:
+      'Start med hvor mange som skal sitte under teltet samtidig, hva slags bord dere vil bruke og om dere trenger plass til buffet, kakebord eller gavebord. Det er som regel disse tre tingene som avgjør om teltet føles romslig eller for tett.',
+    related: {
+      prefix: 'Det enkleste er ofte å bruke ',
+      links: [
+        { label: 'teltguiden', to: '/hvor-stort-partytelt' },
+        { label: 'artikkelen om hvordan du velger riktig partytelt', to: '/artikler/hvordan-velge-riktig-partytelt' },
+      ],
+    },
+  },
+  {
+    question: 'Hva er forskjellen på klappbord og runde bord?',
+    answer:
+      'Klappbord er ofte smartest når dere vil bruke plassen effektivt og samle mange rundt middagen. Runde bord gir et roligere og mer sosialt uttrykk, men de trenger også mer gulvflate rundt seg.',
+    related: {
+      prefix: 'Hvis bordvalget betyr mye for oppsettet, kan du se ',
+      links: [
+        { label: 'bord og stoler', to: '/bord-og-stoler' },
+        { label: 'partytelt til bryllup', to: '/partytelt-bryllup' },
+      ],
+    },
+  },
+  {
+    question: 'Hvor bør vi starte hvis vi bare vil orientere oss først?',
+    answer:
+      'Hvis du vil finne riktig størrelse først, er det smartest å begynne med størrelsesguiden. Hvis du heller vil se konkrete oppsett, anledninger og produkter, er det bedre å starte med kategorisidene og artiklene.',
+    related: {
+      prefix: 'Et godt startpunkt er ',
+      links: [
+        { label: 'teltguiden', to: '/hvor-stort-partytelt' },
+        { label: 'artiklene våre', to: '/artikler' },
+        { label: 'partytelt-siden', to: '/partytelt' },
+      ],
+    },
   },
 ]
 
@@ -280,10 +320,10 @@ export const alleProdukter = [
     kategori: 'Partytelt',
     badge: 'Størst kapasitet',
     seoTitle: 'Lei partytelt 6 x 12 meter i Sandefjord',
-    ingress: 'Når du trenger god plass til mange gjester.',
-    kortBeskrivelse: 'Vårt største telt, passer til bryllup, firmafester og andre store anledninger.',
+    ingress: 'Når dere trenger god plass til mange gjester.',
+    kortBeskrivelse: 'Vårt største telt. Et godt valg til bryllup, firmafester og andre store anledninger.',
     langBeskrivelse:
-      'Dette teltet gir deg mye plass og passer godt når mange skal sitte under tak. Det har god takhøyde, solide vegger og vinduer som slipper inn lys.',
+      'Dette teltet gir god plass til både bord, stoler og flyt mellom sonene. Det passer godt når teltet skal være hovedområdet for hele arrangementet.',
     pris: 'Fra 3 500 kr',
     priser: { dogn: 3500, helg: 3950, uke: 4500 },
     imageAlt: 'Partytelt 6 x 12 meter satt opp for stort selskap eller bryllup',
@@ -317,7 +357,7 @@ export const alleProdukter = [
     ingress: 'Et stort telt som passer til mange typer selskaper.',
     kortBeskrivelse: 'Et populært valg for konfirmasjoner, jubileer og større hagefester.',
     langBeskrivelse:
-      'Med 50 kvadratmeter får du et telt med god plass til bord, stoler og gjester. Det passer fint når du vil ha mye plass uten å velge den største modellen.',
+      'Med 50 kvadratmeter får dere god plass til bord, stoler og litt luft i oppsettet. Dette er ofte størrelsen mange ender på når de vil ha god plass uten å gå helt opp til den største modellen.',
     pris: 'Fra 2 500 kr',
     priser: { dogn: 2500, helg: 2950, uke: 3500 },
     imageAlt: 'Partytelt 5 x 10 meter klart for konfirmasjon eller større hagefest',
@@ -344,9 +384,9 @@ export const alleProdukter = [
     badge: 'Allround',
     seoTitle: 'Lei partytelt 5 x 8 meter i Sandefjord',
     ingress: 'Et mellomstort telt som passer mange vanlige selskaper.',
-    kortBeskrivelse: 'Lei et solid partytelt på 5x8 meter i Sandefjord. Perfekt for hagefest, bursdag og konfirmasjon med opptil 50 gjester.',
+    kortBeskrivelse: 'Et solid telt som passer godt til hagefest, bursdag og mindre konfirmasjoner.',
     langBeskrivelse:
-      'Dette teltet gir deg god plass og beskytter godt mot vær. Vindusveggene slipper inn lys og gjør teltet lyst og åpent.',
+      'Dette teltet gir god plass og skjermer godt for vær og vind. Vindusveggene slipper inn lys og gjør teltet lyst og åpent.',
     pris: 'Fra 2 150 kr',
     priser: { dogn: 2150, helg: 2500, uke: 2950 },
     imageAlt: 'Partytelt 5 x 8 meter med vindusvegger til hagefest og konfirmasjon',
@@ -367,9 +407,9 @@ export const alleProdukter = [
     badge: 'Smalt oppsett',
     seoTitle: 'Lei partytelt 3 x 8 meter i Sandefjord',
     ingress: 'Et godt valg når plassen er smal eller litt trang.',
-    kortBeskrivelse: 'Lei et smalt partytelt på 3x8 meter. Ideelt for terrasser, oppkjørsler og trange hager i Sandefjord og Vestfold.',
+    kortBeskrivelse: 'Et smalt telt som passer godt på terrasse, i oppkjørsel eller der plassen er avlang.',
     langBeskrivelse:
-      'Denne modellen passer godt når du vil ha tak over gjestene uten å bruke hele uteområdet. Den er enkel å plassere der plassen er mer avlang.',
+      'Denne modellen er fin når du vil ha tak over gjestene uten å bruke hele uteområdet. Den passer godt der plassen er smal eller litt krevende.',
     pris: 'Fra 1 450 kr',
     priser: { dogn: 1450, helg: 1850, uke: 2200 },
     imageAlt: 'Partytelt 3 x 8 meter i smalt oppsett ved terrasse eller oppkjøring',
@@ -390,7 +430,7 @@ export const alleProdukter = [
     badge: 'Kompakt',
     seoTitle: 'Lei partytelt 3 x 6 meter i Sandefjord',
     ingress: 'For mindre samlinger eller som ekstratelt.',
-    kortBeskrivelse: 'Lei et kompakt partytelt på 3x6 meter i Sandefjord. Enkelt å montere og perfekt for mindre hagefester eller som serveringstelt.',
+    kortBeskrivelse: 'Et kompakt telt til mindre samlinger, servering eller som ekstra takflate.',
     langBeskrivelse:
       'Dette teltet passer når du trenger et mindre område med tak til gjester, servering eller utstyr.',
     pris: 'Fra 1 250 kr',
@@ -412,10 +452,10 @@ export const alleProdukter = [
     kategori: 'Bord og stoler',
     badge: 'Maks 6 plasser',
     seoTitle: 'Leie sammenleggbare bord i Sandefjord',
-    ingress: 'Praktiske bord som er enkle å ta med, frakte og sette opp.',
-    kortBeskrivelse: 'Lei stødige klappbord på 180 cm i Sandefjord. Perfekt for middag, buffet og servering i partytelt.',
+    ingress: 'Praktiske bord som er lette å frakte, sette opp og rydde bort.',
+    kortBeskrivelse: 'Stødige klappbord på 180 cm som passer godt til middag, buffet og servering.',
     langBeskrivelse:
-      'Disse bordene er solide og enkle å sette opp. De passer godt når du trenger bord som fungerer til det meste.',
+      'Disse bordene er solide, enkle å sette opp og passer til det meste. De er ofte førstevalget når du vil bruke plassen godt.',
     pris: 'Fra 115 kr / stk',
     priser: { dogn: 115, helg: 125, uke: 140 },
     imageAlt: 'Sammenleggbart bord satt opp til middag i partytelt',
@@ -441,10 +481,10 @@ export const alleProdukter = [
     kategori: 'Bord og stoler',
     badge: 'Maks 6 plasser',
     seoTitle: 'Leie runde bord i Sandefjord – Perfekt for bryllup',
-    ingress: 'For deg som ønsker runde bord i selskapet.',
-    kortBeskrivelse: 'Lei runde bord (152 cm) i Sandefjord. Skap en elegant atmosfære i bryllupet eller jubileet med plass til 6 personer per bord.',
+    ingress: 'For dere som vil dekke med runde bord.',
+    kortBeskrivelse: 'Runde bord på 152 cm som gir et roligere uttrykk til bryllup, jubileum og middagsselskaper.',
     langBeskrivelse:
-      'Runde bord gir en annen bordsetting enn vanlige klappbord. De passer godt når gjestene skal sitte lenge og prate sammen rundt bordet.',
+      'Runde bord gir en annen flyt enn vanlige klappbord. De passer godt når gjestene skal sitte lenge og dere vil ha et lunere uttrykk rundt bordet.',
     pris: 'Fra 250 kr / stk',
     priser: { dogn: 250, helg: 300, uke: 400 },
     imageAlt: 'Runde bord dekket opp i partytelt til bryllup eller jubileum',
@@ -465,9 +505,9 @@ export const alleProdukter = [
     badge: 'Fleksibel rigg',
     seoTitle: 'Leie klappstoler i Sandefjord',
     ingress: 'Enkle å ta med, sette ut og rydde bort.',
-    kortBeskrivelse: 'Lei komfortable klappstoler i Sandefjord. Praktiske stoler som tar lite plass og passer perfekt til alle typer arrangementer.',
+    kortBeskrivelse: 'Komfortable klappstoler som tar lite plass og passer til de fleste arrangementer.',
     langBeskrivelse:
-      'Klappstoler er en enkel løsning når du trenger mange plasser på kort tid. De passer godt sammen med både vanlige og runde bord.',
+      'Klappstoler er en enkel løsning når du trenger mange sitteplasser på kort tid. De passer godt sammen med både vanlige og runde bord.',
     pris: 'Fra 30 kr / stk',
     priser: { dogn: 30, helg: 35, uke: 40 },
     imageAlt: 'Klappstoler satt opp til selskap med bord i telt eller hage',
@@ -487,10 +527,10 @@ export const alleProdukter = [
     kategori: 'Lyd',
     badge: 'Enkel lydpakke',
     seoTitle: 'Leie Soundboks i Sandefjord – Kraftig lyd til festen',
-    ingress: 'For deg som vil ha god lyd uten mye styr.',
-    kortBeskrivelse: 'Lei Soundboks i Sandefjord. Batteridrevet høyttaler med Bluetooth som leverer kraftig lyd til hagefest, bryllup og arrangementer.',
+    ingress: 'For deg som vil ha god lyd uten for mye styr.',
+    kortBeskrivelse: 'Batteridrevet høyttaler med Bluetooth og god lyd til hagefest, bryllup og mindre arrangementer.',
     langBeskrivelse:
-      'En Soundboks passer godt til mange vanlige selskaper alene. Den er enkel å bruke og krever lite oppsett, og vi kan også legge ved mikrofon hvis du ønsker det.',
+      'En Soundboks passer godt til mange vanlige selskaper. Den er enkel å bruke, enkel å koble opp, og vi kan legge ved mikrofon hvis du ønsker det.',
     pris: 'Fra 500 kr',
     priser: { dogn: 500, helg: 1000, uke: 1500 },
     imageAlt: 'Soundboks høyttaler til fest, tale og musikk i telt eller utearrangement',
@@ -521,7 +561,7 @@ export const sizeGuide = tentCapacityRows.map((row) => ({
 export const priceNotes = [
   'Prisene på nettsiden gjelder leie av utstyret.',
   'Levering, montering og andre tillegg avtales ved behov.',
-  'Bruk prisestimatet for å få et raskt overslag før du tar kontakt.',
+  'Bruk kalkulatoren hvis du vil ha en rask pekepinn før du tar kontakt.',
 ]
 
 export const calculatorQuantityRules = {
@@ -601,12 +641,12 @@ export const aboutBlocks = [
   },
   {
     title: 'Lokalt i Sandefjord',
-    text: 'Vi holder til i Sandefjord og hjelper kunder med utstyr til både små og store arrangementer.',
+    text: 'Vi holder til i Sandefjord og hjelper med utstyr til både små og store arrangementer.',
     icon: 'local',
   },
   {
     title: 'Lett å bestille',
-    text: 'Det skal være enkelt å forstå hva du kan leie og hva som skjer videre.',
+    text: 'Det skal være enkelt å forstå hva du kan leie, og hva som skjer videre.',
     icon: 'simple',
   },
 ]

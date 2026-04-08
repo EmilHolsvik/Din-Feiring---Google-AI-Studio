@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { ArrowRight } from 'lucide-react'
 import Eyebrow from './Eyebrow'
+import FaqAnswer from './FaqAnswer'
 import Kontakt from './Kontakt'
 import ProduktKort from './ProduktKort'
 import { getProductById } from '../data/produkter'
@@ -158,13 +159,13 @@ export default function SeoCollectionLanding({ content }) {
             <div className="faq-list">
               {content.faq.map((item) => (
                 <details key={item.question} className="faq-item">
-                  <summary>
-                    <span>{item.question}</span>
-                    <span className="faq-toggle" aria-hidden>
-                      +
-                    </span>
-                  </summary>
-                  <p>{item.answer}</p>
+                <summary>
+                  <span>{item.question}</span>
+                  <span className="faq-toggle" aria-hidden>
+                    +
+                  </span>
+                </summary>
+                  <FaqAnswer item={item} />
                 </details>
               ))}
             </div>

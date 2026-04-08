@@ -34,7 +34,7 @@ export const artikler = [
         title: 'Konfirmasjon og dåp',
         paragraphs: [
           'Ved konfirmasjon og dåp er det ofte mange som kommer samtidig, og man ønsker gjerne en litt ryddig og fin ramme rundt dagen. Et partytelt kan fungere som hovedområde for servering, eller som ekstra plass dersom du allerede har noe innendørs.',
-          'Dette er også arrangementer der det er fint å kunne planlegge for været på forhånd. Med telt vet du at du har en løsning, uansett om dagen blir solfylt eller våt.',
+          'Dette er også arrangementer der det er fint å kunne planlegge for været på forhånd. Med telt vet du at du har en løsning, uansett om dagen byr på sol eller regn.',
         ],
       },
       {
@@ -47,7 +47,7 @@ export const artikler = [
       {
         title: 'Sommerfest, firmafest og kundearrangement',
         paragraphs: [
-          'Partytelt passer også svært godt til arrangementer i bedriftssammenheng. Det kan være sommerfest, kickoff, kundekveld eller en intern markering. Telt gir fleksibilitet og gjør det enklere å arrangere noe utendørs uten å være helt prisgitt været.',
+          'Partytelt passer også godt til arrangementer i bedriftssammenheng. Det kan være sommerfest, kickoff, kundekveld eller en intern markering. Telt gir fleksibilitet og gjør det enklere å arrangere noe utendørs uten å være helt prisgitt været.',
           'På Din Feiring har vi både mindre og større telt, noe som gjør det mulig å tilpasse løsningen til både små samlinger og større arrangementer.',
         ],
       },
@@ -55,7 +55,7 @@ export const artikler = [
         title: 'Mottakelser, plan B og ekstra soner',
         paragraphs: [
           'Ikke alle arrangementer trenger bord og stoler til alle. Ved stående mottakelser, enklere servering eller mer uformelle samlinger kan et partytelt romme mange mennesker på en ryddig måte.',
-          'Noen ganger er det heller ikke teltet som er hovedattraksjonen, men tryggheten det gir. Kanskje du håper på fint vær og planlegger det meste ute, men vil ha en sikker løsning dersom det snur.',
+          'Noen ganger er det heller ikke teltet i seg selv som er poenget, men tryggheten det gir. Kanskje du håper på fint vær og planlegger det meste ute, men vil ha en sikker løsning dersom det snur.',
           'Partytelt trenger heller ikke alltid være hovedområdet. Mange bruker telt som buffetområde, gavebord, loungeområde, bar eller skjermet plass for lydutstyr og servering. Det er ofte de løsningene som gjør arrangementet mer oversiktlig og behagelig.',
         ],
       },
@@ -103,7 +103,7 @@ export const artikler = [
       {
         title: 'Følg med på værmeldingen',
         paragraphs: [
-          'Værforholdene er en viktig del av planleggingen. Selv om telt gir god trygghet mot både regn og skiftende vær, bør man alltid følge med på vindforholdene. Det gjelder særlig dagen før og samme dag som arrangementet.',
+          'Været er en viktig del av planleggingen. Selv om telt gir god trygghet mot både regn og skiftende vær, bør man alltid følge med på vindforholdene. Det gjelder særlig dagen før og samme dag som arrangementet.',
           'Dersom det er meldt mer vind enn normalt, bør du tenke gjennom plassering, ekstra sikring og hvordan teltet skal brukes. Det er mye enklere å gjøre gode vurderinger tidlig enn å stå midt i situasjonen og måtte løse alt på sparket.',
         ],
       },
@@ -124,7 +124,7 @@ export const artikler = [
     title: 'Hvordan velge riktig partytelt',
     seoTitle: 'Hvordan velge riktig partytelt – størrelse, oppsett og kapasitet',
     excerpt:
-      'Velg partytelt ut fra antall gjester, bordoppsett, kapasitet og hvor teltet faktisk skal stå. Denne guiden hjelper deg å vurdere helheten før du bestemmer størrelse.',
+      'Velg partytelt ut fra antall gjester, bordoppsett, kapasitet og hvor teltet faktisk skal stå. Denne guiden hjelper deg å vurdere helheten før du bestemmer deg.',
     category: 'Planlegging',
     author: 'Emil Holsvik',
     publishedAt: '2026-03-05T08:12:00+01:00',

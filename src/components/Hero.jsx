@@ -36,9 +36,7 @@ export default function Hero() {
 
             <h1 className="hero-title">Lei partytelt, bord, stoler og lyd på ett sted</h1>
 
-            <p className="hero-lede">
-              Se priser, størrelser og produkter først. Når du er klar kan du sende en forespørsel og få svar.
-            </p>
+            <p className="hero-lede">Se priser, størrelser og produkter først. Når du vet litt mer, er det lett å sende en forespørsel.</p>
 
             <div className="hero-actions" role="group" aria-label="Hovedhandlinger">
               <Link to="/kontakt" className="btn btn-primary">
@@ -75,7 +73,7 @@ export default function Hero() {
         <ul className="hero-highlights" aria-label="Fordeler ved å velge Din Feiring">
           {homeHighlights.map((item) => {
             const Icon = highlightIcons[item.icon] ?? PackageCheck
-            const isSimpleOrdering = item.title === 'Enkel bestilling'
+            const isSimpleOrdering = item.title === 'Enkelt å komme i gang'
 
             return (
               <li key={item.title} className="hero-highlight-card">
@@ -86,9 +84,9 @@ export default function Hero() {
                   <h2 className={`hero-highlight-title ${isSimpleOrdering ? 'hero-highlight-title-break' : ''}`}>
                     {isSimpleOrdering ? (
                       <>
-                        Enkel
+                        Enkelt
                         <br />
-                        bestilling
+                        å komme i gang
                       </>
                     ) : (
                       item.title

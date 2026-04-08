@@ -42,7 +42,7 @@ export default function PrivacyPage() {
           <section className="privacy-section">
             <h2 className="privacy-title">1. Behandlingsansvarlig</h2>
             <p className="section-copy">
-              Behandlingsansvarlig er Din Feiring, org.nr. -, med lageradresse {companyInfo.address}. Har du spørsmål om
+              Behandlingsansvarlig er Din Feiring, org.nr. 935 536 049, med lageradresse {companyInfo.address}. Har du spørsmål om
               hvordan vi behandler personopplysninger, kan du kontakte oss på{' '}
               <a href={companyInfo.emailHref} className="text-link">
                 {companyInfo.email}
@@ -58,7 +58,7 @@ export default function PrivacyPage() {
           <section className="privacy-section">
             <h2 className="privacy-title">2. Hvilke opplysninger samles inn</h2>
             <p className="section-copy">
-              Vi henter primært personopplysninger direkte fra deg når du kontakter oss via nettsiden eller per telefon.
+              Vi henter primært personopplysninger direkte fra deg når du kontakter oss via nettsiden eller på telefon.
               I kontaktskjemaet kan du sende inn navn, telefonnummer, e-postadresse, dato for arrangementet,
               hjemmeadresse og hva du ønsker å leie. I tillegg kan vi få informasjon gjennom dialogen med deg, som
               antall gjester, leveringsadresse og andre preferanser.

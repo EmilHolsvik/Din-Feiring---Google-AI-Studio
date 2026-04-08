@@ -129,7 +129,7 @@ export default function QuoteForm({
 
   const stepIntro =
     intro ??
-    'Fyll inn det viktigste først. Resten kan du ta i neste steg.'
+    'Fyll inn det viktigste først. Resten tar du steg for steg.'
   const hasTopContent = showIntro || hasPresetItems || Boolean(error)
 
   const handleFieldChange = (event) => {
@@ -451,7 +451,7 @@ export default function QuoteForm({
             ) : null}
             {hasPresetItems ? (
               <p className="prefill-note">
-                Vi har fylt inn produkter fra siden du kom fra. Du kan endre antall eller legge til flere.
+                Vi har lagt inn produktene fra siden du kom fra. Du kan endre antall eller legge til flere.
               </p>
             ) : null}
             {error ? (
@@ -630,7 +630,7 @@ export default function QuoteForm({
             <div className="form-step-header form-step-header-split">
               <div>
                 <h4>Hva ønsker du å leie?</h4>
-                <p>Velg produkter og skriv gjerne litt mer hvis det er nyttig.</p>
+                <p>Velg produkter og skriv gjerne litt mer hvis det er relevant.</p>
               </div>
               {hasEquipmentLines ? (
                 <button type="button" className="ghost-button" onClick={addLine}>
@@ -687,7 +687,7 @@ export default function QuoteForm({
               </div>
             ) : (
               <div className="quote-form-empty-state" role="status" aria-live="polite">
-                <p>Du har ikke valgt noe utstyr ennå. Du kan sende forespørselen likevel, så kontakter vi deg for å finne riktig oppsett.</p>
+                <p>Du trenger ikke velge utstyr med en gang. Send forespørselen likevel, så hjelper vi deg å lande riktig oppsett.</p>
                 <button type="button" className="btn btn-secondary btn-small btn-inline quote-form-empty-action" onClick={addLine}>
                   Velg utstyr
                 </button>
@@ -731,7 +731,7 @@ export default function QuoteForm({
 
         {status === 'sent' && !onSuccessfulSubmit ? (
           <p className="status-note" aria-live="polite">
-            Forespørselen er sendt. Vi svarer deg så fort vi kan.
+            Forespørselen er sendt. Vi svarer så fort vi kan.
           </p>
         ) : null}
 

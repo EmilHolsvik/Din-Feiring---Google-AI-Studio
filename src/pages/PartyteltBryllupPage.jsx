@@ -42,7 +42,7 @@ export default function PartyteltBryllupPage() {
     <>
       <SEO
         title="Partytelt til bryllup i Sandefjord og Vestfold"
-        description="Lei partytelt til bryllup i Sandefjord og Vestfold. Se anbefalte teltstørrelser, runde bord, stoler og tips til et bryllupsoppsett som fungerer hele dagen."
+        description="Se hva som er lurt å tenke på når bryllupet skal være under telt. Her får dere et godt utgangspunkt for teltstørrelse, bordtype og flyt gjennom dagen."
         path="/partytelt-bryllup"
         ogImage={leadProduct?.bilde}
         ogImageAlt={leadProduct?.imageAlt || leadProduct?.navn}

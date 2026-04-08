@@ -8,12 +8,12 @@ import { companyInfo } from '../data/produkter'
 const contactSellingPoints = [
   {
     title: 'Enkel start',
-    text: 'Start med navn, telefon og e-post. Resten kan du fylle inn steg for steg når det passer.',
+    text: 'Start med navn, telefon og e-post. Resten kan du fylle inn steg for steg.',
     Icon: ClipboardList,
   },
   {
-    title: 'Samlet forespørsel',
-    text: 'Du kan sende inn telt, bord, stoler og lyd i samme skjema hvis du ønsker alt på ett sted.',
+    title: 'Alt i samme forespørsel',
+    text: 'Du kan ta med telt, bord, stoler og lyd i samme skjema hvis du vil samle alt på ett sted.',
     Icon: PackageCheck,
   },
   {
@@ -57,7 +57,7 @@ export default function Kontakt({
                 </span>
                 <h3 className="kontakt-success-title">Vi har mottatt henvendelsen din</h3>
                 <p className="kontakt-success-copy">
-                  Takk for forespørselen. Vi ser gjennom detaljene og svarer deg så fort vi kan.
+                  Takk. Vi ser gjennom det du har sendt og svarer deg så fort vi kan.
                 </p>
                 <p className="kontakt-success-copy kontakt-success-copy-muted">
                   Hvis det haster, kan du ringe <a href={companyInfo.phoneHref}>{companyInfo.phoneDisplay}</a> eller sende
@@ -115,11 +115,11 @@ export default function Kontakt({
                       Derfor er det enkelt
                     </Eyebrow>
                     <h3 id="kontakt-benefits-title" className="section-title">
-                      Du får en ryddig vei videre
+                      Det skal være enkelt å komme videre
                     </h3>
                     <p className="section-subtitle section-subtitle-centered compact-copy">
-                      Kontaktsiden skal gjøre det lett å komme i gang, enten du vet nøyaktig hva du trenger eller bare vil
-                      ha hjelp til å finne riktig oppsett.
+                      Kontaktsiden skal gjøre det lett å komme i gang, enten du vet hva du trenger eller vil ha hjelp til
+                      å finne riktig oppsett.
                     </p>
                   </div>
 

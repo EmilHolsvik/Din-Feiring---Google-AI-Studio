@@ -17,8 +17,8 @@ export default function ContactTestimonials() {
               <br /> tidligere kunder
             </h2>
             <p className="section-subtitle section-subtitle-centered">
-              Vi har levert utstyr til over 200 kunder siden 2022. Her er noen utvalgte tilbakemeldinger fra
-              arrangementer vi har fått være en del av.
+              Vi har levert utstyr til over 200 kunder siden 2022. Her er noen tilbakemeldinger fra folk vi har fått
+              hjelpe.
             </p>
           </div>
 

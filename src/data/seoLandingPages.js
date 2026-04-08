@@ -16,21 +16,49 @@ export const bordOgStolerFaq = [
     question: 'Hvor mange sitter komfortabelt per bord?',
     answer:
       'På både klappbordene og de runde bordene anbefaler vi normalt seks personer per bord. Da er det fortsatt plass til kuverter, servering og litt luft rundt hver gjest.',
+    related: {
+      prefix: 'Hvis du vil se bordene nærmere, kan du gå videre til ',
+      links: [
+        { label: 'klappbordet', to: '/produkter/bord' },
+        { label: 'det runde bordet', to: '/produkter/runde-bord' },
+      ],
+    },
   },
   {
     question: 'Når velger folk klappbord fremfor runde bord?',
     answer:
       'Klappbord er som regel smartest når dere vil få plass til mange på en ryddig måte. Runde bord velges oftere når uttrykket rundt middagen betyr mer enn maksimal plassutnyttelse.',
+    related: {
+      prefix: 'Dette blir ekstra tydelig hvis du ser på ',
+      links: [
+        { label: 'partytelt-siden', to: '/partytelt' },
+        { label: 'bryllup under telt', to: '/partytelt-bryllup' },
+      ],
+    },
   },
   {
     question: 'Bør vi beregne noen ekstrabord i tillegg?',
     answer:
       'Ja, ofte. Kakebord, kaffestasjon, gavebord og buffet er det mange som glemmer første gang de prøver å regne ut oppsettet sitt.',
+    related: {
+      prefix: 'Hvis du vil kjenne litt på helheten, kan du bruke ',
+      links: [
+        { label: 'prisestimatet', to: '/kalkulator' },
+        { label: 'teltguiden', to: '/hvor-stort-partytelt' },
+      ],
+    },
   },
   {
-    question: 'Kan dere ta telt, bord og stoler i samme forespørsel?',
+    question: 'Hvordan vet vi om bordene faktisk får plass i teltet?',
     answer:
-      'Ja. Det er ofte den beste løsningen, fordi vi da kan se hele oppsettet i sammenheng og unngå at teltet eller møblene blir feil dimensjonert.',
+      'Det kommer først og fremst an på bordtype, antall gjester og om dere også trenger plass til servering og passasjer. Runde bord krever mer plass enn mange forventer når alt skal fungere godt i praksis.',
+    related: {
+      prefix: 'For å se dette i sammenheng, er det nyttig å se ',
+      links: [
+        { label: 'partytelt', to: '/partytelt' },
+        { label: 'artikkelen om hvordan du velger riktig partytelt', to: '/artikler/hvordan-velge-riktig-partytelt' },
+      ],
+    },
   },
 ]
 
@@ -40,7 +68,7 @@ export const bordOgStolerLandingContent = {
     eyebrow: 'Bord og stoler til utleie',
     title: 'Leie bord og stoler i Sandefjord og Vestfold',
     description:
-      'Her får dere et ærlig utgangspunkt for hva som fungerer best til middag, kaker, kaffe og servering, uten at oppsettet blir unødvendig trangt.',
+      'Her får dere et godt utgangspunkt for hva som fungerer best til middag, kaker, kaffe og servering, uten at oppsettet blir unødvendig trangt.',
     primaryCta: { label: 'Be om tilbud', to: '#kontakt' },
     secondaryCta: { label: 'Se prisestimat', to: '/kalkulator' },
     tertiaryCta: { label: 'Se partytelt', to: '/partytelt' },
@@ -48,7 +76,7 @@ export const bordOgStolerLandingContent = {
   quickFacts: [
     {
       title: 'Klappbord er ofte smartest når mange skal spise samtidig',
-      text: 'De er enkle å plassere i telt, lokale eller hage og gjør det lettere å få en ryddig plan.',
+      text: 'De er enkle å plassere i telt, lokale eller hage, og gjør det lettere å lage et ryddig oppsett.',
       icon: Users,
     },
     {
@@ -78,7 +106,7 @@ export const bordOgStolerLandingContent = {
       cards: [
         {
           title: 'Klappbord når dere vil bruke plassen effektivt',
-          text: 'Dette er ofte det enkleste valget til konfirmasjon, hagefest og andre selskaper der mange skal spise samtidig.',
+          text: 'Dette er ofte det vanligste valget til konfirmasjon, hagefest og andre selskaper der mange skal spise samtidig.',
         },
         {
           title: 'Runde bord når stemningen rundt middagen betyr mest',
@@ -114,8 +142,8 @@ export const bordOgStolerLandingContent = {
   faqHeading: {
     icon: CircleHelp,
     eyebrow: 'Vanlige spørsmål',
-    title: 'Vanlige spørsmål før folk bestiller bord og stoler',
-    description: 'Korte svar på det de fleste vil vite før de bestemmer seg.',
+    title: 'Vanlige spørsmål om bord, stoler og oppsett',
+    description: 'Svar på det folk som regel vil vite når de skal finne riktig bordtype og nok plass rundt den.',
   },
   faq: bordOgStolerFaq,
   contactSection: {
@@ -123,7 +151,7 @@ export const bordOgStolerLandingContent = {
     eyebrow: 'Få hjelp med oppsettet',
     title: 'Fortell kort hva dere skal dekke opp til',
     subtitle:
-      'Send antall gjester, om dere ønsker klappbord eller runde bord, og om dere også trenger telt. Så kan vi foreslå et oppsett som faktisk fungerer.',
+      'Send antall gjester, om dere ønsker klappbord eller runde bord, og om dere også trenger telt. Så kan vi foreslå et oppsett som passer.',
   },
   linksHeading: {
     title: 'Videre hvis dere vil sammenligne',
@@ -143,7 +171,7 @@ export const bordOgStolerLandingContent = {
     {
       label: 'Bruk prisestimatet',
       to: '/kalkulator',
-      text: 'Få et grovt overslag hvis dere vil kjenne litt på nivået før dere bestemmer dere.',
+      text: 'Få en rask pekepinn hvis dere vil kjenne litt på nivået før dere bestemmer dere.',
     },
   ],
 }
@@ -153,21 +181,50 @@ export const partyteltKonfirmasjonFaq = [
     question: 'Hva er et godt startpunkt for 25 til 35 gjester?',
     answer:
       'Hvis alle skal spise under teltet, starter mange med 5 x 8 m. Skal dere også ha kaker, gavebord eller kaffestasjon inne i teltet, kan 5 x 10 m være et tryggere valg.',
+    related: {
+      prefix: 'Hvis du vil sammenligne det konkret, kan du se ',
+      links: [
+        { label: '5 x 8 m', to: '/produkter/partytelt-5x8' },
+        { label: '5 x 10 m', to: '/produkter/partytelt-5x10' },
+      ],
+    },
   },
   {
     question: 'Hva er et godt startpunkt for 40 til 50 gjester?',
     answer:
       'Da ser mange på 5 x 10 m eller større. Riktig størrelse avhenger særlig av bordoppsett, om alle skal sitte samtidig og hvor mye ekstra som også skal inn under teltet.',
+    related: {
+      prefix: 'Et naturlig neste steg er å sammenligne ',
+      links: [
+        { label: '5 x 10 m', to: '/produkter/partytelt-5x10' },
+        { label: '6 x 12 m', to: '/produkter/partytelt-6x12' },
+        { label: 'hele partytelt-utvalget', to: '/partytelt' },
+      ],
+    },
   },
   {
     question: 'Må kaker, gavebord og kaffe regnes med fra start?',
     answer:
       'Ja, helst. Det er ofte disse delene som gjør at et telt som virker stort nok på papiret blir for tett i praksis.',
+    related: {
+      prefix: 'Hvis du vil planlegge dette bedre, kan du se ',
+      links: [
+        { label: 'bord og stoler', to: '/bord-og-stoler' },
+        { label: 'teltguiden', to: '/hvor-stort-partytelt' },
+      ],
+    },
   },
   {
-    question: 'Kan vi få hjelp til telt, bord og stoler samlet?',
+    question: 'Hva slags bordoppsett fungerer ofte best til konfirmasjon?',
     answer:
-      'Ja. Det er ofte den enkleste måten å lande et oppsett som faktisk fungerer, fordi vi kan se hele konfirmasjonen i samme runde.',
+      'Klappbord er ofte det mest praktiske når mange i familien skal sitte samlet og dere vil bruke plassen godt. Runde bord kan fungere fint, men de krever mer plass og blir sjelden førstevalget hvis teltet også skal romme kaker og kaffe.',
+    related: {
+      prefix: 'Hvis du vil sammenligne oppsettene, kan du se ',
+      links: [
+        { label: 'bord og stoler', to: '/bord-og-stoler' },
+        { label: 'partytelt-siden', to: '/partytelt' },
+      ],
+    },
   },
 ]
 
@@ -251,8 +308,8 @@ export const partyteltKonfirmasjonLandingContent = {
   faqHeading: {
     icon: CircleHelp,
     eyebrow: 'Vanlige spørsmål',
-    title: 'Vanlige spørsmål før konfirmasjon under telt',
-    description: 'Svar på det familier som regel vil vite før de bestemmer seg.',
+    title: 'Vanlige spørsmål om konfirmasjon under telt',
+    description: 'Svar på det familier som oftest lurer på når de planlegger middag, kaker og plass til alle.',
   },
   faq: partyteltKonfirmasjonFaq,
   contactSection: {
@@ -280,7 +337,7 @@ export const partyteltKonfirmasjonLandingContent = {
     {
       label: 'Bruk prisestimatet',
       to: '/kalkulator',
-      text: 'Få et grovt overslag hvis dere vil vite nivået før dere går videre.',
+      text: 'Få en rask pekepinn hvis dere vil vite nivået før dere går videre.',
     },
   ],
 }
@@ -290,21 +347,49 @@ export const partyteltBryllupFaq = [
     question: 'Hva er et godt startpunkt for 50 til 70 gjester i bryllup?',
     answer:
       'Mange ser på 5 x 10 m eller 6 x 12 m, men riktig valg avhenger særlig av bordtype, hvor mye luft dere vil ha rundt bordene og om teltet også skal brukes til velkomst, kaffe eller andre soner.',
+    related: {
+      prefix: 'Hvis du vil se forskjellen i praksis, kan du sammenligne ',
+      links: [
+        { label: '5 x 10 m', to: '/produkter/partytelt-5x10' },
+        { label: '6 x 12 m', to: '/produkter/partytelt-6x12' },
+      ],
+    },
   },
   {
     question: 'Er runde bord eller langbord best i bryllupstelt?',
     answer:
       'Det kommer an på uttrykket dere ønsker. Runde bord gir ofte et mykere og mer sosialt middagsrom, men de krever også mer plass enn et enklere langbordoppsett.',
+    related: {
+      prefix: 'Hvis dette er viktig for dere, er det nyttig å se ',
+      links: [
+        { label: 'bord og stoler', to: '/bord-og-stoler' },
+        { label: 'det runde bordet', to: '/produkter/runde-bord' },
+      ],
+    },
   },
   {
     question: 'Bør vi planlegge ekstra plass til mingling og kaffe?',
     answer:
       'Ja, hvis teltet skal brukes til mer enn bare selve middagen. Litt ekstra plass merkes ofte godt gjennom hele kvelden.',
+    related: {
+      prefix: 'Hvis du vil regne på dette før dere bestemmer dere, kan du bruke ',
+      links: [
+        { label: 'teltguiden', to: '/hvor-stort-partytelt' },
+        { label: 'artikkelen om hvordan du velger riktig partytelt', to: '/artikler/hvordan-velge-riktig-partytelt' },
+      ],
+    },
   },
   {
-    question: 'Kan teltet være klart før bryllupsdagen?',
+    question: 'Hvor mye mer plass krever runde bord i praksis?',
     answer:
-      'Ja, det kan avtales. Mange ønsker å ha teltet oppe i god tid, slik at pynting, borddekking og siste forberedelser kan gjøres roligere.',
+      'Som regel mer enn mange først tror. Det er ikke bare selve bordet som tar plass, men også stolene, passasjene rundt og ønsket om at middagsrommet skal føles rolig og pent hele kvelden.',
+    related: {
+      prefix: 'Hvis dere vil se dette opp mot teltstørrelsene, kan dere gå videre til ',
+      links: [
+        { label: 'det runde bordet', to: '/produkter/runde-bord' },
+        { label: 'partytelt-siden', to: '/partytelt' },
+      ],
+    },
   },
 ]
 
@@ -314,7 +399,7 @@ export const partyteltBryllupLandingContent = {
     eyebrow: 'Bryllup under telt',
     title: 'Partytelt til bryllup i Sandefjord og Vestfold',
     description:
-      'Skal teltet romme middag, runde bord og god flyt gjennom kvelden, er det bedre å planlegge litt romslig enn for trangt. Her er et ærlig startpunkt.',
+      'Skal teltet romme middag, runde bord og god flyt gjennom kvelden, er det bedre å planlegge litt romslig enn for trangt. Her er et godt sted å starte.',
     primaryCta: { label: 'Be om tilbud', to: '#kontakt' },
     secondaryCta: { label: 'Se partytelt', to: '/partytelt' },
     tertiaryCta: { label: 'Leie bord og stoler', to: '/bord-og-stoler' },
@@ -388,8 +473,8 @@ export const partyteltBryllupLandingContent = {
   faqHeading: {
     icon: CircleHelp,
     eyebrow: 'Vanlige spørsmål',
-    title: 'Vanlige spørsmål før bryllup under telt',
-    description: 'Korte svar på det mange vil vite før de bestemmer seg.',
+    title: 'Vanlige spørsmål om bryllup under telt',
+    description: 'Svar på det mange vil avklare når bordoppsett, teltstørrelse og flyt gjennom kvelden skal henge sammen.',
   },
   faq: partyteltBryllupFaq,
   contactSection: {
@@ -397,7 +482,7 @@ export const partyteltBryllupLandingContent = {
     eyebrow: 'Snakk med oss',
     title: 'Fortell oss litt om bryllupet deres',
     subtitle:
-      'Send dato, sted, gjestetall og om dere ser for dere runde bord eller langbord. Så kan vi foreslå et oppsett som faktisk passer kvelden.',
+      'Send dato, sted, gjestetall og om dere ser for dere runde bord eller langbord. Så kan vi foreslå et oppsett som passer kvelden bedre.',
   },
   linksHeading: {
     title: 'Videre hvis dere vil sammenligne',
@@ -417,7 +502,7 @@ export const partyteltBryllupLandingContent = {
     {
       label: 'Bruk prisestimatet',
       to: '/kalkulator',
-      text: 'Få et grovt overslag hvis dere vil kjenne på nivået før dere går videre.',
+      text: 'Få en rask pekepinn hvis dere vil kjenne på nivået før dere går videre.',
     },
   ],
 }
