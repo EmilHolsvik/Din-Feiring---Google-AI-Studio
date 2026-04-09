@@ -58,22 +58,22 @@ export const navigationLinks = [
 export const homeHighlights = [
   {
     title: 'Tydelige priser',
-    text: 'Du kan se priser og regne litt selv før du tar kontakt.',
+    text: 'Ingen skjulte kostnader. Se estimat før du booker.',
     icon: 'price',
   },
   {
-    title: 'Lager i Sandefjord',
-    text: 'Du ser hvor utstyret hentes, og at det kommer fra oss lokalt.',
+    title: 'Lokalt lager',
+    text: 'Enkel henting i Sandefjord eller levering etter avtale.',
     icon: 'warehouse',
   },
   {
-    title: 'Alt på ett sted',
-    text: 'Telt, bord, stoler og lyd kan tas i samme bestilling.',
+    title: 'Komplett pakke',
+    text: 'Telt, møbler og god lyd i én og samme bestilling.',
     icon: 'bundle',
   },
   {
-    title: 'Enkelt å komme i gang',
-    text: 'Du får oversikt over priser, størrelser og produkter før du bestemmer deg.',
+    title: 'Enkel planlegging',
+    text: 'Vi hjelper deg å finne riktig størrelse til ditt antall gjester.',
     icon: 'simple',
   },
 ]
@@ -350,14 +350,15 @@ export const alleProdukter = [
   {
     id: 'partytelt-5x10',
     navn: 'Partytelt 5 x 10 m',
+    pageTitle: 'Partytelt 5 x 10 m – Vår bestselger',
     kategoriId: 'partytelt',
     kategori: 'Partytelt',
     badge: 'Populær',
-    seoTitle: 'Lei partytelt 5 x 10 meter i Sandefjord',
-    ingress: 'Et stort telt som passer til mange typer selskaper.',
-    kortBeskrivelse: 'Et populært valg for konfirmasjoner, jubileer og større hagefester.',
+    seoTitle: 'Lei partytelt 5 x 10 meter i Sandefjord – Plass til 50+ gjester',
+    ingress: 'Dette teltet på 50 kvadratmeter er det ideelle valget for deg som vil ha god plass uten å leie vår aller største modell.',
+    kortBeskrivelse: 'Lei vårt mest populære partytelt på 50 kvm. Perfekt for store familieselskaper og jubileer i Vestfold. Vanntett duk og solid ramme.',
     langBeskrivelse:
-      'Med 50 kvadratmeter får dere god plass til bord, stoler og litt luft i oppsettet. Dette er ofte størrelsen mange ender på når de vil ha god plass uten å gå helt opp til den største modellen.',
+      'Det rommer enkelt 45-50 gjester ved langbord og gir rom for både servering og bevegelse.',
     pris: 'Fra 2 500 kr',
     priser: { dogn: 2500, helg: 2950, uke: 3500 },
     imageAlt: 'Partytelt 5 x 10 meter klart for konfirmasjon eller større hagefest',
@@ -367,11 +368,9 @@ export const alleProdukter = [
     passerTil: ['Konfirmasjon', 'Jubileum', 'Større hagefest'],
     montering: 'Kan hentes selv eller leveres etter avtale.',
     spesifikasjoner: [
-      '50 kvm gulvflate',
-      'Sidehøyde ca. 2 meter',
-      'Mønehøyde ca. 2,8 meter',
-      'Solid stålramme',
-      'Vanntett duk med vindusvegger',
+      'Kraftig stålramme og 100 % vanntett duk',
+      'Store vindusflater som gir et lyst og trivelig inneområde',
+      'Kan hentes selv i Sandefjord eller leveres ferdig montert',
     ],
     inkludert: ['Tak og sidevegger', 'Stropping / barduner og jordspyd for sikring av teltet', 'Monteringsanvisning'],
     relatedIds: ['bord', 'stoler', 'soundboks'],
@@ -635,18 +634,18 @@ export const contactTestimonials = [
 
 export const aboutBlocks = [
   {
-    title: 'Enkelt å finne frem',
-    text: 'Du ser priser, størrelser og produkter tydelig før du tar kontakt.',
+    title: 'Enkelhet',
+    text: 'Priser og kapasitet er alltid tilgjengelig på nett.',
     icon: 'guide',
   },
   {
-    title: 'Lokalt i Sandefjord',
-    text: 'Vi holder til i Sandefjord og hjelper med utstyr til både små og store arrangementer.',
+    title: 'Kvalitet',
+    text: 'Vi leier kun ut utstyr vi selv ville brukt i våre egne selskaper.',
     icon: 'local',
   },
   {
-    title: 'Lett å bestille',
-    text: 'Det skal være enkelt å forstå hva du kan leie, og hva som skjer videre.',
+    title: 'Personlig service',
+    text: 'Vi hjelper deg gjerne med råd om plassering og sikring av utstyr.',
     icon: 'simple',
   },
 ]

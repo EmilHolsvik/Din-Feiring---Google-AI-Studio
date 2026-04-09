@@ -66,35 +66,35 @@ export const bordOgStolerLandingContent = {
   hero: {
     icon: PackageCheck,
     eyebrow: 'Bord og stoler til utleie',
-    title: 'Leie bord og stoler i Sandefjord og Vestfold',
+    title: 'Bord og stoler til din feiring',
     description:
-      'Her får dere et godt utgangspunkt for hva som fungerer best til middag, kaker, kaffe og servering, uten at oppsettet blir unødvendig trangt.',
+      'Skap en komfortabel ramme rundt middagen. Vi leier ut møbler som er enkle å sette opp og som tar seg godt ut i ethvert telt eller lokale.',
     primaryCta: { label: 'Be om tilbud', to: '#kontakt' },
     secondaryCta: { label: 'Se prisestimat', to: '/kalkulator' },
     tertiaryCta: { label: 'Se partytelt', to: '/partytelt' },
   },
   quickFacts: [
     {
-      title: 'Klappbord er ofte smartest når mange skal spise samtidig',
-      text: 'De er enkle å plassere i telt, lokale eller hage, og gjør det lettere å lage et ryddig oppsett.',
+      title: 'Sammenleggbare langbord (180 cm)',
+      text: 'Solide bord som utnytter plassen effektivt.',
       icon: Users,
     },
     {
-      title: 'Runde bord gir et roligere uttrykk, men trenger mer plass',
-      text: 'Det er ofte et godt valg til bryllup og jubileum, men telt og gulvflate må planlegges deretter.',
+      title: 'Runde bord (152 cm)',
+      text: 'Gir en eksklusiv og sosial atmosfære, perfekt for bryllup.',
       icon: Sparkles,
     },
     {
-      title: 'Det er ofte ekstrabordene som blir glemt',
-      text: 'Kakebord, gavebord og buffet bør med i regnestykket fra start hvis oppsettet skal føles komfortabelt.',
+      title: 'Klappstoler',
+      text: 'Praktiske stoler med god sittekomfort som er raske å rigge.',
       icon: MapPin,
     },
   ],
   productSection: {
     icon: Ruler,
-    eyebrow: 'Et godt startpunkt',
-    title: 'Produkter mange bruker når de skal dekke opp',
-    description: 'Start med bordtypen og antall sitteplasser. Da blir resten av oppsettet mye enklere å lande.',
+    eyebrow: 'Vårt utvalg',
+    title: 'Møblene vi leier ut mest',
+    description: 'Husk ekstrabordene. Ikke glem plass til gavebord og kaffestasjon.',
     productIds: ['bord', 'runde-bord', 'stoler'],
   },
   sections: [
@@ -232,27 +232,27 @@ export const partyteltKonfirmasjonLandingContent = {
   hero: {
     icon: BadgeCheck,
     eyebrow: 'Konfirmasjon under telt',
-    title: 'Partytelt til konfirmasjon i Sandefjord og Vestfold',
+    title: 'Gjør konfirmasjonen komplett med partytelt',
     description:
-      'Skal dere ha middag, kaker og kaffe ute, er det som regel litt ekstra plass som avgjør om dagen føles rolig. Her er et godt sted å starte.',
+      'Konfirmasjonen er en stor dag som krever god plass til både middag, kaker og gaver. Med et partytelt fra Din Feiring er dere sikret mot vær og vind, samtidig som dere får samlet alle i hagen.',
     primaryCta: { label: 'Be om tilbud', to: '#kontakt' },
     secondaryCta: { label: 'Se teltguiden', to: '/hvor-stort-partytelt' },
     tertiaryCta: { label: 'Se prisestimat', to: '/kalkulator' },
   },
   quickFacts: [
     {
-      title: '25 til 35 gjester med middag',
-      text: 'Mange starter med 5 x 8 m. Trenger dere også kakebord og gavebord under teltet, er 5 x 10 m ofte tryggere.',
+      title: '25-35 gjester',
+      text: '5x8m telt gir fin plass til middag.',
       icon: MapPin,
     },
     {
-      title: '40 til 50 gjester eller mye servering',
-      text: 'Da går mange rett til 5 x 10 m eller større, særlig hvis alle skal sitte samtidig.',
+      title: '40-50 gjester',
+      text: 'Velg 5x10m for å få plass til kakebord og gavebord under samme tak.',
       icon: CalendarDays,
     },
     {
-      title: 'Telt, bord og stoler bør planlegges samlet',
-      text: 'Da slipper dere å gjette dere fram til et oppsett som i verste fall blir for tett på selve dagen.',
+      title: 'Bord og stoler',
+      text: 'Sammenleggbare bord og stoler gjør riggen enkel for hele familien.',
       icon: Users,
     },
   ],
@@ -397,27 +397,27 @@ export const partyteltBryllupLandingContent = {
   hero: {
     icon: Heart,
     eyebrow: 'Bryllup under telt',
-    title: 'Partytelt til bryllup i Sandefjord og Vestfold',
+    title: 'Skap drømmebryllupet i eget partytelt',
     description:
-      'Skal teltet romme middag, runde bord og god flyt gjennom kvelden, er det bedre å planlegge litt romslig enn for trangt. Her er et godt sted å starte.',
+      'Et hagebryllup gir en personlig og unik ramme rundt den store dagen. For at dagen skal bli perfekt, anbefaler vi å planlegge for litt ekstra luft og bevegelsesfrihet i teltet.',
     primaryCta: { label: 'Be om tilbud', to: '#kontakt' },
     secondaryCta: { label: 'Se partytelt', to: '/partytelt' },
     tertiaryCta: { label: 'Leie bord og stoler', to: '/bord-og-stoler' },
   },
   quickFacts: [
     {
-      title: 'Runde bord trenger mer plass enn langbord',
-      text: 'Det påvirker både hvor stort telt dere trenger og hvordan middagen oppleves når alle sitter samlet.',
+      title: 'Runde bord',
+      text: 'Bruk runde bord for et mykt og sosialt uttrykk.',
       icon: Sparkles,
     },
     {
-      title: 'Mange bryllup bruker teltet til mer enn middag',
-      text: 'Velkomst, kaffe og naturlige overganger gjennom dagen bør med i vurderingen fra start.',
+      title: '6x12m telt',
+      text: 'Velg vårt 6x12m telt for maksimal kapasitet og god flyt.',
       icon: Users,
     },
     {
-      title: 'Litt ekstra luft merkes hele kvelden',
-      text: 'Når gjestene skal sitte lenge, bevege seg og bli sittende utover kvelden, er et rolig oppsett verdt mye.',
+      title: 'Egne soner',
+      text: 'Planlegg egne soner for velkomstmingling og dans.',
       icon: MapPin,
     },
   ],
@@ -482,7 +482,7 @@ export const partyteltBryllupLandingContent = {
     eyebrow: 'Snakk med oss',
     title: 'Fortell oss litt om bryllupet deres',
     subtitle:
-      'Send dato, sted, gjestetall og om dere ser for dere runde bord eller langbord. Så kan vi foreslå et oppsett som passer kvelden bedre.',
+      'Vi hjelper dere gjerne med å finne den beste løsningen for deres bryllupsfeiring i Sandefjord.',
   },
   linksHeading: {
     title: 'Videre hvis dere vil sammenligne',

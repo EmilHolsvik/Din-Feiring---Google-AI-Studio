@@ -15,18 +15,18 @@ import {
 
 const quickFacts = [
   {
-    title: '25 til 35 gjester med middag',
-    text: 'Mange starter med 5 x 8 m. Skal dere også ha kaker, kaffe eller gavebord under teltet, er 5 x 10 m ofte tryggere.',
+    title: '3x6 m og 3x8 m',
+    text: 'Perfekt for terrasser, oppkjørsler og mindre selskaper.',
     icon: Ruler,
   },
   {
-    title: '40 til 50 gjester eller runde bord',
-    text: 'Da ender mange på 5 x 10 m eller større. Runde bord og ekstra servering spiser fort mer plass enn man tror.',
+    title: '5x8 m og 5x10 m',
+    text: 'Favoritten til konfirmasjoner og hagefester.',
     icon: CalendarDays,
   },
   {
-    title: 'Usikker på størrelse? Send oss rammene',
-    text: 'Send dato, sted, gjestetall og litt om oppsettet, så kan vi peke dere i riktig retning.',
+    title: '6x12 m',
+    text: 'Vårt største telt for bryllup og firmafester.',
     icon: MapPin,
   },
 ]
@@ -58,10 +58,9 @@ export default function PartyteltLanding() {
             <Eyebrow icon={BadgeCheck} className="badge badge-spaced">
               Partytelt til utleie
             </Eyebrow>
-            <h1 className="section-title">Leie partytelt i Sandefjord og Vestfold</h1>
+            <h1 className="section-title">Partytelt til alle anledninger</h1>
             <p className="section-subtitle section-subtitle-centered">
-              Skal dere ha middag, gjester og servering ute, er det som regel bordoppsett og ekstra soner som avgjør om
-              teltet blir passe. Her er et godt sted å starte.
+              Når du skal leie partytelt, er det bordoppsettet og antall gjester som avgjør suksessen. Vi hjelper deg å velge riktig telt, enten du skal ha en intim middag eller en storstilt feiring.
             </p>
 
             <div className="button-row button-row-center seo-landing-hero-actions">
@@ -99,11 +98,11 @@ export default function PartyteltLanding() {
         <div className="container">
           <div className="section-header section-header-centered">
             <Eyebrow icon={Ruler} className="badge badge-spaced">
-              Størrelser og priser
+              Våre mest populære telt
             </Eyebrow>
-            <h2 className="section-title">Et godt sted å starte når du skal velge telt</h2>
+            <h2 className="section-title">Finn riktig størrelse til selskapet ditt</h2>
             <p className="section-subtitle section-subtitle-centered">
-              Velg størrelse ut fra hvordan teltet faktisk skal brukes, ikke bare hvor mange som er invitert.
+              Tips: Husk å beregne plass til kakebord, gavebord og buffet når du velger størrelse.
             </p>
           </div>
 

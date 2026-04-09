@@ -10,19 +10,21 @@ const aboutBlockIcons = {
   simple: ClipboardCheck,
 }
 
-export default function WhyChooseUsSection() {
+export default function WhyChooseUsSection({
+  eyebrow = 'Derfor velger kunder oss',
+  title = 'Derfor velger kunder oss',
+  description = 'Vi prøver å gjøre det lett å forstå hva du kan leie, og lett å komme videre.',
+}) {
   return (
     <FadeIn>
       <section className="section about-points-section">
         <div className="container">
           <div className="section-header section-header-centered">
             <Eyebrow icon={BadgeCheck} className="badge badge-spaced">
-              Derfor velger kunder oss
+              {eyebrow}
             </Eyebrow>
-            <h2 className="section-title">Derfor velger kunder oss</h2>
-            <p className="section-subtitle section-subtitle-centered">
-              Vi prøver å gjøre det lett å forstå hva du kan leie, og lett å komme videre.
-            </p>
+            <h2 className="section-title">{title}</h2>
+            <p className="section-subtitle section-subtitle-centered">{description}</p>
           </div>
 
           <ul className="grid-3 about-points-list" aria-label="Tre grunner til å velge Din Feiring">

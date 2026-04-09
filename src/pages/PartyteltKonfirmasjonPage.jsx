@@ -41,8 +41,8 @@ export default function PartyteltKonfirmasjonPage() {
   return (
     <>
       <SEO
-        title="Partytelt til konfirmasjon i Sandefjord og Vestfold"
-        description="Se hva som er lurt å tenke på når konfirmasjonen skal være under telt. Her får dere et godt startpunkt for størrelse, bordoppsett og plass til kaker og kaffe."
+        title="Partytelt til konfirmasjon i Sandefjord – Skap en minnerik dag"
+        description="Planlegger du konfirmasjon ute? Vi leier ut partytelt med plass til hele familien. Se våre anbefalte oppsett for 30-50 gjester i Sandefjord."
         path="/partytelt-konfirmasjon"
         ogImage={leadProduct?.bilde}
         ogImageAlt={leadProduct?.imageAlt || leadProduct?.navn}

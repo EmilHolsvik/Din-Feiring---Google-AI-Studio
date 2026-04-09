@@ -41,8 +41,8 @@ export default function BordOgStolerPage() {
   return (
     <>
       <SEO
-        title="Leie bord og stoler i Sandefjord og Vestfold"
-        description="Se bord, runde bord og stoler før du bestemmer deg. Her får du et godt utgangspunkt for middag, kaker, kaffe og oppsett som passer bedre."
+        title="Utleie av bord og stoler i Sandefjord – Klappbord og runde bord"
+        description="Lei stødige klappbord, elegante runde bord og komfortable klappstoler til din fest. Vi leverer i Sandefjord og resten av Vestfold."
         path="/bord-og-stoler"
         ogImage={leadProduct?.bilde}
         ogImageAlt={leadProduct?.imageAlt || leadProduct?.navn}

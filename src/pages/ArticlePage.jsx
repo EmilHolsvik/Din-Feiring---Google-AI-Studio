@@ -38,6 +38,7 @@ export default function ArticlePage() {
 
   const relatedArticles = getAndreArtikler(article.slug, 2)
   const articlePath = `/artikler/${article.slug}`
+  const articleHeading = article.pageTitle || article.title
   const ctaConfig =
     article.slug === 'hvilke-arrangementer-passer-partytelt-for'
       ? {
@@ -121,7 +122,7 @@ export default function ArticlePage() {
         <article className="article-shell">
           <header className="article-header">
             <Eyebrow icon={FileText}>{article.category}</Eyebrow>
-            <h1 className="section-title">{article.title}</h1>
+            <h1 className="section-title">{articleHeading}</h1>
             <p className="section-subtitle">{article.excerpt}</p>
 
             <div className="article-meta-row">

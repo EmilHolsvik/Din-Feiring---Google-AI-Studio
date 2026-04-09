@@ -122,9 +122,10 @@ export const artikler = [
   {
     slug: 'hvordan-velge-riktig-partytelt',
     title: 'Hvordan velge riktig partytelt',
-    seoTitle: 'Hvordan velge riktig partytelt – størrelse, oppsett og kapasitet',
+    pageTitle: 'Hvordan velge riktig partytelt for din feiring',
+    seoTitle: 'Guide: Slik velger du riktig partytelt til festen',
     excerpt:
-      'Velg partytelt ut fra antall gjester, bordoppsett, kapasitet og hvor teltet faktisk skal stå. Denne guiden hjelper deg å vurdere helheten før du bestemmer deg.',
+      'Ekspertens tips til valg av teltstørrelse, underlag og sikring. Les guiden før du bestiller partytelt i Sandefjord eller Vestfold.',
     category: 'Planlegging',
     author: 'Emil Holsvik',
     publishedAt: '2026-03-05T08:12:00+01:00',
@@ -133,7 +134,7 @@ export const artikler = [
     image: tentMain,
     imageAlt: 'Partytelt satt opp i hage klart for selskap',
     intro:
-      'Det er fort gjort å tenke at partytelt bare handler om å finne et telt som ser fint ut. Men det viktigste er egentlig at teltet passer til arrangementet ditt. Hvor mange kommer, skal alle sitte, og trenger du plass til gavebord, buffet eller lydutstyr? Når du har kontroll på de tingene, blir det mye enklere å velge riktig.',
+      'Å velge telt handler om mer enn bare kvadratmeter. Du må tenke på hvem som kommer, hva de skal gjøre, og hvor teltet skal stå. I denne guiden går vi gjennom de viktigste faktorene du må vurdere for å sikre en vellykket fest.',
     sections: [
       {
         title: 'Start med antall gjester',
@@ -182,7 +183,7 @@ export const artikler = [
       },
     ],
     conclusion:
-      'Det finnes ikke ett partytelt som passer til alt, og det er egentlig hele poenget. Når du velger telt ut fra gjester, oppsett og bruk, får du en løsning som fungerer i praksis, ikke bare på papiret. Er du usikker på hva du trenger, er det helt lov å spørre. Det er mye lettere å velge riktig når du får litt hjelp på veien.',
+      'Antall gjester, underlag og ekstra soner som buffet, bar eller Soundboks har mye å si for hvilket telt som faktisk passer. Les videre i punktene over, og bruk guiden som et startpunkt før du bestemmer deg.',
   },
 ]
 

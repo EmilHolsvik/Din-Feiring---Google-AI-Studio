@@ -34,9 +34,11 @@ export default function Hero() {
               Lager i Sandefjord
             </span>
 
-            <h1 className="hero-title">Lei partytelt, bord, stoler og lyd på ett sted</h1>
+            <h1 className="hero-title">Alt du trenger til feiringen på ett sted</h1>
 
-            <p className="hero-lede">Se priser, størrelser og produkter først. Når du vet litt mer, er det lett å sende en forespørsel.</p>
+            <p className="hero-lede">
+              Lei partytelt, bord, stoler og lyd uten stress. Vi holder til i Sandefjord og leverer utstyr av høy kvalitet til både små og store anledninger i hele Vestfold.
+            </p>
 
             <div className="hero-actions" role="group" aria-label="Hovedhandlinger">
               <Link to="/kontakt" className="btn btn-primary">
@@ -73,7 +75,7 @@ export default function Hero() {
         <ul className="hero-highlights" aria-label="Fordeler ved å velge Din Feiring">
           {homeHighlights.map((item) => {
             const Icon = highlightIcons[item.icon] ?? PackageCheck
-            const isSimpleOrdering = item.title === 'Enkelt å komme i gang'
+            const isSimpleOrdering = item.title === 'Enkel planlegging'
 
             return (
               <li key={item.title} className="hero-highlight-card">
@@ -84,9 +86,9 @@ export default function Hero() {
                   <h2 className={`hero-highlight-title ${isSimpleOrdering ? 'hero-highlight-title-break' : ''}`}>
                     {isSimpleOrdering ? (
                       <>
-                        Enkelt
+                        Enkel
                         <br />
-                        å komme i gang
+                        planlegging
                       </>
                     ) : (
                       item.title

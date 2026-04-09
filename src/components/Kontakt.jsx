@@ -36,6 +36,8 @@ export default function Kontakt({
   homeTone = false,
   productSpacing = false,
   titleAs = 'h2',
+  title = contactHeading,
+  subtitle = contactDescription,
 }) {
   const [hasSubmitted, setHasSubmitted] = useState(false)
   const TitleTag = titleAs
@@ -73,8 +75,8 @@ export default function Kontakt({
                     <Eyebrow icon={eyebrowIcon} className="badge badge-spaced">
                       {eyebrow}
                     </Eyebrow>
-                    <TitleTag className="section-title">{contactHeading}</TitleTag>
-                    <p className="section-subtitle kontakt-subtitle">{contactDescription}</p>
+                    <TitleTag className="section-title">{title}</TitleTag>
+                    <p className="section-subtitle kontakt-subtitle">{subtitle}</p>
                   </div>
 
                   <div className="contact-intro-clean">

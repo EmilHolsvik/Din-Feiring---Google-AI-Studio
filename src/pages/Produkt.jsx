@@ -44,6 +44,7 @@ export default function Produkt() {
   const related = getRelatedProducts(produkt)
   const gallery = produkt.galleri?.length ? produkt.galleri : [produkt.bilde]
   const selectedImage = activeImage || gallery[0]
+  const productHeading = produkt.pageTitle || produkt.navn
   const categoryPath =
     produkt.kategoriId === 'partytelt' ? '/partytelt' : produkt.kategoriId === 'mobler' ? '/bord-og-stoler' : '/produkter'
   const categoryLabel =
@@ -198,7 +199,7 @@ export default function Produkt() {
               {produkt.kategori}
             </div>
             <h1 className="heading-elegant product-title" style={{ fontSize: '42px', marginBottom: '16px', color: 'var(--primary)' }}>
-              {produkt.navn}
+              {productHeading}
             </h1>
             <p style={{ fontSize: '18px', color: 'var(--text)', lineHeight: 1.6, marginBottom: '24px' }}>{produkt.ingress}</p>
 

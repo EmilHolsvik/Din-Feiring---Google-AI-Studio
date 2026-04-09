@@ -42,8 +42,8 @@ export default function Home() {
   return (
     <>
       <SEO 
-        title="Din Feiring i Sandefjord – partytelt, bord, stoler og lyd"
-        description="Din Feiring leier ut partytelt, bord, stoler og lyd i Sandefjord og Vestfold. Se priser, størrelser og produkter før du sender en forespørsel."
+        title="Din Feiring Sandefjord – Utleie av partytelt, bord, stoler og lyd"
+        description="Skal du arrangere fest? Din Feiring leier ut partytelt, bord, stoler og Soundboks i Sandefjord og hele Vestfold. Se priser og bestill enkelt på nett."
         path="/"
         ogImage={heroImages[0]?.src}
         ogImageAlt={heroImages[0]?.alt}

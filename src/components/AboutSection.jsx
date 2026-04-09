@@ -38,8 +38,8 @@ const copyByVariant = {
     title: 'Din Feiring skal være lett å planlegge med',
     badge: 'Om Din Feiring',
     paragraphs: [
-      'Din Feiring er bygget rundt en enkel idé: Det skal være lettere å finne riktig telt og utstyr uten å måtte gjette på pris eller kapasitet.',
-      'Vi holder lager i Sandefjord og hjelper både private og bedrifter med utstyr til alt fra mindre hagefester til større markeringer.',
+      'Din Feiring ble startet med ett mål for øye: Det skal være slutt på å gjette seg til priser og teltstørrelser. Vi ønsker å være den mest transparente og hjelpsomme utleiepartneren i Sandefjord.',
+      'Vårt lager i Pinaveien 8A i Sandefjord er alltid klart for å hjelpe deg med din neste markering.',
     ],
     ctas: [
       { label: 'Se produkter', to: '/produkter', className: 'btn btn-secondary' },
