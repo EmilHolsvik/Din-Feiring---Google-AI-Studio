@@ -37,7 +37,7 @@ export default function Hero() {
             <h1 className="hero-title">Alt du trenger til feiringen på ett sted</h1>
 
             <p className="hero-lede">
-              Lei partytelt, bord, stoler og lyd uten stress. Vi holder til i Sandefjord og leverer utstyr av høy kvalitet til både små og store anledninger i hele Vestfold.
+              Lei partytelt, bord, stoler og Soundboks til arrangementet ditt. Vi holder til i Sandefjord, leverer i hele Vestfold, og du ser hva alt koster før du tar kontakt.
             </p>
 
             <div className="hero-actions" role="group" aria-label="Hovedhandlinger">

@@ -8,7 +8,7 @@ export default function About() {
     <>
       <SEO 
         title="Om Din Feiring – Din lokale utleiepartner i Sandefjord"
-        description="Din Feiring brenner for å gjøre festplanlegging enklere. Les om vår visjon og hvorfor vi er det foretrukne valget for utleie i Vestfold."
+        description="Din Feiring leier ut partytelt, bord, stoler og lyd fra Sandefjord. Vi holder prisene åpne, utstyret vedlikeholdt og svarer på spørsmål uten salgssnakk."
         path="/om-oss"
         ogImage={heroImages[3]?.src || heroImages[0]?.src}
         ogImageAlt={heroImages[3]?.alt || heroImages[0]?.alt}
@@ -17,7 +17,7 @@ export default function About() {
       <WhyChooseUsSection
         eyebrow="Hva vi står for"
         title="Hva vi står for"
-        description="Vårt lager i Pinaveien 8A i Sandefjord er alltid klart for å hjelpe deg med din neste markering."
+        description="Vi leier ut utstyr vi selv ville valgt til egne feiringer. Vedlikeholdt, rent og klart til bruk – og prisene finner du på nettsiden."
       />
     </>
   )

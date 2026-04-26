@@ -68,7 +68,7 @@ export const bordOgStolerLandingContent = {
     eyebrow: 'Bord og stoler til utleie',
     title: 'Bord og stoler til din feiring',
     description:
-      'Skap en komfortabel ramme rundt middagen. Vi leier ut møbler som er enkle å sette opp og som tar seg godt ut i ethvert telt eller lokale.',
+      'Vi leier ut klappbord, runde bord og klappstoler som er enkle å sette opp og passer til de fleste telt og oppsett. Priser og kapasitet finner du på produktsidene.',
     primaryCta: { label: 'Be om tilbud', to: '#kontakt' },
     secondaryCta: { label: 'Se prisestimat', to: '/kalkulator' },
     tertiaryCta: { label: 'Se partytelt', to: '/partytelt' },
@@ -397,9 +397,9 @@ export const partyteltBryllupLandingContent = {
   hero: {
     icon: Heart,
     eyebrow: 'Bryllup under telt',
-    title: 'Skap drømmebryllupet i eget partytelt',
+    title: 'Partytelt til bryllup – ute, på egne premisser',
     description:
-      'Et hagebryllup gir en personlig og unik ramme rundt den store dagen. For at dagen skal bli perfekt, anbefaler vi å planlegge for litt ekstra luft og bevegelsesfrihet i teltet.',
+      'Et hagebryllup lar dere velge sted, sette opp bord slik dere vil og ha gjestene samlet under ett tak. Vi hjelper dere finne teltstørrelsen som gir god plass til middag, dans og bevegelse.',
     primaryCta: { label: 'Be om tilbud', to: '#kontakt' },
     secondaryCta: { label: 'Se partytelt', to: '/partytelt' },
     tertiaryCta: { label: 'Leie bord og stoler', to: '/bord-og-stoler' },

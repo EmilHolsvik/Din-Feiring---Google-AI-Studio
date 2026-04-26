@@ -16,7 +16,7 @@ export default function CalculatorPage() {
       <Kalkulator
         titleAs="h1"
         titleText="Beregn pris for din feiring"
-        subtitleText="Velg utstyret du trenger, legg inn ønsket leieperiode, og få et umiddelbart overslag på prisen. Dette gjør det enkelt for deg å planlegge budsjettet for festen. Husk at levering og montering kommer i tillegg dersom du ønsker at vi skal ta oss av dette."
+        subtitleText="Velg produkter, antall og periode for å få et raskt overslag. Levering og montering kommer i tillegg ved behov."
       />
       <Priser />
     </>

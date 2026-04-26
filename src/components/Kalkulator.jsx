@@ -179,7 +179,7 @@ export default function Kalkulator({
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
               {valg.length === 0 ? (
-                <p className="calculator-empty-state">Legg til et produkt for å komme i gang.</p>
+                <p className="calculator-empty-state">Klikk på «+ Legg til ny linje» nedenfor for å legge til produkter og se et prisestimat.</p>
               ) : null}
 
               {valg.map((item, index) => (
@@ -291,64 +291,65 @@ export default function Kalkulator({
             </button>
           </div>
 
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-            <div
-              className="card"
-              style={{
-                padding: '34px 26px',
-                textAlign: 'center',
-                background: 'var(--primary)',
-                color: 'var(--white)',
-                border: 'none',
-                borderRadius: 'var(--radius)',
-                boxShadow: 'var(--shadow-md)',
-              }}
-            >
+          {valg.length > 0 ? (
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
               <div
+                className="card"
                 style={{
-                  color: 'rgba(255,255,255,0.8)',
-                  fontSize: '14px',
-                  fontWeight: 600,
-                  letterSpacing: '0.5px',
-                  marginBottom: '10px',
-                  textTransform: 'uppercase',
+                  padding: '34px 26px',
+                  textAlign: 'center',
+                  background: 'var(--primary)',
+                  color: 'var(--white)',
+                  border: 'none',
+                  borderRadius: 'var(--radius)',
+                  boxShadow: 'var(--shadow-md)',
                 }}
               >
-                Prisestimat
+                <div
+                  style={{
+                    color: 'rgba(255,255,255,0.8)',
+                    fontSize: '14px',
+                    fontWeight: 600,
+                    letterSpacing: '0.5px',
+                    marginBottom: '10px',
+                    textTransform: 'uppercase',
+                  }}
+                >
+                  Prisestimat
+                </div>
+                <output
+                  aria-live="polite"
+                  style={{
+                    fontFamily: 'var(--font-main)',
+                    fontSize: 'clamp(40px, 6vw, 54px)',
+                    fontWeight: 700,
+                    color: 'white',
+                    lineHeight: 1,
+                  }}
+                >
+                  {formatCurrency(total)}
+                </output>
+                <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '14px', marginTop: '18px', lineHeight: 1.6, fontWeight: 400 }}>
+                  Dette er et overslag basert på valgene over. Levering og montering kommer i tillegg ved behov.
+                </p>
+                <div className="calculator-summary">
+                  <strong>Valgene dine</strong>
+                  <ul>
+                    {oppsummering.map((oppsummeringItem) => (
+                      <li key={oppsummeringItem}>{oppsummeringItem}</li>
+                    ))}
+                  </ul>
+                </div>
+                <Link
+                  to={contactHref}
+                  className="btn btn-outline"
+                  style={{ width: '100%', maxWidth: '320px', marginTop: '22px', borderColor: 'rgba(255,255,255,0.3)', color: 'white' }}
+                >
+                  Send disse valgene videre
+                </Link>
               </div>
-              <output
-                aria-live="polite"
-                style={{
-                  fontFamily: 'var(--font-main)',
-                  fontSize: 'clamp(40px, 6vw, 54px)',
-                  fontWeight: 700,
-                  color: 'white',
-                  lineHeight: 1,
-                }}
-              >
-                {formatCurrency(total)}
-              </output>
-              <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '14px', marginTop: '18px', lineHeight: 1.6, fontWeight: 400 }}>
-                Dette er et overslag basert på valgene over. Levering og montering kommer i tillegg ved behov.
-              </p>
-              <div className="calculator-summary">
-                <strong>Valgene dine</strong>
-                <ul>
-                  {oppsummering.map((oppsummeringItem) => (
-                    <li key={oppsummeringItem}>{oppsummeringItem}</li>
-                  ))}
-                </ul>
-              </div>
-              <Link
-                to={contactHref}
-                className="btn btn-outline"
-                style={{ width: '100%', maxWidth: '320px', marginTop: '22px', borderColor: 'rgba(255,255,255,0.3)', color: 'white' }}
-              >
-                Send disse valgene videre
-              </Link>
             </div>
-
-          </div>
+          ) : null}
         </div>
       </div>
     </section>

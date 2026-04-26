@@ -41,8 +41,8 @@ export default function PartyteltBryllupPage() {
   return (
     <>
       <SEO
-        title="Partytelt til bryllup i Sandefjord – Romantisk hagebryllup"
-        description="Drømmer du om bryllup i hagen? Vi leier ut store partytelt og runde bord som skaper den rette stemningen i Vestfold. Se våre bryllupsløsninger."
+        title="Partytelt til bryllup i Sandefjord – Leie og priser"
+        description="Lei partytelt til bryllup i Vestfold. Vi tilbyr runde bord og telt i flere størrelser – og hjelper deg finne oppsettet som gir god plass til middag og dans."
         path="/partytelt-bryllup"
         ogImage={leadProduct?.bilde}
         ogImageAlt={leadProduct?.imageAlt || leadProduct?.navn}

@@ -8,7 +8,7 @@ export default function ArticlesPreview() {
   const posts = getSortedArtikler().slice(0, 3)
 
   return (
-    <section className="section section-alt articles-preview-section">
+    <section className="section articles-preview-section">
       <div className="container">
         <div className="articles-preview-top">
           <div className="section-header section-header-sm articles-preview-header">

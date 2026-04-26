@@ -57,7 +57,7 @@ export default function PartyteltPage() {
     <>
       <SEO
         title="Lei partytelt i Sandefjord og Vestfold – Størrelsesguide og priser"
-        description="Finn det perfekte partyteltet til din hagefest, konfirmasjon eller bryllup. Vi leier ut telt i mange størrelser i Sandefjord-området."
+        description="Lei partytelt i Sandefjord og Vestfold. Se størrelser, kapasitet og priser – og finn teltet som faktisk gir plass til alle gjestene dine."
         path="/partytelt"
         ogImage={heroImages[0]?.src}
         ogImageAlt={heroImages[0]?.alt}

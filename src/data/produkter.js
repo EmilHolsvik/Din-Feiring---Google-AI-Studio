@@ -57,75 +57,75 @@ export const navigationLinks = [
 
 export const homeHighlights = [
   {
-    title: 'Tydelige priser',
-    text: 'Ingen skjulte kostnader. Se estimat før du booker.',
+    title: 'Prisene på nett',
+    text: 'Du ser hva alt koster før du tar kontakt. Ingen skjulte kostnader, og du kan bruke kalkulatoren for et raskt overslag.',
     icon: 'price',
   },
   {
-    title: 'Lokalt lager',
-    text: 'Enkel henting i Sandefjord eller levering etter avtale.',
+    title: 'Lager i Sandefjord',
+    text: 'Hent fra lageret vårt i Pinaveien, eller avtal levering og montering direkte til arrangementet.',
     icon: 'warehouse',
   },
   {
-    title: 'Komplett pakke',
-    text: 'Telt, møbler og god lyd i én og samme bestilling.',
+    title: 'Alt i én forespørsel',
+    text: 'Telt, bord, stoler og Soundboks kan kombineres i én og samme bestilling. Vi ordner resten.',
     icon: 'bundle',
   },
   {
-    title: 'Enkel planlegging',
-    text: 'Vi hjelper deg å finne riktig størrelse til ditt antall gjester.',
+    title: 'Vi hjelper med størrelsen',
+    text: 'Fortell oss antall gjester og bordoppsett – vi hjelper deg å finne telt som faktisk gir plass til alle.',
     icon: 'simple',
   },
 ]
 
 export const serviceValues = [
   {
-    title: 'Lett å finne det som passer',
-    text: 'Du ser pris og plassbehov tidlig, så det blir lettere å velge.',
+    title: 'Du vet hva du betaler',
+    text: 'Priser og kapasitet er synlig på nettsiden. Ingen skjulte kostnader – og du kan beregne et estimat selv.',
   },
   {
-    title: 'Utstyr som passer sammen',
-    text: 'Telt, bord, stoler og lyd er valgt for å fungere godt sammen.',
+    title: 'Utstyr som henger sammen',
+    text: 'Telt, bord, stoler og lyd er valgt for å passe med hverandre. Du slipper å koordinere flere leverandører.',
   },
   {
-    title: 'Lokalt og ryddig',
-    text: 'Vi holder til i Sandefjord og prøver å gjøre alt så enkelt og tydelig som mulig.',
+    title: 'Lokalt og oversiktlig',
+    text: 'Vi holder til i Sandefjord. Det gjør det enklere å planlegge, hente og avtale levering til stedet.',
   },
 ]
 
 export const processSteps = [
   {
-    title: 'Velg utstyr',
-    text: 'Se på produkter, priser og størrelser for å finne det som passer best.',
+    title: 'Finn det som passer',
+    text: 'Se priser, størrelser og kapasitet på nettsiden – eller bruk kalkulatoren for et raskt overslag.',
   },
   {
-    title: 'Send forespørsel',
-    text: 'Send det du vet nå. Resten avklarer vi sammen.',
+    title: 'Send en forespørsel',
+    text: 'Del dato, antall gjester og hva du tenker å leie. Det holder som start – vi tar resten.',
   },
   {
-    title: 'Vi avklarer detaljene',
-    text: 'Du får svar på tilgjengelighet, pris og om det blir henting eller levering.',
+    title: 'Vi svarer deg',
+    text: 'Du får svar på hva som er ledig, hva det koster og om levering kan ordnes til arrangementet.',
   },
   {
-    title: 'Hent eller få levert',
-    text: 'Utstyret er klart til avtalt tid, slik at du kan fokusere på dagen.',
+    title: 'Klar til arrangementet',
+    text: 'Utstyret er klargjort og klart til henting – eller levert og satt opp på stedet til avtalt tid.',
   },
 ]
 
 export const eventIdeas = [
   {
     title: 'Bryllup og jubileum',
-    text: 'Et godt valg når dere trenger god plass til middag, gjester og en lang dag ute.',
+    text: 'Telt gir dere en hel festflate ute – med plass til middag, mingling og en lang dag uansett vær.',
     path: '/partytelt-bryllup',
   },
   {
     title: 'Konfirmasjon og hagefest',
-    text: 'Nyttig når dere vil ha kontroll på vær, sitteplasser og servering.',
+    text: 'Du bestemmer plassen, vi leverer teltet. Enklere å planlegge når du vet nøyaktig hvor mange som får plass.',
     path: '/partytelt-konfirmasjon',
   },
   {
     title: 'Firmaarrangement og sommerfest',
-    text: 'En enkel måte å samle telt, møbler og lyd på ett sted.',
+    text: 'Legg sommerfest, teamdag eller kundekveld utendørs – med telt, møbler og lyd i én og samme bestilling.',
     path: '/partytelt',
   },
 ]
@@ -634,18 +634,18 @@ export const contactTestimonials = [
 
 export const aboutBlocks = [
   {
-    title: 'Enkelhet',
-    text: 'Priser og kapasitet er alltid tilgjengelig på nett.',
+    title: 'Prisene er åpne',
+    text: 'Du finner priser og størrelser på nettsiden – ingen ring for pris, ingen overraskelser på slutten.',
     icon: 'guide',
   },
   {
-    title: 'Kvalitet',
-    text: 'Vi leier kun ut utstyr vi selv ville brukt i våre egne selskaper.',
+    title: 'Utstyr vi er stolte av',
+    text: 'Vi leier ut det vi ville valgt til egne feiringer. Vedlikeholdt, rent og klart til bruk.',
     icon: 'local',
   },
   {
-    title: 'Personlig service',
-    text: 'Vi hjelper deg gjerne med råd om plassering og sikring av utstyr.',
+    title: 'Vi svarer på spørsmål',
+    text: 'Usikker på størrelse, plassering eller oppsett? Still spørsmål – vi gir konkrete råd, ikke salgssnakk.',
     icon: 'simple',
   },
 ]

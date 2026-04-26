@@ -14,8 +14,8 @@ export default function SizeGuidePage() {
       />
       <SizeGuide
         titleAs="h1"
-        titleText="Finn den perfekte teltstørrelsen"
-        subtitleText="Ingenting er kjedeligere enn et telt som føles for trangt. Her ser du hvor mange personer hvert telt komfortabelt rommer i ulike scenarioer. Husk å legge til ca. 10-20 % ekstra plass dersom du skal ha buffet eller gavebord inne i teltet."
+        titleText="Hvor stort partytelt trenger du?"
+        subtitleText="Her ser du hvor mange personer hvert telt rommer ved ulike bordoppsett. Legg gjerne til 10–20 % ekstra hvis dere skal ha buffet, kakebord eller gavebord inne i teltet."
       />
     </>
   )

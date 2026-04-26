@@ -9,7 +9,7 @@ export default function ProductsPage() {
     <>
       <SEO 
         title="Våre produkter – Alt innen telt, møbler og lydutleie i Sandefjord"
-        description="Utforsk vårt utvalg av utleieutstyr. Fra kompakte 3x6m telt til store 6x12m telt, samt Soundboks og møbler til festen din i Vestfold."
+        description="Se alle produkter vi leier ut – partytelt i fem størrelser, bord, stoler og Soundboks. Priser og kapasitet er oppgitt på hver produktside."
         path="/produkter"
         ogImage={heroImages[0]?.src}
         ogImageAlt={heroImages[0]?.alt}

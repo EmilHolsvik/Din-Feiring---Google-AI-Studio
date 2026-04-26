@@ -1709,6 +1709,9 @@ section[id] { scroll-margin-top: calc(var(--nav-height) + 20px); }
 .article-page {
   background: var(--cream-light);
 }
+.articles-preview-section {
+  background: var(--white);
+}
 .articles-preview-top {
   margin-bottom: 24px;
 }
@@ -1954,7 +1957,7 @@ section[id] { scroll-margin-top: calc(var(--nav-height) + 20px); }
   background: var(--white);
 }
 .leieprosess-section-home {
-  background: var(--cream-light);
+  background: var(--white);
 }
 .products-home-cta {
   width: auto;
@@ -2647,7 +2650,7 @@ section[id] { scroll-margin-top: calc(var(--nav-height) + 20px); }
   padding-top: 88px;
 }
 .kontakt-section-home {
-  background: transparent;
+  background: var(--section-alt);
 }
 .kontakt-section-submitted {
   padding-bottom: 72px;

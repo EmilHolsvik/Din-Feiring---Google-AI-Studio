@@ -41,8 +41,8 @@ export default function PartyteltKonfirmasjonPage() {
   return (
     <>
       <SEO
-        title="Partytelt til konfirmasjon i Sandefjord – Skap en minnerik dag"
-        description="Planlegger du konfirmasjon ute? Vi leier ut partytelt med plass til hele familien. Se våre anbefalte oppsett for 30-50 gjester i Sandefjord."
+        title="Partytelt til konfirmasjon i Sandefjord – Størrelser og priser"
+        description="Lei partytelt til konfirmasjon i Vestfold. Se størrelser og kapasitet for 30–60 gjester, og finn oppsettet som gir plass til middag, kaker og gavebord."
         path="/partytelt-konfirmasjon"
         ogImage={leadProduct?.bilde}
         ogImageAlt={leadProduct?.imageAlt || leadProduct?.navn}
