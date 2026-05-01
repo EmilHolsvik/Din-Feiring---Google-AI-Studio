@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import { Download, FileText } from 'lucide-react'
 import SEO from '../components/SEO'
 import Eyebrow from '../components/Eyebrow'
-import { companyInfo } from '../data/produkter'
+import { companyInfo, heroImages } from '../data/produkter'
 
 const rentalTermsPdfUrl = `${import.meta.env.BASE_URL}leievilkar_holsvik_co_full.pdf`
 
@@ -142,6 +142,8 @@ export default function RentalTermsPage() {
         title="Leievilkår for partytelt, bord og stoler"
         description="Les leievilkår for partytelt, bord, stoler og lydutstyr fra Din Feiring i Sandefjord. Her finner du regler for leieperiode, ansvar, betaling og bruk."
         path="/leievilkar"
+        ogImage={heroImages[0]?.src}
+        ogImageAlt={heroImages[0]?.alt}
       />
       <div className="container narrow-container">
         <div className="page-breadcrumbs">

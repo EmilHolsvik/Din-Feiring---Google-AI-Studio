@@ -151,6 +151,10 @@ export default function Produkt() {
                 src={selectedImage}
                 alt={produkt.imageAlt || produkt.navn}
                 referrerPolicy="no-referrer"
+                fetchPriority="high"
+                decoding="async"
+                width="1200"
+                height="900"
                 style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                 sizes="(max-width: 768px) 100vw, 640px"
               />

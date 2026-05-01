@@ -7,26 +7,17 @@ const breadcrumbJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    {
-      '@type': 'ListItem',
-      position: 1,
-      name: 'Forside',
-      item: 'https://dinfeiring.no/',
-    },
-    {
-      '@type': 'ListItem',
-      position: 2,
-      name: 'Partytelt',
-      item: 'https://dinfeiring.no/partytelt',
-    },
+    { '@type': 'ListItem', position: 1, name: 'Forside', item: '/' },
+    { '@type': 'ListItem', position: 2, name: 'Partytelt', item: '/partytelt' },
   ],
 }
 
 const localBusinessJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
+  '@id': 'https://dinfeiring.no/#localbusiness',
   name: 'Din Feiring',
-  url: 'https://dinfeiring.no/',
+  url: '/',
   telephone: companyInfo.phoneHref.replace('tel:', ''),
   email: companyInfo.email,
   address: {
@@ -34,9 +25,13 @@ const localBusinessJsonLd = {
     streetAddress: 'Pinaveien 8A',
     postalCode: '3225',
     addressLocality: 'Sandefjord',
+    addressRegion: 'Vestfold',
     addressCountry: 'NO',
   },
-  areaServed: ['Sandefjord', 'Vestfold'],
+  areaServed: [
+    { '@type': 'City', name: 'Sandefjord' },
+    { '@type': 'AdministrativeArea', name: 'Vestfold' },
+  ],
 }
 
 const faqJsonLd = {
@@ -56,8 +51,8 @@ export default function PartyteltPage() {
   return (
     <>
       <SEO
-        title="Lei partytelt i Sandefjord og Vestfold – Størrelsesguide og priser"
-        description="Lei partytelt i Sandefjord og Vestfold. Se størrelser, kapasitet og priser – og finn teltet som faktisk gir plass til alle gjestene dine."
+        title="Lei partytelt i Sandefjord – Størrelser, priser og kapasitet"
+        description="Partytelt fra 3x6 til 6x12 meter. Se kapasitet, priser per døgn og helg, og finn teltet som faktisk passer antall gjester."
         path="/partytelt"
         ogImage={heroImages[0]?.src}
         ogImageAlt={heroImages[0]?.alt}

@@ -16,6 +16,7 @@ const URL_LIKE_KEYS = new Set([
   'sameAs',
   'mainEntityOfPage',
   'canonical',
+  'item',
 ])
 
 function hasWindowLocation() {

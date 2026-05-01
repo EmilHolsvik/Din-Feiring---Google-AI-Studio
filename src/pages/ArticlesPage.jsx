@@ -8,17 +8,40 @@ import WhyChooseUsSection from '../components/WhyChooseUsSection'
 import { getSortedArtikler } from '../data/artikler'
 import SEO from '../components/SEO'
 
+const breadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Forside', item: '/' },
+    { '@type': 'ListItem', position: 2, name: 'Artikler', item: '/artikler' },
+  ],
+}
+
 export default function ArticlesPage() {
   const posts = getSortedArtikler()
 
+  const itemListJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: 'Artikler og guider fra Din Feiring',
+    numberOfItems: posts.length,
+    itemListElement: posts.map((article, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      url: `/artikler/${article.slug}`,
+      name: article.title,
+    })),
+  }
+
   return (
     <>
-      <SEO 
+      <SEO
         title="Artikler og inspirasjon til din feiring"
         description="Les artiklene våre om partytelt, oppsett, montering og planlegging. Her finner du korte og praktiske råd før du bestemmer deg."
         path="/artikler"
         ogImage={posts[0]?.image}
         ogImageAlt={posts[0]?.imageAlt}
+        jsonLd={[breadcrumbJsonLd, itemListJsonLd]}
       />
       <section className="section article-index-page">
         <div className="container">

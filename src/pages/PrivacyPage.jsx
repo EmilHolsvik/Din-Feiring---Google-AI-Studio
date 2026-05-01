@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import { ShieldCheck } from 'lucide-react'
 import SEO from '../components/SEO'
 import Eyebrow from '../components/Eyebrow'
-import { companyInfo } from '../data/produkter'
+import { companyInfo, heroImages } from '../data/produkter'
 
 export default function PrivacyPage() {
   return (
@@ -11,6 +11,8 @@ export default function PrivacyPage() {
         title="Personvern og cookies"
         description="Les hvordan Din Feiring behandler personopplysninger, cookies og kontaktdata når du bruker nettsiden eller sender en forespørsel."
         path="/personvern"
+        ogImage={heroImages[0]?.src}
+        ogImageAlt={heroImages[0]?.alt}
       />
       <div className="container narrow-container">
         <div className="page-breadcrumbs">

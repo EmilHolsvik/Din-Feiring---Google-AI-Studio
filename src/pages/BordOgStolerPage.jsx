@@ -7,18 +7,8 @@ const breadcrumbJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    {
-      '@type': 'ListItem',
-      position: 1,
-      name: 'Forside',
-      item: 'https://dinfeiring.no/',
-    },
-    {
-      '@type': 'ListItem',
-      position: 2,
-      name: 'Bord og stoler',
-      item: 'https://dinfeiring.no/bord-og-stoler',
-    },
+    { '@type': 'ListItem', position: 1, name: 'Forside', item: '/' },
+    { '@type': 'ListItem', position: 2, name: 'Bord og stoler', item: '/bord-og-stoler' },
   ],
 }
 
@@ -42,7 +32,7 @@ export default function BordOgStolerPage() {
     <>
       <SEO
         title="Utleie av bord og stoler i Sandefjord – Klappbord og runde bord"
-        description="Lei stødige klappbord, elegante runde bord og komfortable klappstoler til din fest. Vi leverer i Sandefjord og resten av Vestfold."
+        description="Klappbord, runde bord og klappstoler til hagefest, konfirmasjon og bryllup. Henting i Sandefjord eller levering i Vestfold."
         path="/bord-og-stoler"
         ogImage={leadProduct?.bilde}
         ogImageAlt={leadProduct?.imageAlt || leadProduct?.navn}

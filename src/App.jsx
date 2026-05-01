@@ -39,9 +39,15 @@ function AppRoutes() {
     <Routes location={location} key={location.pathname}>
       <Route path="/" element={<Home />} />
       <Route path="/partytelt" element={<PartyteltPage />} />
+      <Route path="/teltutleie" element={<Navigate to="/partytelt" replace />} />
+      <Route path="/partytelt-utleie" element={<Navigate to="/partytelt" replace />} />
       <Route path="/bord-og-stoler" element={<BordOgStolerPage />} />
+      <Route path="/leie-bord-og-stoler" element={<Navigate to="/bord-og-stoler" replace />} />
+      <Route path="/bord-og-stoler-sandefjord" element={<Navigate to="/bord-og-stoler" replace />} />
       <Route path="/partytelt-konfirmasjon" element={<PartyteltKonfirmasjonPage />} />
+      <Route path="/konfirmasjonstelt" element={<Navigate to="/partytelt-konfirmasjon" replace />} />
       <Route path="/partytelt-bryllup" element={<PartyteltBryllupPage />} />
+      <Route path="/bryllupstelt" element={<Navigate to="/partytelt-bryllup" replace />} />
       <Route path="/om-oss" element={<About />} />
       <Route path="/produkter" element={<ProductsPage />} />
       <Route path="/produkter/:id" element={<Produkt />} />

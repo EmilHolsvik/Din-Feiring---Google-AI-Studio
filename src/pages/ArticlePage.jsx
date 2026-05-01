@@ -139,7 +139,15 @@ export default function ArticlePage() {
           </header>
 
           <div className="article-cover">
-            <img src={article.image} alt={article.imageAlt} referrerPolicy="no-referrer" />
+            <img
+              src={article.image}
+              alt={article.imageAlt}
+              referrerPolicy="no-referrer"
+              fetchPriority="high"
+              decoding="async"
+              width="1200"
+              height="800"
+            />
           </div>
 
           <div className="article-body">

@@ -7,18 +7,8 @@ const breadcrumbJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    {
-      '@type': 'ListItem',
-      position: 1,
-      name: 'Forside',
-      item: 'https://dinfeiring.no/',
-    },
-    {
-      '@type': 'ListItem',
-      position: 2,
-      name: 'Partytelt til bryllup',
-      item: 'https://dinfeiring.no/partytelt-bryllup',
-    },
+    { '@type': 'ListItem', position: 1, name: 'Forside', item: '/' },
+    { '@type': 'ListItem', position: 2, name: 'Partytelt til bryllup', item: '/partytelt-bryllup' },
   ],
 }
 
@@ -41,8 +31,8 @@ export default function PartyteltBryllupPage() {
   return (
     <>
       <SEO
-        title="Partytelt til bryllup i Sandefjord – Leie og priser"
-        description="Lei partytelt til bryllup i Vestfold. Vi tilbyr runde bord og telt i flere størrelser – og hjelper deg finne oppsettet som gir god plass til middag og dans."
+        title="Partytelt til bryllup i Sandefjord – Størrelser og priser"
+        description="Eget telt til bryllup gir frihet over bordoppsett, dansegulv og velkomst. Runde bord og telt i flere størrelser – pris og tilgjengelighet innen 24 timer."
         path="/partytelt-bryllup"
         ogImage={leadProduct?.bilde}
         ogImageAlt={leadProduct?.imageAlt || leadProduct?.navn}

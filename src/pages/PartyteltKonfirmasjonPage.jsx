@@ -7,18 +7,8 @@ const breadcrumbJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    {
-      '@type': 'ListItem',
-      position: 1,
-      name: 'Forside',
-      item: 'https://dinfeiring.no/',
-    },
-    {
-      '@type': 'ListItem',
-      position: 2,
-      name: 'Partytelt til konfirmasjon',
-      item: 'https://dinfeiring.no/partytelt-konfirmasjon',
-    },
+    { '@type': 'ListItem', position: 1, name: 'Forside', item: '/' },
+    { '@type': 'ListItem', position: 2, name: 'Partytelt til konfirmasjon', item: '/partytelt-konfirmasjon' },
   ],
 }
 
@@ -42,7 +32,7 @@ export default function PartyteltKonfirmasjonPage() {
     <>
       <SEO
         title="Partytelt til konfirmasjon i Sandefjord – Størrelser og priser"
-        description="Lei partytelt til konfirmasjon i Vestfold. Se størrelser og kapasitet for 30–60 gjester, og finn oppsettet som gir plass til middag, kaker og gavebord."
+        description="Partytelt til konfirmasjon i Sandefjord og Vestfold. Størrelser og kapasitet for 30–60 gjester – middag, kakebord og gaver under samme tak."
         path="/partytelt-konfirmasjon"
         ogImage={leadProduct?.bilde}
         ogImageAlt={leadProduct?.imageAlt || leadProduct?.navn}
