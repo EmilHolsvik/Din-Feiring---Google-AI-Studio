@@ -16,7 +16,7 @@ export default function Leieprosess() {
             </Eyebrow>
             <h2 className="section-title">Slik bestiller du</h2>
             <p className="section-subtitle section-subtitle-centered">
-              Fra første melding til utstyret er klart — fire steg, ingen overraskelser underveis.
+              Fire steg fra forespørsel til arrangement.
             </p>
           </div>
 

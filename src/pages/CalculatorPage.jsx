@@ -6,17 +6,17 @@ import { heroImages } from '../data/produkter'
 export default function CalculatorPage() {
   return (
     <>
-      <SEO 
-        title="Pris på leie av partytelt – Få estimat raskt og enkelt"
-        description="Bruk vår priskalkulator for å se hva det koster å leie telt, bord og stoler. Få full oversikt over leiepriser i Sandefjord og Vestfold."
+      <SEO
+        title="Priskalkulator – Lei partytelt, bord og stoler i Sandefjord"
+        description="Regn ut hva det koster å leie partytelt, bord og stoler i Sandefjord og Vestfold. Velg produkter, antall og periode – og se totalen direkte."
         path="/kalkulator"
         ogImage={heroImages[0]?.src}
         ogImageAlt={heroImages[0]?.alt}
       />
       <Kalkulator
         titleAs="h1"
-        titleText="Beregn pris for din feiring"
-        subtitleText="Velg produkter, antall og periode for å få et raskt overslag. Levering og montering kommer i tillegg ved behov."
+        titleText="Regn ut prisen på din feiring"
+        subtitleText="Velg utstyr, antall og periode – så får du totalsummen direkte. Levering og montering legges på ved behov."
       />
       <Priser />
     </>

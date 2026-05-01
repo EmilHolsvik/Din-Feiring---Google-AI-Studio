@@ -6,17 +6,17 @@ import Eyebrow from './Eyebrow'
 const sellingPoints = [
   {
     title: 'Lager i Sandefjord',
-    text: 'Lokal base med et tydelig sted for henting, levering og planlegging.',
+    text: 'Ett sted å hente, levere fra og planlegge mot.',
     icon: MapPinned,
   },
   {
     title: 'Telt og utstyr samlet',
-    text: 'Telt, bord, stoler og lyd kan samles i én bestilling hos samme leverandør.',
+    text: 'Telt, bord, stoler og lyd – ett kontaktpunkt for hele oppsettet.',
     icon: Tent,
   },
   {
-    title: 'Enkelt å komme i gang',
-    text: 'Du ser prisnivå, størrelser og kapasitet før du sender en forespørsel.',
+    title: 'Pris og størrelse på nettet',
+    text: 'Du regner selv før du sender en forespørsel.',
     icon: ClipboardCheck,
   },
 ]
@@ -26,8 +26,8 @@ const copyByVariant = {
     title: 'Lokal utleie med lager i Sandefjord',
     badge: 'Om oss',
     paragraphs: [
-      'Vi vil gjøre det enkelt å finne riktig telt og utstyr. Du skal slippe å lure på pris, størrelse og hva som faktisk passer.',
-      'Fra lageret vårt i Sandefjord hjelper vi med telt, bord, stoler og lyd til alt fra hagefest og konfirmasjon til bryllup og firmaarrangement.',
+      'Pris, størrelse og kapasitet ligger åpent. Du slipper ringrunden, og kan bestemme deg på egen tid.',
+      'Fra Sandefjord leverer vi telt, bord, stoler og lyd til hagefest, konfirmasjon, bryllup og firmaarrangement i hele Vestfold.',
     ],
     ctas: [
       { label: 'Be om tilbud', to: '/kontakt', className: 'btn btn-primary' },
@@ -38,8 +38,8 @@ const copyByVariant = {
     title: 'Din Feiring skal være lett å planlegge med',
     badge: 'Om Din Feiring',
     paragraphs: [
-      'Din Feiring ble startet fordi planlegging av fest ikke burde kreve ringrundering for å finne ut hva noe koster. Priser, størrelser og kapasitet er lagt åpent ut – så du kan orientere deg og bestemme deg uten å måtte ta kontakt først.',
-      'Vi holder til i Sandefjord, leverer i hele Vestfold, og leier ut det vi selv ville valgt til egne feiringer.',
+      'Vi startet Din Feiring fordi det ikke burde være nødvendig å ringe rundt for å finne ut hva noe koster. Priser, størrelser og kapasitet ligger åpent på nettsiden – du kan bestemme deg før du tar telefonen.',
+      'Vi holder til i Sandefjord, leverer i hele Vestfold, og leier ut det vi selv ville valgt til egen feiring.',
     ],
     ctas: [
       { label: 'Se produkter', to: '/produkter', className: 'btn btn-secondary' },

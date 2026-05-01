@@ -12,7 +12,7 @@ export default function NotFound() {
           <Eyebrow icon={TriangleAlert}>404</Eyebrow>
           <h1 className="section-title">Siden finnes ikke</h1>
           <p className="section-copy">
-            Lenken kan være gammel, eller siden kan ha blitt flyttet. Gå til forsiden eller se produktene våre i stedet.
+            Lenken er kanskje gammel, eller siden har flyttet på seg. Gå til forsiden eller se produktene i stedet.
           </p>
           <div className="button-row button-row-center">
             <Link to="/" className="btn btn-primary">

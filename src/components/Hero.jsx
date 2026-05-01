@@ -34,10 +34,10 @@ export default function Hero() {
               Lager i Sandefjord
             </span>
 
-            <h1 className="hero-title">Alt du trenger til feiringen på ett sted</h1>
+            <h1 className="hero-title">Partytelt og utstyr til feiringen din</h1>
 
             <p className="hero-lede">
-              Lei partytelt, bord, stoler og Soundboks til arrangementet ditt. Vi holder til i Sandefjord, leverer i hele Vestfold, og du ser hva alt koster før du tar kontakt.
+              Telt, bord, stoler og Soundboks – fra lager i Sandefjord, levert i hele Vestfold. Prisene står på nettsiden, så du vet hva alt koster før du tar kontakt.
             </p>
 
             <div className="hero-actions" role="group" aria-label="Hovedhandlinger">

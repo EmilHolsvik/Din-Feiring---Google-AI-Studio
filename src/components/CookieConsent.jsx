@@ -81,10 +81,9 @@ export default function CookieConsent() {
                     <Cookie className="cookie-icon" size={24} />
                   </div>
                   <div>
-                    <h3 className="cookie-banner-title">Vi bruker informasjonskapsler</h3>
+                    <h3 className="cookie-banner-title">Cookies på nettsiden</h3>
                     <p className="cookie-banner-description">
-                      Vi bruker cookies for å forbedre din opplevelse, analysere trafikk og vise relevante annonser. 
-                      Du kan velge å godta alle eller administrere dine innstillinger.
+                      Vi bruker cookies til analyse og målrettede annonser. Velg hva du vil tillate – eller godta alle.
                     </p>
                   </div>
                 </div>
@@ -128,15 +127,14 @@ export default function CookieConsent() {
 
               <div className="modal-body">
                 <p className="modal-description">
-                  Her kan du velge hvilke informasjonskapsler du tillater oss å bruke. 
-                  Nødvendige cookies kan ikke slås av da de kreves for at nettsiden skal fungere.
+                  Velg hva du vil tillate. Nødvendige cookies kan ikke slås av – de kreves for at nettsiden skal fungere.
                 </p>
 
                 <div className="cookie-options">
                   <div className="cookie-option">
                     <div className="cookie-option-info">
                       <h4 className="cookie-option-title">Nødvendige</h4>
-                      <p className="cookie-option-desc">Kreves for grunnleggende funksjonalitet som sikkerhet og skjemaer.</p>
+                      <p className="cookie-option-desc">Kreves for sikkerhet og skjemaer på nettsiden.</p>
                     </div>
                     <button type="button" className="cookie-toggle disabled" disabled aria-label="Nødvendige cookies er alltid aktive">
                       <Check size={16} className="text-white" />
@@ -146,7 +144,7 @@ export default function CookieConsent() {
                   <div className="cookie-option">
                     <div className="cookie-option-info">
                       <h4 className="cookie-option-title">Analyse</h4>
-                      <p className="cookie-option-desc">Hjelper oss å forstå hvordan besøkende bruker nettsiden slik at vi kan forbedre den.</p>
+                      <p className="cookie-option-desc">Måler bruk av nettsiden slik at vi vet hva som funker.</p>
                     </div>
                     <button
                       type="button"
@@ -163,7 +161,7 @@ export default function CookieConsent() {
                   <div className="cookie-option">
                     <div className="cookie-option-info">
                       <h4 className="cookie-option-title">Markedsføring</h4>
-                      <p className="cookie-option-desc">Brukes for å vise relevante annonser og måle effekten av markedsføring.</p>
+                      <p className="cookie-option-desc">Brukes til relevante annonser og måling av annonse-effekt.</p>
                     </div>
                     <button
                       type="button"

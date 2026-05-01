@@ -13,7 +13,7 @@ const aboutBlockIcons = {
 export default function WhyChooseUsSection({
   eyebrow = 'Derfor velger kunder oss',
   title = 'Derfor velger kunder oss',
-  description = 'Vi prøver å gjøre det lett å forstå hva du kan leie, og lett å komme videre.',
+  description = 'Åpne priser, lokalt lager og konkrete svar på det du faktisk lurer på.',
 }) {
   return (
     <FadeIn>

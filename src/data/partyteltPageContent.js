@@ -8,41 +8,41 @@ export const partyteltProducts = alleProdukter
 
 export const partyteltBenefits = [
   {
-    title: 'Ta utgangspunkt i middagsoppsettet',
-    text: 'Hvis alle skal spise under teltet samtidig, er det dette som bør styre størrelsen, ikke bare hvor mange som er invitert.',
+    title: 'Start med middagsoppsettet',
+    text: 'Hvis alle skal spise samtidig under teltet, er det middagen – ikke gjestelisten – som styrer størrelsen.',
   },
   {
-    title: 'Legg inn plass til det som ofte glemmes',
-    text: 'Buffet, kakebord, gavebord og passasjer mellom bordene gjør større utslag enn mange forventer.',
+    title: 'Regn inn det som glemmes',
+    text: 'Buffet, kakebord, gavebord og passasjer mellom bordene tar mer plass enn de fleste antar.',
   },
   {
-    title: 'Mål området før dere låser valget',
-    text: 'Det må være plass til teltet, litt arbeidsrom rundt og et underlag som fungerer godt gjennom hele dagen.',
+    title: 'Mål før dere låser valget',
+    text: 'Sjekk at det er plass til selve teltet, litt arbeidsrom rundt, og et underlag som tåler dagen.',
   },
 ]
 
 export const partyteltServicePoints = [
   {
-    title: 'Når både middag og ekstra bord skal inn under samme tak',
-    text: 'Kaker, gavebord, buffet eller kaffestasjon gjør ofte større utslag enn selve gjestetallet.',
+    title: 'Middag og ekstra bord under samme tak',
+    text: 'Kakebord, gavebord, buffet og kaffestasjon trekker ofte mer plass enn selve gjestetallet.',
   },
   {
-    title: 'Når dere ønsker roligere passasjer mellom bordene',
-    text: 'Litt ekstra luft merkes godt når folk skal sitte lenge, reise seg og bevege seg mellom bordene gjennom dagen.',
+    title: 'Romsligere passasjer rundt bordene',
+    text: 'Når folk skal sitte lenge, reise seg og bevege seg, merkes ekstra luft mellom bordene gjennom hele dagen.',
   },
   {
-    title: 'Når teltet skal brukes lenge, ikke bare til en kort middag',
-    text: 'Jo mer teltet skal fungere som hovedrom for dagen, desto mer merkes det hvis oppsettet blir for tett.',
+    title: 'Teltet brukes hele dagen, ikke bare til middag',
+    text: 'Skal teltet være hovedrom fra velkomst til kveld, blir for tett oppsett raskt slitsomt.',
   },
 ]
 
 export const partyteltFaq = [
   {
-    question: 'Hvilken teltstørrelse passer ofte til 25 til 35 gjester?',
+    question: 'Hvor stort partytelt til 25–35 gjester?',
     answer:
-      'Hvis alle skal sitte til middag under teltet, er 5 x 8 m et vanlig startpunkt. Skal dere også ha kaker, buffet eller litt ekstra luft, ender mange heller på 5 x 10 m.',
+      '5x8m holder hvis alle skal sitte til middag. Skal kaker, buffet eller bedre luft mellom bordene også inn, lander mange på 5x10m.',
     related: {
-      prefix: 'Hvis du vil sammenligne dette nærmere, kan du se ',
+      prefix: 'Sammenlign størrelsene: ',
       links: [
         { label: '5 x 8 m', to: '/produkter/partytelt-5x8' },
         { label: '5 x 10 m', to: '/produkter/partytelt-5x10' },
@@ -53,9 +53,9 @@ export const partyteltFaq = [
   {
     question: 'Når bør vi gå opp en størrelse?',
     answer:
-      'Hvis dere vil ha runde bord, flere serveringssoner eller unngå et tett oppsett, lønner det seg ofte å gå opp en størrelse før dere låser bestillingen.',
+      'Med runde bord, flere serveringssoner eller dansegulv: gå opp før dere bestiller. Den ekstra plassen merkes hele kvelden.',
     related: {
-      prefix: 'Det er ekstra relevant hvis du vurderer ',
+      prefix: 'Spesielt relevant hvis dere vurderer ',
       links: [
         { label: 'bord og stoler', to: '/bord-og-stoler' },
         { label: 'bryllup under telt', to: '/partytelt-bryllup' },
@@ -63,11 +63,11 @@ export const partyteltFaq = [
     },
   },
   {
-    question: 'Må vi regne med plass til mer enn selve bordene?',
+    question: 'Må vi planlegge for mer enn bordene?',
     answer:
-      'Ja, som regel. Det er nettopp kakebord, gavebord, servering og passasjer som gjør at et telt som ser stort nok ut på papiret kan bli trangt i praksis.',
+      'Ja. Kakebord, gavebord, servering og passasjer mellom bord er det som oftest gjør at et telt som ser stort nok ut blir trangt i praksis.',
     related: {
-      prefix: 'Hvis du vil lese mer om hvordan dette påvirker valget, kan du bruke ',
+      prefix: 'Mer om dette: ',
       links: [
         { label: 'teltguiden', to: '/hvor-stort-partytelt' },
         { label: 'artikkelen om hvordan du velger riktig partytelt', to: '/artikler/hvordan-velge-riktig-partytelt' },
@@ -75,11 +75,11 @@ export const partyteltFaq = [
     },
   },
   {
-    question: 'Hva er forskjellen på 5 x 8 m og 5 x 10 m i praksis?',
+    question: 'Hva er forskjellen på 5x8m og 5x10m i praksis?',
     answer:
-      'De ekstra to meterne merkes ofte mer enn mange tror. Det er ofte forskjellen på bare å få plass til bordene, og å også få inn kaker, servering eller litt roligere passasjer mellom bordene.',
+      'De to ekstra meterne er ofte forskjellen mellom å bare få plass til middagsbordene, og å også få inn kakebord og roligere passasjer.',
     related: {
-      prefix: 'Du kan sammenligne størrelsene direkte på ',
+      prefix: 'Sammenlign størrelsene direkte: ',
       links: [
         { label: '5 x 8 m-siden', to: '/produkter/partytelt-5x8' },
         { label: '5 x 10 m-siden', to: '/produkter/partytelt-5x10' },
@@ -92,16 +92,16 @@ export const partyteltInternalLinks = [
   {
     label: 'Leie bord og stoler',
     to: '/bord-og-stoler',
-    text: 'Nyttig hvis du allerede vet at gjestene skal sitte til middag og du vil se møblene som passer best.',
+    text: 'Hvis dere vet at gjestene skal sitte til middag – se møblene som passer.',
   },
   {
     label: 'Partytelt til konfirmasjon',
     to: '/partytelt-konfirmasjon',
-    text: 'Et mer konkret utgangspunkt hvis dere prøver å få plass til middag, kaker og gavebord i samme oppsett.',
+    text: 'Konkret utgangspunkt når middag, kaker og gavebord skal inn i samme oppsett.',
   },
   {
     label: 'Partytelt til bryllup',
     to: '/partytelt-bryllup',
-    text: 'Nyttig hvis dere vurderer runde bord, et roligere middagsrom og litt mer luft i oppsettet.',
+    text: 'Hvis dere vurderer runde bord, dansegulv og et roligere middagsrom.',
   },
 ]

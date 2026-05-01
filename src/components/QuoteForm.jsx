@@ -129,7 +129,7 @@ export default function QuoteForm({
 
   const stepIntro =
     intro ??
-    'Fyll inn det viktigste først. Resten tar du steg for steg.'
+    'Tre steg: kontakt, arrangement, utstyr. Du får svar innen 24 timer.'
   const hasTopContent = showIntro || hasPresetItems || Boolean(error)
 
   const handleFieldChange = (event) => {
@@ -687,7 +687,7 @@ export default function QuoteForm({
               </div>
             ) : (
               <div className="quote-form-empty-state" role="status" aria-live="polite">
-                <p>Du trenger ikke velge utstyr med en gang. Send forespørselen likevel, så hjelper vi deg å lande riktig oppsett.</p>
+                <p>Du trenger ikke velge utstyr nå – send inn likevel, så finner vi oppsettet sammen.</p>
                 <button type="button" className="btn btn-secondary btn-small btn-inline quote-form-empty-action" onClick={addLine}>
                   Velg utstyr
                 </button>
@@ -731,7 +731,7 @@ export default function QuoteForm({
 
         {status === 'sent' && !onSuccessfulSubmit ? (
           <p className="status-note" aria-live="polite">
-            Forespørselen er sendt. Vi svarer så fort vi kan.
+            Forespørselen er sendt. Du får svar innen 24 timer.
           </p>
         ) : null}
 

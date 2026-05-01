@@ -16,7 +16,7 @@ export default function Footer() {
               <img src={logoUrl} alt="Din Feiring" className="brand-logo footer-logo" width="184" height="84" referrerPolicy="no-referrer" />
             </div>
 
-            <p className="footer-copy">Utleie av partytelt, bord, stoler og lyd fra vårt lager i Sandefjord.</p>
+            <p className="footer-copy">Partytelt, bord, stoler og lyd – fra lager i Sandefjord til hele Vestfold.</p>
 
             <Link to="/kontakt" className="btn btn-primary btn-small btn-inline footer-cta">
               Be om tilbud

@@ -7,25 +7,25 @@ import { companyInfo } from '../data/produkter'
 
 const contactSellingPoints = [
   {
-    title: 'Enkel start',
-    text: 'Start med navn, telefon og e-post. Resten kan du fylle inn steg for steg.',
+    title: 'Start enkelt',
+    text: 'Navn, telefon, e-post. Resten fyller du inn steg for steg.',
     Icon: ClipboardList,
   },
   {
-    title: 'Alt i samme forespørsel',
-    text: 'Du kan ta med telt, bord, stoler og lyd i samme skjema hvis du vil samle alt på ett sted.',
+    title: 'Alt i én forespørsel',
+    text: 'Telt, bord, stoler og lyd kan samles i samme skjema – ett kontaktpunkt, en avtale.',
     Icon: PackageCheck,
   },
   {
     title: 'Lokalt og tydelig',
-    text: 'Vi holder til i Sandefjord og avklarer pris, henting og levering på en ryddig måte.',
+    text: 'Lager i Sandefjord. Pris, henting og levering avklares uten omveier.',
     Icon: MapPin,
   },
 ]
 
 const contactHeading = 'Send oss en forespørsel'
 const contactDescription =
-  'Send inn en forespørsel, så hører du fra oss. Velg gjerne dato, utstyr og antall, så blir det enklere for oss å hjelpe deg raskt. Er du usikker på hvilket utstyr du trenger, hjelper vi deg gjerne.'
+  'Del dato, antall gjester og hva dere tenker å leie – så svarer vi med pris og tilgjengelighet innen 24 timer. Er du usikker på utstyret, send forespørselen likevel; vi finner ut av det sammen.'
 
 export default function Kontakt({
   eyebrow = 'Kontakt',
@@ -57,13 +57,12 @@ export default function Kontakt({
                 <span className="kontakt-success-icon" aria-hidden="true">
                   <BadgeCheck size={28} strokeWidth={1.9} />
                 </span>
-                <h3 className="kontakt-success-title">Vi har mottatt henvendelsen din</h3>
+                <h3 className="kontakt-success-title">Vi har mottatt forespørselen din</h3>
                 <p className="kontakt-success-copy">
-                  Takk. Vi ser gjennom det du har sendt og svarer deg så fort vi kan.
+                  Takk. Du får svar med pris og tilgjengelighet innen 24 timer.
                 </p>
                 <p className="kontakt-success-copy kontakt-success-copy-muted">
-                  Hvis det haster, kan du ringe <a href={companyInfo.phoneHref}>{companyInfo.phoneDisplay}</a> eller sende
-                  e-post til <a href={companyInfo.emailHref}>{companyInfo.email}</a>.
+                  Haster det? Ring <a href={companyInfo.phoneHref}>{companyInfo.phoneDisplay}</a> eller send e-post til <a href={companyInfo.emailHref}>{companyInfo.email}</a>.
                 </p>
               </div>
             </div>
@@ -114,14 +113,13 @@ export default function Kontakt({
                 <div className="kontakt-benefits" aria-labelledby="kontakt-benefits-title">
                   <div className="section-header section-header-centered section-header-sm kontakt-benefits-header">
                     <Eyebrow icon={BadgeCheck} className="badge badge-spaced">
-                      Derfor er det enkelt
+                      Slik fungerer det
                     </Eyebrow>
                     <h3 id="kontakt-benefits-title" className="section-title">
-                      Det skal være enkelt å komme videre
+                      Tre ting å vite før du sender
                     </h3>
                     <p className="section-subtitle section-subtitle-centered compact-copy">
-                      Kontaktsiden skal gjøre det lett å komme i gang, enten du vet hva du trenger eller vil ha hjelp til
-                      å finne riktig oppsett.
+                      Du trenger ikke ha alle detaljer klare. De viktigste tre tingene er nok – resten lander vi sammen.
                     </p>
                   </div>
 
